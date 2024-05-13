@@ -1,0 +1,62 @@
+#headerBar{
+	position:fixed;
+	top:0; left:0; right:0;
+	background:linear-gradient(rgba(51,153,153,0.9),rgba(51,153,153,0.9));
+	border-bottom:5px solid white;
+	height:80px;
+	z-index:999;
+}
+
+	#headerContents{
+		margin:auto; margin-top:0; margin-bottom:0; padding:0; width:100%; max-width:1400px;
+	}
+
+	#headerContents a{
+		color:white;
+       		display:flex; align-items:center;
+		height:80px;
+		font-size:22px; padding:15px;
+		text-decoration:none;
+		font-family: 'Trebuchet MS', sans-serif;
+		float:right;
+		background:none;
+	}
+	#headerContents a:hover{color:rgb(51,153,153); background:white;}
+
+#headerSpacer{
+	z-index:998;
+	position:absolute; top:0; left:0; right:0;
+	height:80px;
+	background:#efefef;
+}
+
+#headerLogo {
+	margin:15px;
+	height:50px; width:auto;
+	transition:0.5s; cursor:pointer;
+}
+#headerLogo:hover {scale:1.02;}
+
+
+
+
+
+
+
+
+
+/* LOADING UI */
+#loader{position:fixed;top:0;bottom:0;left:0;right:0;background:linear-gradient(cyan,purple);z-index:998; transition:0.5s;}
+#loader div{
+        	border:16px solid white;
+	        border-top:16px solid gray;
+	        border-bottom: 16px solid gray;
+	        border-radius:50%;
+	        width:120px; height:120px;
+	        animation: spin 2s linear infinite;
+	        margin:auto;margin-top:200px;
+}
+	@keyframes spin{
+        	0% { transform: rotate(0deg); }
+  		100% { transform: rotate(360deg); }
+	}
