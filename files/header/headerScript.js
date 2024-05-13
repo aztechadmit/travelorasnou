@@ -2,6 +2,8 @@ const header = document.getElementById("header");
 const footer = document.getElementById("footer");
 const loader = document.getElementById("loader");
 
+const linkHead = "https://aztechadmit.github.io/travelorasnou/";
+
 function endPageLoad() {
 	// Close the loader after delay num
 	loader.style.opacity = 0;
@@ -23,7 +25,7 @@ function createHeader(){
 
 		const headerContents = document.getElementById("headerContents");
 
-		headerContents.innerHTML += "<a>Menu</a> <a>Vacation Planning</a> <a>Things to Do</a> <a>Places to Visit</a>";
+		headerContents.innerHTML += "<a>Menu</a> <a>Vacation Planning</a> <a href='"+linkHead+"things-to-do'>Things to Do</a> <a>Places to Visit</a>";
 
 	}else{
 		console.log("Minimized Header");
