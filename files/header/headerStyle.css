@@ -38,7 +38,25 @@
 }
 #headerLogo:hover {scale:1.02;}
 
+/* FOOTER ELEMENTS */
+#footer {margin:0; margin-top:40px; width:100%; 
+	 background:#F4A460;
+	 color:dimgray;
+	 padding:0;
+	}
 
+#footer .footerLinks{
+	width:100%; margin:0;
+	padding:0px; max-width:1400px;
+
+	display:flex; flex-flow:row;
+	justify-content:center; align-items:flex-start;
+}
+#footer .footerLinks div{
+	min-width:400px; margin:0; padding:10px;
+	text-align:left;
+	align-self:stretch;
+}
 
 
 
