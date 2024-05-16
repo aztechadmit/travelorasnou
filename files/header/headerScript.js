@@ -44,7 +44,8 @@ function createFooter(){
 	footer.innerHTML = "<br><div class='spacer'></div><div class='container' style='margin-bottom:0px;'><div class='footerLinks'>\
 				<div> <h4>Information</h4> <a>Getting to Oras Nou</a> <a>Visitor Information</a> <a>Frequently Asked Questions</a></div> \
 				<div> <h4>Plan Your Visit</h4> <a>Transportation</a> <a>Hotels and Lodging</a> <a>Travel Guides</a> <a>Tourism Blog</a></div> \
-				<div> <h4>Explore</h4> <a href='"+linkHead+"things-to-do'>Things to Do</a> <a>Events</a> <a>Clubbing and Nightlife</a> <a>Art and Museums</a> <a>Attracitons</a></div> </div> \
+				<div> <h4>Explore</h4> <a href='"+linkHead+"things-to-do'>Things to Do</a> <a>Events</a> <a>Clubbing and Nightlife</a> <a>Art and Museums</a> <a>Attracitons</a> </div> \
+				<div> <h4>Oras Nou Territories</h4> <a href='"+linkHead+"places-to-visit/territories/city-of-oras-nou'>City of Oras Nou</a> <a href='"+linkHead+"places-to-visit/territories/mare-acasa'>Mare Acasa</a> <a href='"+linkHead+"places-to-visit/territories/west-barrow'>West Barrow</a> <a href='"+linkHead+"places-to-visit/territories/ciudad-del-mar'>Ciudad Del Mar</a> </div> </div> \
 		<div class='container'>(C) Oras Nou Ministry of Recreation | Department of Tourism<br><br> \
 		<p><a>Legal Information</a> | <a>Business</a> | <a>MCBPO</a></p></div>";
 }
