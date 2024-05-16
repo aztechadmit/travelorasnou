@@ -21,7 +21,7 @@ function createHeader(){
 
 	if(screen.width > 900){
 
-		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'></div>";
+		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'></div>";
 
 		const headerContents = document.getElementById("headerContents");
 
@@ -29,7 +29,7 @@ function createHeader(){
 
 	}else{
 		console.log("Minimized Header");
-		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'> <a onclick='openHeaderMenu()'>MENU</a></div>";
+		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'> <a onclick='openHeaderMenu()'>MENU</a></div>";
 	}
 	createFooter();
 }
@@ -41,7 +41,7 @@ function openHeaderMenu(){
 
 // Create the Footer and Populate it
 function createFooter(){
-	footer.innerHTML = "<br><div class='spacer'></div><div class='container'><div class='headerLinks'>\
+	footer.innerHTML = "<br><div class='spacer'></div><div class='container'><div class='footerLinks'>\
 				<div> <h4>Information</h4> <a>Footer_Link</a> <a>Footer_Link</a> <a>Footer_Link</a> </div> \
 				<div> <h4>Transportation</h4> <a>Footer_Link</a> <a>Footer_Link</a>  </div> \
 				<div> <h4>Hotels and Lodging</h4> <a>Footer_Link</a> <a>Footer_Link</a>  </div> </div> \
