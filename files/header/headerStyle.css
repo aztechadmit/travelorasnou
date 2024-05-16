@@ -54,7 +54,7 @@
 }
 #footer .footerLinks div{
 	width:25%;
-	min-width:400px; margin:0; padding:10px;
+	min-width:200px; margin:0; padding:10px;
 	text-align:left;
 	align-self:stretch;
 }
