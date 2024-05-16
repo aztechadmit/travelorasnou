@@ -21,7 +21,7 @@ function createHeader(){
 
 	if(screen.width > 900){
 
-		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://gcparksandresorts.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'></div>";
+		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'></div>";
 
 		const headerContents = document.getElementById("headerContents");
 
@@ -29,7 +29,7 @@ function createHeader(){
 
 	}else{
 		console.log("Minimized Header");
-		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://gcparksandresorts.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'> <a onclick='openHeaderMenu()'>MENU</a></div>";
+		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'> <a onclick='openHeaderMenu()'>MENU</a></div>";
 	}
 	createFooter();
 }
