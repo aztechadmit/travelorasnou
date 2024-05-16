@@ -42,9 +42,9 @@ function openHeaderMenu(){
 // Create the Footer and Populate it
 function createFooter(){
 	footer.innerHTML = "<br><div class='spacer'></div><div class='container'><div class='footerLinks'>\
-				<div> <h4>Information</h4> <a>Footer_Link</a> <a>Footer_Link</a> <a>Footer_Link</a> </div> \
-				<div> <h4>Transportation</h4> <a>Footer_Link</a> <a>Footer_Link</a>  </div> \
-				<div> <h4>Hotels and Lodging</h4> <a>Footer_Link</a> <a>Footer_Link</a>  </div> </div> \
+				<div> <h4>Information</h4> <a>Getting to Oras Nou</a> <a>Visitor Information</a> <a>Frequently Asked Questions</a></div> \
+				<div> <h4>Plan Your Visit</h4> <a>Transportation</a> <a>Hotels and Lodging</a> <a>Travel Guides</a> <a>Tourism Blog</a></div> \
+				<div> <h4>Explore</h4> <a href='"+linkHead+"things-to-do'>Things to Do</a> <a>Events</a> <a>Clubbing and Nightlife</a> <a>Art and Museums</a> <a>Attracitons</a></div> </div> \
 		<div class='container'>(C) Oras Nou Ministry of Recreation | Department of Tourism<br><br> \
 		<p><a>Legal Information</a> | <a>Business</a> | <a>MCBPO</a></p></div>";
 }
