@@ -7,6 +7,10 @@
        			<img src=''>
   		</div>
   	</div>
+
+   	In the HTML page scripting section:
+    
+    	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/scripts/slideshow.js'></script>
 */
 
 var slides = document.querySelectorAll('.slideshowContainer img');
