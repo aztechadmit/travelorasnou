@@ -24,7 +24,7 @@
 		background:none;
 		transition:0.5s;
 	}
-	#headerContents a:hover{color:rgb(51,153,153); background:white;}
+	#headerContents a:hover{color:teal; background:white;}
 
 #headerSpacer{
 	z-index:998;
@@ -72,7 +72,7 @@
 		text-decoration:none;
 	}
 	#footer .footerLinks div a:hover{
-		color:black;
+		color:#efefef;
 		text-decoration:underline;
 	}
 	
@@ -96,8 +96,8 @@
        }
 #loader div{
         	border:16px solid white;
-	        border-top:16px solid cyan;
-	        border-bottom: 16px solid orange;
+	        border-top:16px solid coral;
+	        border-bottom: 16px solid coral;
 	        border-radius:50%;
 	        width:120px; height:120px;
 	        animation: spin 2s linear infinite;
