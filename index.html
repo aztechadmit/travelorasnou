@@ -7,7 +7,7 @@
  	<link rel="stylesheet" href="https://aztechadmit.github.io/travelorasnou/files/header/headerStyle.css">
 
 	<!-- TAB TITLE OF PAGE ---------------------------------------------------------------------------------------------------------------------->
-	<title>Visit the City of Entertainment, Commerce, and Better Living | Travel Oras Nou</title>
+	<title>Visit The City of Oras Nou | Minecraftia's Center of Entertainment, Leisure, Buisness, and Modern Living | Official Tourism Site of Oras Nou</title>
 
 	<style></style>
 </head>
@@ -18,18 +18,62 @@
 	<!-- BODY CONTENT --------------------------------------------------------------------------------------------------------------------------->
 
 		<div class='banner'>
-			<img src='https://cdn.britannica.com/04/94204-050-5959D0ED/Skyline-San-Diego-Calif.jpg'>
+			<img src='https://static.planetminecraft.com/files/resource_media/screenshot/1726/qq-20170702161856-1498983568_lrg.jpg'>
 		</div>
 	
 		<div class='container'>
-			<h1>It's Time to Travel Oras Nou</h1>
-			Find your adventure when you experience the city of entertainment, commerce, and fun for everyone. Whether you're looking for family vacation activities, daring nature hikes, or sunny days on the beach, Oras Nou has it all!
+			<h1 style='margin-bottom:0px;'>It's Time to <span id='travelText'>Travel</span> Oras Nou</h1>
+			<h2 style='margin-top:10px; color:#2F4F4F'>Your next great Adventure is here!</h2>
+		</div>
+
+		<div class='fullContainer' style='background:white;'>
+			<div class='container'>
+				Discover a vibrant East-Coast city where there is no limit on fun. Explore a world of thriving culture, art, and business. Dig your toes into warm white sand along miles of gorgeous coastline, or stroll down tree lined boulevards surrounded by art, entertainment, and dining.
+			</div>
+		</div>
+
+		<div class='banner'>
+			<img src='https://preview.redd.it/rmslp9w0stt71.jpg?auto=webp&s=9030bbac894a21758ca634c04df73c4cf6a8ac4a'>
+		</div>
+
+		<div class='fullContainer' style='background:white;'>
+			<div class='container'>
+				Discover a vibrant East-Coast city where there is no limit on fun. Explore a world of thriving culture, art, and business. Dig your toes into warm white sand along miles of gorgeous coastline, or stroll down tree lined boulevards surrounded by art, entertainment, and dining.
+			</div>
 		</div>
 
 	
 
 <!-- Footer Elements --><div id='footer'></div>
 </body>
+
+	<script>
+		const travelText = document.getElementById("travelText");
+
+		var iterationNum = 0;
+
+		function changeDispTxt(){
+			iterationNum += 1;
+			if(iterationNum > 3){iterationNum = 0;}
+
+			switch(iterationNum){
+				case 0:
+					travelText.innerHTML = "Explore";
+					break;
+				case 1:
+					travelText.innerHTML = "Discover";
+					break;
+				case 2:
+					travelText.innerHTML = "Visit";
+					break;
+				case 3:
+					travelText.innerHTML = "Enjoy";
+					break;
+			}
+		}
+
+		setInterval(changeDispTxt, 2500);
+	</script>
 
 	<!-- CREATE THE HEADER AND FOOTER -->
 	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/header/headerScript.js'></script>
