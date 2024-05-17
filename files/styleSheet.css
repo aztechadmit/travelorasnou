@@ -45,7 +45,7 @@ body {
 			margin:0; padding:0;
 		}
 			.tileContainer div{
-				width:21%; margin:2%; margin-top:20px; margin-bottom:20px;
+				width:22%; margin:1%; margin-top:20px; margin-bottom:20px;
 				align-self:stretch; min-width:200px;
 				background:white; border-radius:15px; border: 1px solid black;
 			}
