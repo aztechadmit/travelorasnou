@@ -95,5 +95,21 @@ body {
 
 /* BUTTONS AND UI ELEMENTS */
 
-	button{}
+	button{
+		padding:5px; border:2px solid teal; border-radius:5px;
+		background:none; color:teal; transition:0.5s;
+		cursor:pointer;
+	}
+		button:hover{
+			background:teal; color:white;
+		}
+		button.full{
+			padding:5px; border:2px solid teal; border-radius:5px;
+			background:teal; color:white; transition:0.5s;
+			cursor:pointer;
+		}
+		button.full:hover{
+			background:none; color:teal;
+		}
+
 	a{color:inherit; text-decoration:underline; cursor:pointer;}
