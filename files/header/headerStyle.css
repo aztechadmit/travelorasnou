@@ -89,7 +89,7 @@
 
 /* LOADING UI */
 #loader{position:fixed;top:0;bottom:0;left:0;right:0;z-index:998; transition:0.5s;
-       	background: linear-gradient(-45deg, teal, seagreen);
+       	background: linear-gradient(-45deg, cyan, seagreen);
 	background-size: 400% 400%;
 	animation: gradient 8s ease infinite;
 	height: 100vh;
