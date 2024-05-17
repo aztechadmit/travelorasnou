@@ -20,9 +20,11 @@ var slideIndex = 0;
 showSlides();
 
 function showSlides(){
-	let i;
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
+	if (slideIndex > slides.length){
+		let i;
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";
+		}
 	}
 	
 	slideIndex++;
