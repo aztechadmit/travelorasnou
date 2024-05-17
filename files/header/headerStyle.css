@@ -1,7 +1,9 @@
+/* nice gray: #2F4F4F */
+
 #headerBar{
 	position:fixed;
 	top:0; left:0; right:0;
-	background:linear-gradient(rgba(51,153,153,0.9),rgba(51,153,153,0.9));
+	background:linear-gradient(90deg,rgba(32,178, 170, 0.95),rgba(0, 128, 128,0.95));
 	border-bottom:5px solid white;
 	height:80px;
 	z-index:999;
@@ -42,10 +44,12 @@
 
 /* FOOTER ELEMENTS */
 	#footer {margin:0; margin-top:40px; width:100%; 
-		 background:#FF8C00;
-		 color:#2F4F4F;
+		 background:linear-gradient(90deg, lightseagreen, teal);
+		 color:white;
 		 padding:0;
 		}
+
+	#footer .spacer {background:#efefef;}
 	
 	#footer .footerLinks{
 		width:100%; margin:0;
@@ -85,7 +89,7 @@
 
 /* LOADING UI */
 #loader{position:fixed;top:0;bottom:0;left:0;right:0;z-index:998; transition:0.5s;
-       	background: linear-gradient(-45deg, cyan, seagreen);
+       	background: linear-gradient(-45deg, teal, seagreen);
 	background-size: 400% 400%;
 	animation: gradient 8s ease infinite;
 	height: 100vh;
