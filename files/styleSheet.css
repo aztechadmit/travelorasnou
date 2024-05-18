@@ -76,8 +76,8 @@ body {
 		.banner img{width:100%; height:100%; object-fit:cover;}
 
 	.titleBar{color:white; background:rgb(51,153,153); width:100%; margin:0; padding:15px; text-align:center;}
-	.subtitleBar{color:white; background:darkorange; width:100%; margin:0; padding:15px; text-align:center;}
-		.subtitleBar p{max-width:1400px;}
+	.subtitleBar{color:#2F4F4F; background:white; width:100%; margin:0; padding:15px; text-align:center;}
+		.subtitleBar p{max-width:1400px; margin:auto;}
 
 	.slideshowContainer{
 		width:100%; height:100%; margin:0; padding:0;
