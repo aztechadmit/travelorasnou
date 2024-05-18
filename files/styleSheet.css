@@ -96,15 +96,15 @@ body {
 /* BUTTONS AND UI ELEMENTS */
 
 	button{
-		padding:5px; border:2px solid teal; border-radius:5px;
+		padding:8px; border:2px solid teal; border-radius:10px;
 		background:none; color:teal; transition:0.5s;
-		cursor:pointer;
+		cursor:pointer; margin:10px; font-size:inherit;
 	}
 		button:hover{
 			background:teal; color:white;
 		}
 		button.full{
-			padding:5px; border:2px solid teal; border-radius:5px;
+			border:2px solid teal;
 			background:teal; color:white; transition:0.5s;
 			cursor:pointer;
 		}
