@@ -41,7 +41,6 @@ function openHeaderMenu(){
 
 // Create the Footer and Populate it
 function createFooter(){
-articles/travel-guides
 	// Copy and Past:   <a href='"+linkHead+"sublink/sublink2'>link_text</a>
 	
 	footer.innerHTML = "<br><div class='spacer'></div><div class='container' style='margin-bottom:0px;'><div class='footerLinks'>\
