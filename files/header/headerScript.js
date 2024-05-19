@@ -41,12 +41,12 @@ function openHeaderMenu(){
 
 // Create the Footer and Populate it
 function createFooter(){
-
+articles/travel-guides
 	// Copy and Past:   <a href='"+linkHead+"sublink/sublink2'>link_text</a>
 	
 	footer.innerHTML = "<br><div class='spacer'></div><div class='container' style='margin-bottom:0px;'><div class='footerLinks'>\
 				<div> <h4>Information</h4> <a>Getting to Oras Nou</a> <a>Visitor Information</a> <a>Frequently Asked Questions</a> <a>Travel Alerts</a></div> \
-				<div> <h4>Plan Your Visit</h4> <a>Transportation</a> <a href='"+linkHead+"places-to-stay'>Hotels and Lodging</a> <a>Travel Guides</a> <a>Tourism Blog</a> <a>Corporate Meetings and Events</a></div> \
+				<div> <h4>Plan Your Visit</h4> <a href='"+linkHead+"articles/travel-guides/transportation'>Transportation</a> <a href='"+linkHead+"places-to-stay'>Hotels and Lodging</a> <a href='"+linkHead+"articles/travel-guides'>Travel Guides</a> <a>Corporate Meetings and Events</a></div> \
 				<div> <h4>Explore</h4> <a href='"+linkHead+"things-to-do'>Things to Do</a> <a href='"+linkHead+"things-to-do/events'>Events and Festivals</a> <a>Clubbing and Nightlife</a> <a href='"+linkHead+"things-to-do/attractions?category=museums'>Museums and Exhibitions</a> <a href='"+linkHead+"things-to-do/attractions'>Attractions</a> </div> \
 				<div> <h4>Oras Nou Territories</h4> <a href='"+linkHead+"places-to-visit/territories/city-of-oras-nou'>City of Oras Nou</a> <a href='"+linkHead+"places-to-visit/territories/mare-acasa'>Mare Acasa</a> <a href='"+linkHead+"places-to-visit/territories/west-barrow'>West Barrow</a> <a href='"+linkHead+"places-to-visit/territories/ciudad-del-mar'>Ciudad Del Mar</a> </div> </div> \
 		<div class='container'>(C) Oras Nou Ministry of Recreation | Department of Tourism<br><br> \
