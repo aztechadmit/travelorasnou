@@ -11,7 +11,35 @@
 	<!-- TAB TITLE OF PAGE ---------------------------------------------------------------------------------------------------------------------->
 	<title>Attractions and Activities | Things to Do | Travel Oras Nou</title>
 
-	<style></style>
+	<style>
+		.attractionContainer {
+			width:100%;
+			display:flex; flex-flow:row; flex-wrap:wrap;
+			padding:0; margin:0;
+			justify-content:center; align-items:flex-start;
+		}
+			.attractionTile {
+				width:24%; margin:auto; margin-top:0; margin-bottom:20px; padding:0;
+				align-self:stretch;
+				position:relative;
+				border:1px solid black; border-radius:15px;
+				background:white;
+				cursor:pointer; transition:0.5s;
+			}
+			.attractionTile:hover{scale:1.015;}
+			.attractionTile img{width:100%; height:200px; object-fit:cover; border-radius:15px;}
+			.attractionTile .txtContent {
+				width:100%; padding:15px; text-align:left;
+				font-size:12px;
+				float:bottom;
+			}
+			.attractionTile .txtContent h3{margin:0; font-size:18px;}
+			.attractionTile .txtContent em{display:block; margin:0; margin-bottom:10px;}
+			.attractionTile .txtContent div{
+				color:gray; font-size:10px; font-style: italic;
+			}
+			.attractionTile a.hiddenLink{position:absolute; top:0; bottom:0; left:0; right:0; opacity:0;}
+	</style>
 </head>
 
 <body onload='endPageLoad()'>
@@ -25,15 +53,63 @@
 
 	<!-- BODY CONTENT --------------------------------------------------------------------------------------------------------------------------->	
 
-	
+	<div class='container'>
+		<div class='attractionContainer' id='viewerBox'>
+			<div class='attractionTile'>
+				<img src='https://aztechadmit.github.io/travelorasnou/files/images/placeholder.jpg'>
+				<div class='txtContent'>
+					<h3>Name of Attraction</h3>
+					<em>Location of Attraction</em>
+					Description of Attraction
+					<div>
+						Attraction, Tags, Go, Here
+					</div>
+				</div>
+				<a class='hiddenLink' href=''></a>
+			</div>
+
+			<div class='attractionTile'> <img src='https://www.9minecraft.net/wp-content/uploads/2019/12/Island-Resort-Map-Screenshots-13.jpg'> <div class='txtContent'> <h3>Plaza Ocean Hotel</h3><em>Oceanside</em>A glorious coastal hotel.<div>Hotel, Prestegious, Sexy, Expensive</div></div><a class='hiddenLink' href='LINK_TO_ATTRACTION'></a></div>
+
+			<div class='attractionTile'> <img src='https://gcparksandresorts.github.io/gcresorthighland/webresources/images/tts-entrance.jpg'> <div class='txtContent'> <h3>Globe-City Resort Highland</h3><em>Highland</em>A world-renowned resort featuring two hotels and a theme park.<div>Family, Popular, Unique, All-Day</div></div><a class='hiddenLink' href='https://gcparksandresorts.github.io/gcresorthighland/'></a></div>
+
+			<div class='attractionTile'> <img src='ATTRACTION_IMAGE_LINK'> <div class='txtContent'> <h3>ATTRACTION_NAME</h3><em>ATTRACTION_LOCATION</em>ATTRACTION_DESCRIPTION<div>TAGS</div></div><a class='hiddenLink' href='LINK_TO_ATTRACTION'></a></div>
+		</div>
+	</div>
 
 <!-- Footer Elements --><div id='footer'></div>
 </body>
+
+	<!-- JAVASCRIPT ----------------------------------------------------------------------------------------------------------------------------->
+
+	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/attractionItems.js'></script>
+
+	<script>
+		const viewer = document.getElementById("viewerBox");
+
+		// <div class='attractionTile'> <img src='ATTRACTION_IMAGE_LINK'> <div class='txtContent'> <h3>ATTRACTION_NAME</h3><em>ATTRACTION_LOCATION</em>ATTRACTION_DESCRIPTION<div>TAGS</div></div><a class='hiddenLink' href='LINK_TO_ATTRACTION'></a></div>
+
+		var i = 0;
+		viewer.innerHTML = "";
+
+		//attractionItems[NUM] = "category | location | cost | tags | attraction_name | attraction_photo | attraction_link | attraction_description";
+		
+		// Iteration to perform for entire attraction array
+		while (i < attractionItems.length) {
+			var temp = attractionItems[i].split(" | ");
+
+			viewer.innerHTML += "<div class='attractionTile'> <img src='"+temp[5]+"'> <div class='txtContent'> <h3>"+temp[4]+"</h3><em>"+temp[1]+"</em>"+temp[7]+"<div>"+temp[3]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
+
+			i += 1;
+		}
+		
+	</script>
+
+	<!-- EADER AND FPPT ------------------------------------------------------------------------------------------------------------------------->
 
 	<!-- CREATE THE HEADER AND FOOTER -->
 	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/header/headerScript.js'></script>
 	<script>createHeader();</script>
 
-	<!-- JAVASCRIPT ----------------------------------------------------------------------------------------------------------------------------->
+	
 
 	
