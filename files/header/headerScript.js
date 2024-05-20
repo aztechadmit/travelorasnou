@@ -12,7 +12,7 @@ function endPageLoad() {
 
 // Create the Header and Populate it Depending on Screen Size
 function createHeader(){
-	console.clear();
+	//console.clear();
 
 	loader.innerHTML = "<div></div>";
 	header.innerHTML = "<div id='headerSpacer'></div><div id='headerBar'></div>";
