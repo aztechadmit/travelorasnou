@@ -6,7 +6,8 @@ attractionCost = [];
 
 // ------------ ATTRACTION TAGS ------------------------------------------------------------------------------------------------------------------------------------------------------------------ //
 
-	attractionTags = ["Romantic", "Local-Hotspot", "Popular", "Unique", "LGBTQ", "Scenic", "Quiet", "Cultural", "Transit-Accessible", "MDA-Accessible", "Learning", "Prestigious", "Social", "Beach-Access", "Outdoors", "Nature", "Themed", "Live-Entertainment", "Concerts", "", "", "", ""];
+	attractionTags = ["Romantic", "Local-Hotspot", "Popular", "Unique", "LGBTQ", "Scenic", "Quiet", "Cultural", "Transit-Accessible", "MDA-Accessible", "Learning", "Prestigious", "Social", "Beach-Access", "Outdoors", "Nature", "Themed", "Live-Entertainment", 
+			  "Concerts", "", "", "", ""];
 
 	attractionCategory = ["Food-and-Drink", "Sports", "Entertainment", "Leisure", "Hospitality", "Attractions", "Museum", "Shopping", "Amusement-Park", "Resort-Hotel", "", "", "", "", ""];
 	attractionLocation = ["Downtown", "Newtown", "Oldtown", "Industrial-City", "Highland", "Northwood", "Airport-City", "Oceanside", "Riverwood"];
