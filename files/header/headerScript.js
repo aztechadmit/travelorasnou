@@ -48,6 +48,7 @@ function createFooter(){
 				<div> <h4>Plan Your Visit</h4> <a href='"+linkHead+"articles/travel-guides/transportation'>Transportation</a> <a href='"+linkHead+"places-to-stay'>Hotels and Lodging</a> <a href='"+linkHead+"articles/travel-guides'>Travel Guides</a> <a>Corporate Meetings and Events</a></div> \
 				<div> <h4>Explore</h4> <a href='"+linkHead+"things-to-do'>Things to Do</a> <a href='"+linkHead+"things-to-do/events'>Events and Festivals</a> <a>Clubbing and Nightlife</a> <a href='"+linkHead+"things-to-do/attractions?category=museums'>Museums and Exhibitions</a> <a href='"+linkHead+"things-to-do/attractions'>Attractions</a> </div> \
 				<div> <h4>Oras Nou Territories</h4> <a href='"+linkHead+"places-to-visit/territories/city-of-oras-nou'>City of Oras Nou</a> <a href='"+linkHead+"places-to-visit/territories/mare-acasa'>Mare Acasa</a> <a href='"+linkHead+"places-to-visit/territories/west-barrow'>West Barrow</a> <a href='"+linkHead+"places-to-visit/territories/ciudad-del-mar'>Ciudad Del Mar</a> </div> </div> \
+		<div class='spacer'></div><div class='container'><img style='width:90%; max-width:300px; height:auto; margin:auto;' src='"+linkHead+"files/images/logos/orasnoucitylogo.png'></div> \
 		<div class='container'>(C) Oras Nou Ministry of Recreation | Department of Tourism<br><br> \
 		<p><a href='"+linkHead+"information/legal'>Legal Information</a> | <a href='"+linkHead+"information/business'>Business</a> | <a href='"+linkHead+"information/mcbpo'>MCBPO</a></p></div>";
 }
