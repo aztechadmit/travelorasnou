@@ -58,13 +58,19 @@
 	<!-- BODY CONTENT --------------------------------------------------------------------------------------------------------------------------->	
 
 	<div class='container'>
-		<div style='width:95%; margin:auto; max-width:1000px; border:1px solid black; background:white; border-radius:15px;'>
+		<div style='width:100%; margin:auto; border:1px solid black; background:white; border-radius:15px;'>
 			<h2>Sort Results</h2>
-			<p><button>View Sorting Options</button></p>
+			<p><a onclick='document.getElementById("filterHolder").style.display="block"; this.style.display="none";'>Show Filter Options</a></p>
+			<div class='fadeDiv' id='filterHolder' style='display:none; padding:10px;'>
+				<select name="categorySelect" id="categorySelect" onchange='categoryChanged()'>
+				  	<option value="0">View All</option>
+				</select>
+			</div>
 		</div>
 	</div>
 
 	<div class='container'>
+		<h4 id='resultCounter'>No Results</h4>
 		<div class='attractionContainer' id='viewerBox'>
 			No Content to Show.
 		</div>
@@ -79,23 +85,89 @@
 
 	<script>
 		const viewer = document.getElementById("viewerBox");
+		
+
+		var searchCategory;
 
 		// <div class='attractionTile'> <img src='ATTRACTION_IMAGE_LINK'> <div class='txtContent'> <h3>ATTRACTION_NAME</h3><em>ATTRACTION_LOCATION</em>ATTRACTION_DESCRIPTION<div>TAGS</div></div><a class='hiddenLink' href='LINK_TO_ATTRACTION'></a></div>
 
-		var i = 0;
-		viewer.innerHTML = "";
+		function searchParameter(){
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			
+			if(urlParams.has("category")){
+				var temp = urlParams.get("category"); // Will return an integer number with the category index
+				searchCategory = attractionCategory[temp];
+			}else{
+				searchCategory = 'none';
+			}
 
-		//attractionItems[NUM] = "category | location | cost | tags | attraction_name | attraction_photo | attraction_link | attraction_description";
+			filterElements();
+		} // end of searchParameter
+
+		function filterElements(){
+			var i = 0;
+			var countRes = 0;
+			viewer.innerHTML = "";
+	
+			//attractionItems[NUM] = attractionItems[NUM] = "0name | 1description | 2tags | 3category | 4location | 5price | 6click_link | 7image_link";
+			
+			// Iteration to perform for entire attraction array
+			while (i < attractionItems.length) {
+
+				var temp = attractionItems[i].split(" | ");
+
+				if(searchCategory == "none"){
+					viewer.innerHTML += "<div class='attractionTile fadeDiv' id='tileDiv"+i+"'> <img src='"+temp[7]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[4]+"</em>"+temp[1]+"<div>"+temp[2]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
+					countRes += 1;
+				}else if(temp[3] == searchCategory){
+					viewer.innerHTML += "<div class='attractionTile fadeDiv' id='tileDiv"+i+"'> <img src='"+temp[7]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[4]+"</em>"+temp[1]+"<div>"+temp[2]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
+					countRes += 1;
+				}else{
+					console.log("Skipped " + temp[4]);
+				}
+	
+	
+				i += 1;
+			}
+
+			document.getElementById("resultCounter").innerHTML = "Showing " + countRes + " results";
+
+			setupFilterBox();
+
+		}// end of filterElements
+
+		function setupFilterBox(){
+
+			const theBox = document.getElementById("categorySelect");
+
+			theBox.innerHTML = "<option value='0'>View All</option>";
+
+			var i = 1;
+			
+			while (i < attractionCategory.length) {
+
+				var temp = attractionCategory[i];
+				
+				theBox.innerHTML += "<option value='"+ i +"'>" + temp + "</option>";
+
+				i += 1;
+			}
+			
+		} // end of setupFilterBox
+
+		searchParameter();
 		
-		// Iteration to perform for entire attraction array
-		while (i < attractionItems.length) {
-			var temp = attractionItems[i].split(" | ");
+	</script>
 
-			viewer.innerHTML += "<div class='attractionTile'> <img src='"+temp[5]+"'> <div class='txtContent'> <h3>"+temp[4]+"</h3><em>"+temp[1]+"</em>"+temp[7]+"<div>"+temp[3]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
+	<script>
+		function categoryChanged(){
+			const theBox = document.getElementById("categorySelect");
+			let linkGo = "https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?category="+theBox.value;
 
-			i += 1;
-		}
-		
+			window.open(linkGo,"_self");
+			
+		}// end of function categoryChanged
 	</script>
 
 	<!-- EADER AND FPPT ------------------------------------------------------------------------------------------------------------------------->
