@@ -7,9 +7,9 @@ attractionCost = [];
 // ------------ ATTRACTION TAGS ------------------------------------------------------------------------------------------------------------------------------------------------------------------ //
 
 	attractionTags = ["Romantic", "Local-Hotspot", "Popular", "Unique", "LGBTQ", "Scenic", "Quiet", "Cultural", "Transit-Accessible", "MDA-Accessible", "Learning", "Prestigious", "Social", "Beach-Access", "Outdoors", "Nature", "Themed", "Live-Entertainment", 
-			  "Concerts", "", "", "", ""];
+			  "Concerts", "Art", "", "", ""];
 
-	attractionCategory = ["Food-and-Drink", "Sports", "Entertainment", "Leisure", "Hospitality", "Attractions", "Museum", "Shopping", "Amusement-Park", "Resort-Hotel", "", "", "", "", ""];
+	attractionCategory = ["Food-and-Drink", "Sports", "Entertainment", "Leisure", "Hospitality", "Attractions", "Museum", "Shopping", "Amusement-Park", "Resort-Hotel", "University", "", "", "", ""];
 	attractionLocation = ["Downtown", "Newtown", "Oldtown", "Industrial-City", "Highland", "Northwood", "Airport-City", "Oceanside", "Riverwood"];
 	attractionCost = ["Free", "$", "$$", "$$$", "$$$$"];
 	
@@ -27,4 +27,5 @@ attractionCost = [];
 	attractionItems[3] = "Food-and-Drink | Northwood | $$$ | Unique,Local-Hotspot,Themed | Themepark Cafe | https://www.davidthemingworks.com/EN/images/THE-CAVE-THEME-PARK-RESTAURANT--8-_3wa5c5ed.jpg | attraction_link | A themed restaurant featuring unique dining areas";
 	attractionItems[4] = "Sports | Highland | $$ | Popular,Transit-Accessible,Live-Entertainment,Concerts | Industries Stadium | https://i.redd.it/i-built-this-football-stadium-for-my-minecraft-city-what-do-v0-xbgibw3xc32a1.png?width=1280&format=png&auto=webp&s=565de0e8ac3d98776fc4ba1b0e70636db820b0b5 | attraction_link | Famous stadium for large-scale concerts and sporting events";
 	attractionItems[5] = "Entertainment | Highland | $$ | Transit-Accessible,Live-Entertainment,Concerts | Oras Nou STAGE | https://ca-times.brightspotcdn.com/dims4/default/d230055/2147483647/strip/true/crop/800x420+0+44/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F50%2Fff%2F40081cbf4c2498e7212c9788b84c%2F1953.jpg | attraction_link | Famous outdoor concert venue overlooking Riverwood";
-
+	attractionItems[6] = "University | Downtown | Free | Learning,Prestegious,Transit-Accessible | University of Minecraftia Oras Nou | https://i.imgur.com/84Iq0cb.jpg | attraction_link | A prestegious university campus and medical center.";
+	attractionItems[7] = "University | Newtown | Free | Learning,Prestegious,Transit-Accessible,Concerts,Art | Oras Nou College of Art and Literature | https://i.pinimg.com/736x/4d/7c/c1/4d7cc11eb0ef75b26bffb53b8b4723af.jpg | attraction_link | A world-class college and performance centers.";
