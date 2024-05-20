@@ -9,7 +9,7 @@ attractionCost = [];
 	attractionTags = ["Romantic", "Family-oriented", "Adventure", "Historic", "Local Hotspot", "Prestigious", "Scenic", "Educational", "Thrilling", "Cultural", "Entertainment", 
 			  "Relaxing", "Interactive", "Iconic", "Unique", "Foodie", "Active", "Wildlife", "Artistic", "Instagrammable", "Transit Accessible", "MDA Accessible", "Quiet", "Movies"];
 
-	attractionCategory = ["Art & Culture", "Attractions", "Business & Innovation", "Education & Learning", "Events & Festivals", "Family Fun", "Food & Drink", "Landmark", "Nightlife", 
+	attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innovation", "Education & Learning", "Events & Festivals", "Family Fun", "Food & Drink", "Landmark", "Nightlife", 
 			      "Outdoor Activities", "Shopping", "Sports & Recreation", "Wellness & Relaxation"];
 
 	attractionLocation = ["Downtown", "Newtown", "Oldtown", "Industrial City", "Highland", "Northwood", "Airport City", "Oceanside", "Riverwood"];
