@@ -1,8 +1,8 @@
-const attractionItems = [];
-const attractionTags = [];
-const attractionCategory = [];
-const attractionLocation = [];
-const attractionCost = [];
+attractionItems = [];
+attractionTags = [];
+attractionCategory = [];
+attractionLocation = [];
+attractionCost = [];
 
 // ------------ ATTRACTION TAGS ------------------------------------------------------------------------------------------------------------------------------------------------------------------ //
 
