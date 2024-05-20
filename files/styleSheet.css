@@ -93,6 +93,8 @@ body {
 			100% {opacity:1;}
 		}
 
+	.fadeDiv{animation: fadeIn 0.5s;}
+
 /* BUTTONS AND UI ELEMENTS */
 
 	button{
