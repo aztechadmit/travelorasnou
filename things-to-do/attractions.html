@@ -94,9 +94,11 @@
 		function searchParameter(){
 			const queryString = window.location.search;
 			const urlParams = new URLSearchParams(queryString);
+			const theBox = document.getElementById("categorySelect");
 			
 			if(urlParams.has("category")){
 				var temp = urlParams.get("category"); // Will return an integer number with the category index
+				theBox.value = temp;
 				searchCategory = attractionCategory[temp];
 			}else{
 				searchCategory = 'none';
