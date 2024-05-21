@@ -21,7 +21,7 @@ function createHeader(){
 
 	if(screen.width > 900){
 
-		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'></div><div id='headerMiniMenu'></div>";
+		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'></div><div id='headerMiniMenu'></div><div id='closeMiniMenu' style='display:none' onclick='openMiniMenu(0)'></div> ";
 
 		const headerContents = document.getElementById("headerContents");
 
@@ -29,7 +29,7 @@ function createHeader(){
 		
 	}else{
 		console.log("Minimized Header");
-		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'> <a onclick='openHeaderMenu()'>MENU</a></div>";
+		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'> <a onclick='openHeaderMenu()'>MENU</a></div><div id='closeMiniMenu' style='display:none' onclick='openMiniMenu(0)'></div> ";
 	}
 	createFooter();
 }
@@ -37,17 +37,21 @@ function createHeader(){
 // If small screen width, this menu will create the normal header elements inside the expandable menu
 function openMiniMenu(num){
 	const headerMiniMenu = document.getElementById("headerMiniMenu");
+	const closerMe = document.getElementById("closeMiniMenu");
 	switch(num){
 		case 0:
 			headerMiniMenu.style.display = "none";
+			closerMe.style.display = "none";
 			break;
 		case 1:
-			headerMiniMenu.innerHTML = "<div id='closeMiniMenu' onclick='openMiniMenu(0)'></div> <a style='color:orange'>Vacation Planner</a> <a>Travel Guides and Information</a> <a>Getting Around Town</a> <a>Places to Stay</a> <a>Visitor Visas</a>";
+			headerMiniMenu.innerHTML = "<a style='color:orange'>Vacation Planner</a> <a>Travel Guides and Information</a> <a>Getting Around Town</a> <a>Places to Stay</a> <a>Visitor Visas</a>";
 			headerMiniMenu.style.display = "block";
+			closerMe.style.display = "block";
 			break;
 		case 2:
-			headerMiniMenu.innerHTML = "<div id='closeMiniMenu' onclick='openMiniMenu(0)'></div> <a style='color:orange'>Articles and Information</a> <a>Corporate Events and Meetings</a> <a>Conventions and Events</a> <a>Oras Nou Theater and Performances</a>";
+			headerMiniMenu.innerHTML = "<a style='color:orange'>Articles and Information</a> <a>Corporate Events and Meetings</a> <a>Conventions and Events</a> <a>Oras Nou Theater and Performances</a>";
 			headerMiniMenu.style.display = "block";
+			closerMe.style.display = "block";
 			break;
 	}// end of switch
 }// end of openMiniMenu(num)
