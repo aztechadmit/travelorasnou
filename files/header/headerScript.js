@@ -37,13 +37,18 @@ function createHeader(){
 // If small screen width, this menu will create the normal header elements inside the expandable menu
 function openMiniMenu(num){
 	switch(num){
+		case 0:
+			headerMiniMenu.style.display = "none";
+			break;
 		case 1:
 			const headerMiniMenu = document.getElementById("headerMiniMenu");
-			headerMiniMenu.innerHTML = "<a style='color:orange'>Vacation Planner</a> <a>Travel Guides and Information</a> <a>Getting Around Town</a> <a>Places to Stay</a> <a>Visitor Visas</a>";
+			headerMiniMenu.innerHTML = "<div id='closeMiniMenu' onclick='openMiniMenu(0)'></div> <a style='color:orange'>Vacation Planner</a> <a>Travel Guides and Information</a> <a>Getting Around Town</a> <a>Places to Stay</a> <a>Visitor Visas</a>";
+			headerMiniMenu.style.display = "block";
 			break;
 		case 2:
 			const headerMiniMenu = document.getElementById("headerMiniMenu");
-			headerMiniMenu.innerHTML = "<a style='color:orange'>Articles and Information</a> <a>Corporate Events and Meetings</a> <a>Conventions and Events</a> <a>Oras Nou Theater and Performances</a>";
+			headerMiniMenu.innerHTML = "<div id='closeMiniMenu' onclick='openMiniMenu(0)'></div> <a style='color:orange'>Articles and Information</a> <a>Corporate Events and Meetings</a> <a>Conventions and Events</a> <a>Oras Nou Theater and Performances</a>";
+			headerMiniMenu.style.display = "block";
 			break;
 	}// end of switch
 }// end of openMiniMenu(num)
