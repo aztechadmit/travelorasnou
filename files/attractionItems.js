@@ -13,7 +13,7 @@ attractionCost = [];
 	attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innovation", "Education & Learning", "Events & Festivals", "Family Fun", "Food & Drink", "Landmark", "Nightlife", 
 			      "Shopping", "Sports & Recreation", "Wellness & Relaxation"];
 
-	attractionLocation = ["Downtown", "Newtown", "Oldtown", "Industrial City", "Highland", "Northwood", "Airport City", "Oceanside", "Riverwood"];
+	attractionLocation = ["none", "Airport City", "Downtown", "Highland", "Industrial City", "Newtown", "Northwood", "Oceanside", "Oldtown"];
 
 	attractionCost = ["Free", "$", "$$", "$$$", "$$$$"];
 	
