@@ -15,7 +15,7 @@ attractionCost = [];
 
 	attractionLocation = ["none", "Airport City", "Downtown", "Highland", "Industrial City", "Newtown", "Northwood", "Oceanside", "Oldtown"];
 
-	attractionCost = ["Free", "$", "$$", "$$$", "$$$$"];
+	attractionCost = ["none","Free", "$", "$$", "$$$", "$$$$"];
 	
 // ------------ ATTRACTION ITEMS ----------------------------------------------------------------------------------------------------------------------------------------------------------------- //
 
