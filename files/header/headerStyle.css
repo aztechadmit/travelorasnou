@@ -47,28 +47,28 @@
 	background:#2F4F4F; color:white;
 	text-align:right;
 	display:none;
-	animation: slideOpen 0.5s;
+	animation: fadeIn 0.5s;
 	z-index:998;
 	border-right:5px solid white;
 	border-bottom:5px solid white;
-}
-
-@keyframes slideOpen{
-	0%{height:0;}
-	100%{height:auto;}
-}
-
-#closeMiniMenu{
-	position:fixed;
-	top:80px; bottom:0; left:0; right:0;
-	z-index:995; background:rgba(0,0,0,0.6);
-	animation:fadeIn 0.3s;
-}
-#headerMiniMenu a{
-	display:block;
-	font-size:20px;
-	margin-top:20px;
-}
+}	
+	#closeMiniMenu{
+		position:fixed;
+		top:80px; bottom:0; left:0; right:0;
+		z-index:995; background:rgba(0,0,0,0.6);
+		animation:fadeIn 0.8s;
+	}
+	#headerMiniMenu a{
+		display:block;
+		width:100%; padding:10px; padding-right:20px;
+		font-size:20px; margin:0; 
+		text-decoration:none; transition:0.4s;
+		background:none; cursor:pointer;
+	}
+	#headerMiniMenu a:hover{
+		background:white; color:#2F4F4F;
+		scale:1.04;
+	}
 
 /* FOOTER ELEMENTS */
 	#footer {margin:0; margin-top:40px; width:100%; 
