@@ -187,7 +187,11 @@
 				} // end of sort by price
 			}else{console.log("Not sorting by price");}
 
-			document.getElementById("resultCounter").innerHTML = "Showing " + countRes + " results";
+			if(countRes > 1){
+				document.getElementById("resultCounter").innerHTML = "Showing " + countRes + " results";
+			}else{
+				document.getElementById("resultCounter").innerHTML = "No results match selected filters. Try broadening your search!";
+			}
 
 			setupFilterBox();
 			
