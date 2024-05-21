@@ -63,7 +63,7 @@
 					</select>
 				</div>
 			</div>
-			<p><a onclick='categoryChanged()' style='display:none' class='fadeDiv' id='updateFiltBtn'>Update Filters</a></p>
+			<p><span style='display:none' class='fadeDiv' id='updateFiltBtn'><a onclick='categoryChanged()'>Update Filters</a> | </span><a>Search by Tags</a></p>
 		</div>
 	</div>
 
@@ -187,7 +187,7 @@
 				} // end of sort by price
 			}else{console.log("Not sorting by price");}
 
-			if(countRes > 1){
+			if(countRes > 0){
 				document.getElementById("resultCounter").innerHTML = "Showing " + countRes + " results";
 			}else{
 				document.getElementById("resultCounter").innerHTML = "No results match selected filters. Try broadening your search!";
