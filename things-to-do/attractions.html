@@ -34,13 +34,13 @@
 			<div class='fadeDiv' id='filterHolder' style='padding:20px;'>
 				<div>
 					<label for='categorySelect'>Category: </label>
-					<select name="categorySelect" id="categorySelect">
+					<select name="categorySelect" id="categorySelect" onchange='document.getElementById("updateFiltBtn").style.display="block";'>
 					  	<option value="0">View All</option>
 					</select>
 				</div>
 				<div>
 					<label for='locationSelect'>Location: </label>
-					<select name='locationSelect' id='locationSelect'>
+					<select name='locationSelect' id='locationSelect' onchange='document.getElementById("updateFiltBtn").style.display="block";'>
 						<option value="0">View All</option>
 						<option value="1">Airport City</option>
 						<option value="2">Downtown</option>
@@ -54,7 +54,7 @@
 				</div>
 				<div>
 					<label for='priceSelect'>Price: </label>
-					<select name='priceSelect' id='priceSelect'>
+					<select name='priceSelect' id='priceSelect' onchange='document.getElementById("updateFiltBtn").style.display="block";'>
 						<option value="0">View All</option>
 						<option value="1">Free</option>
 						<option value="2">$</option>
@@ -63,7 +63,7 @@
 					</select>
 				</div>
 			</div>
-			<p><a onclick='categoryChanged()'>Update Filters</a></p>
+			<p><a onclick='categoryChanged()' style='display:none' class='fadeDiv' id='updateFiltBtn'>Update Filters</a></p>
 		</div>
 	</div>
 
