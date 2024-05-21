@@ -57,6 +57,7 @@
 		top:80px; bottom:0; left:0; right:0;
 		z-index:995; background:rgba(0,0,0,0.6);
 		animation:fadeIn 0.8s;
+		display:none;
 	}
 	#headerMiniMenu a{
 		display:block;
