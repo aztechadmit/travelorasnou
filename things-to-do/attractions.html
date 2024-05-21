@@ -196,7 +196,9 @@
 
 		function setupFilterBox(){
 
-			const theBox = document.getElementById("categorySelect");
+			const theBoxA = document.getElementById("categorySelect");
+			const theBoxB = document.getElementById("locationSelect");
+			const theBoxC = document.getElementById("priceSelect");
 
 			theBox.innerHTML = "<option value='0'>View All</option>";
 
@@ -206,12 +208,14 @@
 
 				var temp = attractionCategory[i];
 				
-				theBox.innerHTML += "<option value='"+ i +"'>" + temp + "</option>";
+				theBoxA.innerHTML += "<option value='"+ i +"'>" + temp + "</option>";
 
 				i += 1;
 			}
 
-			theBox.value = attractionCategory.indexOf(searchCategory);
+			theBoxA.value = attractionCategory.indexOf(searchCategory);
+			theBoxB.value = attractionLocation.indexOf(searchLocation);
+			theBoxC.value = attractionCost.indexOf(searchPrice);
 			
 		} // end of setupFilterBox
 
