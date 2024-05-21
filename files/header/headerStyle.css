@@ -41,18 +41,26 @@
 #headerLogo:hover {scale:1.02;}
 
 #headerMiniMenu{
-	position:absolute; top:80px; right:0;
+	position:fixed; top:80px; right:0;
 	width:80%; max-width:500px;
 	padding:20px;
 	background:#2F4F4F; color:white;
 	text-align:right;
 	display:none;
-	animation: fadeIn 0.5s;
+	animation: slideOpen 0.5s;
 	z-index:998;
+	border-right:5px solid white;
+	border-bottom:5px solid white;
 }
-#headerMiniMenu #closeMiniMenu{
-	position:absolute;
-	top:0; bottom:0; left:0; right:0;
+
+@keyframes slideOpen{
+	0%{height:0;}
+	100%{height:auto;}
+}
+
+#closeMiniMenu{
+	position:fixed;
+	top:80px; bottom:0; left:0; right:0;
 	z-index:995; background:rgba(0,0,0,0.6);
 	animation:fadeIn 0.3s;
 }
