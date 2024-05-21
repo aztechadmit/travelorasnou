@@ -221,8 +221,10 @@
 
 	<script>
 		function categoryChanged(){
-			const theBox = document.getElementById("categorySelect");
-			let linkGo = "https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?category="+theBox.value;
+			const theBoxA = document.getElementById("categorySelect");
+			const theBoxB = document.getElementById("locationSelect");
+			const theBoxC = document.getElementById("priceSelect");
+			let linkGo = "https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?category="+theBoxA.value+"&location="+theBoxB.value+"&price="+theBoxC.value;
 
 			window.open(linkGo,"_self");
 			
