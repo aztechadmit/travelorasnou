@@ -159,8 +159,10 @@
 					if(tempDiv != null){ // The div exists on the page
 						var temp = attractionItems[i].split(" | ");
 						if(searchLocation != temp[4]){
-							tempDiv.style.display = "none";
-							countRes -= 1;
+							if(tempDiv.style.display != "none"){
+								tempDiv.style.display = "none";
+								countRes -= 1;
+							}
 						}
 					}
 					
@@ -178,8 +180,10 @@
 					if(tempDiv != null){ // The div exists on the page
 						var temp = attractionItems[i].split(" | ");
 						if(searchPrice != temp[5]){
-							tempDiv.style.display = "none";
-							countRes -= 1;
+							if(tempDiv.style.display != "none"){
+								tempDiv.style.display = "none";
+								countRes -= 1;
+							}	
 						}
 					}
 					
