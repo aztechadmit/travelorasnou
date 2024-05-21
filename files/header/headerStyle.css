@@ -46,6 +46,8 @@
 	padding:20px;
 	background:#2F4F4F; color:white;
 	text-align:right;
+	display:none;
+	animation: fadeIn 0.5s;
 }
 
 /* FOOTER ELEMENTS */
