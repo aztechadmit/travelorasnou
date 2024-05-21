@@ -48,8 +48,9 @@ function openMiniMenu(num){
 				minOpen = 0;
 			}
 			break;
+		// 
 		case 1:
-			headerMiniMenu.innerHTML = "<a style='color:orange'>Vacation Planner</a> <a>Travel Guides and Information</a> <a>Getting Around Town</a> <a>Places to Stay</a> <a>Visitor Visas</a>";
+			headerMiniMenu.innerHTML = "<a style='color:orange'>Vacation Planner</a> <a href='"+linkHead+"articles/travel-guides'>Travel Guides and Information</a> <a>Getting Around Town</a> <a href='"+linkHead+"places-to-stay'>Places to Stay</a> <a>Visitor Visas</a>";
 			headerMiniMenu.style.display = "block";
 			closerMe.style.display = "block";
 			minOpen = 1;
