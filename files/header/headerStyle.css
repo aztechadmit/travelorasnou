@@ -50,6 +50,12 @@
 	animation: fadeIn 0.5s;
 }
 
+#headerMiniMenu a{
+	display:block;
+	font-size:20px;
+	margin-top:20px;
+}
+
 /* FOOTER ELEMENTS */
 	#footer {margin:0; margin-top:40px; width:100%; 
 		 background:linear-gradient(90deg, lightseagreen, teal);
