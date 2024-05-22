@@ -3,7 +3,7 @@ articleCategory = [];
 
 //-------- CATEGORIES ----------------------------------------------------------------------------------------------------------- //
 
-	articleCategory = ["none", "Visitor Guides", "Entertainment", "Food & Drink", "Events & Festivals", "Vacation Inspiration", "", "", "", "", ""];
+	articleCategory = ["none", "Visitor Guides", "Entertainment", "Food & Drink", "Events & Festivals", "Vacation Inspiration", "Corporate Events", "Learning"];
 
 //-------- ITEMS ---------------------------------------------------------------------------------------------------------------- //
 
