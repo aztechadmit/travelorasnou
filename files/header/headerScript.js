@@ -64,7 +64,7 @@ function openMiniMenu(num){
 			break;
 		case 3:
 			headerMiniMenu.style.textAlign = "left";
-			headerMiniMenu.innerHTML = "<a style='color:orange'>Explore Oras Nou</a> <a>Theater & Performances</a> <a>Conventions and Events</a> <a>Restaurants and Dining</a> <a>Unique Attractions</a>";
+			headerMiniMenu.innerHTML = "<a style='color:orange' href='"+linkHead+"things-to-do'>Explore Oras Nou</a> <a>Theater & Performances</a> <a>Conventions and Events</a> <a>Restaurants and Dining</a> <a href='"+linkHead+"things-to-do/attractions?category=2'>Unique Attractions</a>";
 			headerMiniMenu.style.display = "block";
 			closerMe.style.display = "block";
 			minOpen = 3;
