@@ -60,7 +60,12 @@
 			btnHolder.innerHTML = "";
 			
 			while(i < articleCategory.length){
-				btnHolder.innerHTML += " <button id='filterBtn"+i+"' onclick='applyFilter("+i+"'>"+articleCategory[i]+"</button> ";
+				if(searchCategory == articleCategory[i]){
+					btnHolder.innerHTML += " <button class='full' id='filterBtn"+i+"' onclick='applyFilter("+i+")'>"+articleCategory[i]+"</button> "
+				}else{
+					btnHolder.innerHTML += " <button id='filterBtn"+i+"' onclick='applyFilter("+i+")'>"+articleCategory[i]+"</button> ";
+				}
+				i += 1;
 			}// end of while loop
 			
 		}// end of populateButtons
@@ -85,11 +90,11 @@
 				var temp = articleItems[i].split(" | ");
 
 				if(searchCategory=="none"){
-					// articleItems[NUM] = "1article_title | 2short_description | 3author | 4article_category | 5image_link | 6article_link";
-					articleHolder.innerHTML += "<div class='attractionTile'> <img src='"+temp[5]"'> <div class='txtContent'> <h3>"+temp[1]+"</h3><em>"+temp[4]+"</em>"+temp[2]+"<div>"+temp[3]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
+					// articleItems[NUM] = "0article_title | 1short_description | 2author | 3article_category | 4image_link | 5article_link";
+					articleHolder.innerHTML += "<div class='attractionTile'> <img src='"+temp[4]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[3]+"</em>"+temp[1]+"<div>"+temp[2]+"</div></div><a class='hiddenLink' href='"+temp[5]+"'></a></div>";
 					resCount += 1;
 				}else if(searchCategory == temp[4]){
-					articleHolder.innerHTML += "<div class='attractionTile'> <img src='"+temp[5]"'> <div class='txtContent'> <h3>"+temp[1]+"</h3><em>"+temp[4]+"</em>"+temp[2]+"<div>"+temp[3]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
+					articleHolder.innerHTML += "<div class='attractionTile'> <img src='"+temp[4]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[3]+"</em>"+temp[1]+"<div>"+temp[2]+"</div></div><a class='hiddenLink' href='"+temp[5]+"'></a></div>";
 					resCount += 1;
 				}else{
 					console.log("skipped " + temp[1]);
@@ -100,12 +105,15 @@
 			}// end of while loop
 
 			document.getElementById("resultCounter").innerHTML = "Showing "+resCount+" results";
+			populateButtons();
 		}
 
 		function applyFilter(num){
 			let linkGo = "https://aztechadmit.github.io/travelorasnou/articles/travel-guides?category="+num;
 			window.open(linkGo,"_self");
 		}
+
+		sortItems();
 
 		/* 	document.getElementById("MyElement").classList.add('MyClass');
 			document.getElementById("MyElement").classList.remove('MyClass');
