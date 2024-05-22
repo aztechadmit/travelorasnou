@@ -29,7 +29,7 @@ function createHeader(){
 		
 	}else{
 		console.log("Minimized Header");
-		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'> <a onclick='openHeaderMenu(1)'>MENU</a></div><div id='miniHeaderMenu'></div>";
+		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'> <a onclick='openHeaderMenu(1)' id='minHeadShow'>MENU</a></div><div id='miniHeaderMenu'></div>";
 		const miniHeaderMenu = document.getElementById("miniHeaderMenu");
 		
 		/* SETUP MINI MENU */
@@ -54,6 +54,7 @@ function openMiniMenu(num){
 		case 0:
 			if(screen.width <= 1000){
 				openHeaderMenu(0);
+				headerMiniMenu.style.display = "none";
 			}else if(minOpen != 0){
 				headerMiniMenu.style.display = "none";
 				closerMe.style.display = "none";
@@ -86,11 +87,20 @@ function openMiniMenu(num){
 }// end of openMiniMenu(num)
 function openHeaderMenu(num){
 	const miniHeaderMenu = document.getElementById("miniHeaderMenu");
+	const minHeadShow = document.getElementById("minHeadShow");
+	const closerMe = document.getElementById("closeMiniMenu");
 	if(num == 0){
 		miniHeaderMenu.style.display = "none";
+		minHeadShow.innerHTML = "MENU";
 	}else if(num == 1){
-		miniHeaderMenu.style.display = "block";
-		closerMe.style.display = "block";
+		if(miniHeaderMenu.style.display == "block"){
+			miniHeaderMenu.style.display = "none";
+			minHeadShow.innerHTML = "MENU";
+		}else{
+			minHeadShow.innerHTML = "CLOSE";
+			miniHeaderMenu.style.display = "block";
+			closerMe.style.display = "block";
+		}
 	}else if(num == 3){
 		document.getElementById("thing-to-do-menu").style.display = 'block';
 	}else if(num == 4){
