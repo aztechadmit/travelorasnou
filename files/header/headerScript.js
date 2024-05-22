@@ -35,7 +35,7 @@ function createHeader(){
 		/* SETUP MINI MENU */
 		miniHeaderMenu.innerHTML = "<a href='https://aztechadmit.github.io/travelorasnou/places-to-visit'>Places to Visit</a> \
 						<a onclick='openHeaderMenu(3)'>Things to Do</a> \
-						<div id='thing-to-do-menu'><a style='color:orange' href='href='"+linkHead+"things-to-do'>Explore Oras Nou</a> <a>Theaters & Performances</a> <a>Conventions & Events</a> <a>Restaurants & Dining</a></div> \
+						<div id='thing-to-do-menu'><a style='color:orange' href='"+linkHead+"things-to-do'>Explore Oras Nou</a> <a>Theaters & Performances</a> <a>Conventions & Events</a> <a>Restaurants & Dining</a></div> \
 						<a onclick='openHeaderMenu(4)'>Vacation Planning</a> \
 						<div id='vacation-planning-menu'><a style='color:orange' href='"+linkHead+"vacation-planner'>Vacation Planner</a> <a href='"+linkHead+"articles/travel-guides'>Travel Guides & Information</a> <a href='"+linkHead+"places-to-stay'>Places to Stay</a> <a>Visitor Visas</a></div> \
 						<a>More</a>";
@@ -90,6 +90,7 @@ function openHeaderMenu(num){
 		miniHeaderMenu.style.display = "none";
 	}else if(num == 1){
 		miniHeaderMenu.style.display = "block";
+		closerMe.style.display = "block";
 	}else if(num == 3){
 		document.getElementById("thing-to-do-menu").style.display = 'block';
 	}else if(num == 4){
