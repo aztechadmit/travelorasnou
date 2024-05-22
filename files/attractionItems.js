@@ -6,7 +6,7 @@ attractionCost = [];
 
 // ------------ ATTRACTION TAGS ------------------------------------------------------------------------------------------------------------------------------------------------------------------ //
 
-	attractionTags = ["Romantic", "Family-oriented", "Adventure", "Historic", "Local Hotspot", "Prestigious", "Scenic", "Educational", "Thrilling", "Cultural", "Entertainment", 
+	attractionTags = ["Romantic", "Family Oriented", "Adventure", "Historic", "Local Hotspot", "Prestigious", "Scenic", "Educational", "Thrilling", "Cultural", "Entertainment", 
 			  "Relaxing", "Interactive", "Iconic", "Unique", "Foodie", "Active", "Wildlife", "Artistic", "Instagrammable", "Transit Accessible", "MDA Accessible", "Quiet", "Movies", 
 			  "Music", "Outdoor","LGBTQ"];
 
@@ -52,4 +52,5 @@ attractionCost = [];
 	attractionItems[24] = "Rose District | An enclave of art, love, and hummanity. Home to many queer art galleries, clubs, and restaurants | LGBTQ,Foodie,Cultural,Artistic,Unique,Local Hotspot,Outdoor,Transit Accessible | Art & Culture | Downtown | $ | click_link | https://a.cdn-hotels.com/gdcs/production112/d1468/a422fe92-c4e2-40e5-baba-f8591c32d177.jpg";
 	attractionItems[25] = "Highland Walk of Stars | Nearly a mile of Highland avenue dedicated to the film and media industry | Movies,Iconic,Historic,Unique,Transit Accessible | Attractions | Highland | Free | click_link | https://cdn.vox-cdn.com/thumbor/05U_pWw12PVvSQX_vHeBA13CM94=/0x0:4800x2700/1200x800/filters:focal(2016x966:2784x1734)/cdn.vox-cdn.com/uploads/chorus_image/image/66229480/20200103_HWOF_Rendering_AerialView.0.jpg"; // Walk of stars on sidewalk, aztech theater, highland hotel, etc.
 	attractionItems[26] = "Aviation Park | A beautiful recreation space perfect for plane watching | Scenic,Relaxing,Romantic,Instagrammable | Wellness & Relaxation | Airport City | Free | click_link | https://i0.wp.com/travelawaits.com/wp-content/uploads/2021/04/watching-a-plane-land-from-in937652.png?resize=1024%2C610&ssl=1";
-	attractionItems[27] = "Aquarium of Oras Nou | A massive aquarium featuring hundreds of exhibits | Family-oriented,Adventure,Educational,Wildlife,Instagrammable,Transit Accessible,MDA Accessible,Romantic | Attractions | Oceanside | $$ | click_link | https://www.georgiaaquarium.org/wp-content/uploads/2019/05/GAQ-Digital-Marketing-201-1.jpg";
+	attractionItems[27] = "Bautista Aquarium of Oceanside | A massive aquarium featuring dozens of large-scale exhibits and fishies | Family Oriented,Adventure,Educational,Wildlife,Instagrammable,Transit Accessible,MDA Accessible,Romantic | Attractions | Oceanside | $$ | click_link | https://www.georgiaaquarium.org/wp-content/uploads/2019/05/GAQ-Digital-Marketing-201-1.jpg";
+	attractionItems[28] = "Ocean Village Marketplace | An outdoor mall near the beach featuring many local shops and eateries and a diverse foodcourt | Cultural,Iconic,Romantic,Outdoor,Foodie,Instagrammable | Food & Drink | Oceanside | $$ | click_link | https://sandiegomagazine.com/wp-content/uploads/2023/08/0472ac4697183e8c7f704cf72b36cf6f.jpg";
