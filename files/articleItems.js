@@ -7,7 +7,7 @@ articleCategory = [];
 
 //-------- ITEMS ---------------------------------------------------------------------------------------------------------------- //
 
-	// articleItems[NUM] = "article_title | short_description | author | article_category | image_link | article_link";
+	// articleItems[NUM] = "1article_title | 2short_description | 3author | 4article_category | 5image_link | 6article_link";
 
 	// article_link includes https://aztechadmit.github.io/travelorasnou/articles/
 
