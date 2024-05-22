@@ -46,6 +46,7 @@ function openMiniMenu(num){
 				headerMiniMenu.style.display = "none";
 				closerMe.style.display = "none";
 				minOpen = 0;
+				headerMiniMenu.style.textAlign = "right";
 			}
 			break;
 		// 
@@ -62,6 +63,7 @@ function openMiniMenu(num){
 			minOpen = 2;
 			break;
 		case 3:
+			headerMiniMenu.style.textAlign = "left";
 			headerMiniMenu.innerHTML = "<a style='color:orange'>Explore Oras Nou</a> <a>Theater & Performances</a> <a>Conventions and Events</a> <a>Restaurants and Dining</a> <a>Unique Attractions</a>";
 			headerMiniMenu.style.display = "block";
 			closerMe.style.display = "block";
