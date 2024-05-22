@@ -53,8 +53,8 @@ function openMiniMenu(num){
 	switch(num){
 		case 0:
 			if(screen.width <= 1000){
-				openHeaderMenu(0);
-				headerMiniMenu.style.display = "none";
+				closerMe.style.display = "none";
+				openHeaderMenu(0);				
 			}else if(minOpen != 0){
 				headerMiniMenu.style.display = "none";
 				closerMe.style.display = "none";
