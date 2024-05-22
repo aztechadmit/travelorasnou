@@ -35,15 +35,16 @@ function createHeader(){
 		/* SETUP MINI MENU */
 		miniHeaderMenu.innerHTML = "<a href='https://aztechadmit.github.io/travelorasnou/places-to-visit'>Places to Visit</a> \
 						<a onclick='openHeaderMenu(3)'>Things to Do</a> \
-						<div id='thing-to-do-menu'></div> \
+						<div id='thing-to-do-menu'><a style='color:orange' href='href='"+linkHead+"things-to-do'>Explore Oras Nou</a> <a>Theaters & Performances</a> <a>Conventions & Events</a> <a>Restaurants & Dining</a></div> \
 						<a onclick='openHeaderMenu(4)'>Vacation Planning</a> \
-						<div id='vacation-planning-menu'></div> \
+						<div id='vacation-planning-menu'><a style='color:orange' href='"+linkHead+"vacation-planner'>Vacation Planner</a> <a href='"+linkHead+"articles/travel-guides'>Travel Guides & Information</a> <a href='"+linkHead+"places-to-stay'>Places to Stay</a> <a>Visitor Visas</a></div> \
 						<a>More</a>";
 	}
 	createFooter();
 }
 
 var minOpen = 0;
+window.onresize = createHeader;
 
 // If small screen width, this menu will create the normal header elements inside the expandable menu
 function openMiniMenu(num){
@@ -87,8 +88,12 @@ function openHeaderMenu(num){
 	const miniHeaderMenu = document.getElementById("miniHeaderMenu");
 	if(num == 0){
 		miniHeaderMenu.style.display = "none";
-	}else{
+	}else if(num == 1){
 		miniHeaderMenu.style.display = "block";
+	}else if(num == 3){
+		document.getElementById("thing-to-do-menu").style.display = 'block';
+	}else if(num == 4){
+		document.getElementById("vacation-planning-menu").style.display = 'block';
 	}
 }
 
