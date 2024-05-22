@@ -46,17 +46,18 @@ function openMiniMenu(num){
 				headerMiniMenu.style.display = "none";
 				closerMe.style.display = "none";
 				minOpen = 0;
-				headerMiniMenu.style.textAlign = "right";
 			}
 			break;
 		// 
 		case 1:
+			headerMiniMenu.style.textAlign = "right";
 			headerMiniMenu.innerHTML = "<a style='color:orange'>Vacation Planner</a> <a href='"+linkHead+"articles/travel-guides'>Travel Guides and Information</a> <a>Getting Around Town</a> <a href='"+linkHead+"places-to-stay'>Places to Stay</a> <a>Visitor Visas</a>";
 			headerMiniMenu.style.display = "block";
 			closerMe.style.display = "block";
 			minOpen = 1;
 			break;
 		case 2:
+			headerMiniMenu.style.textAlign = "right";
 			headerMiniMenu.innerHTML = "<a style='color:orange' href='"+linkHead+"articles/travel-guides'>Articles and Information</a> <a>Corporate Events</a> <a>Become a Resident</a>";
 			headerMiniMenu.style.display = "block";
 			closerMe.style.display = "block";
