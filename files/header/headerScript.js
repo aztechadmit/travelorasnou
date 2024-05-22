@@ -25,7 +25,7 @@ function createHeader(){
 
 		const headerContents = document.getElementById("headerContents");
 
-		headerContents.innerHTML += "<a onmouseover='openMiniMenu(2)'>Menu</a> <a onmouseover='openMiniMenu(1)'>Vacation Planning</a> <a href='"+linkHead+"things-to-do' onmouseover='openMiniMenu(0)'>Things to Do</a> <a href='"+linkHead+"places-to-visit' onmouseover='openMiniMenu(0)'>Places to Visit</a>";
+		headerContents.innerHTML += "<a onmouseover='openMiniMenu(2)'>&#11206;</a> <a onmouseover='openMiniMenu(1)'>Vacation Planning</a> <a href='"+linkHead+"things-to-do' onmouseover='openMiniMenu(3)'>Things to Do</a> <a href='"+linkHead+"places-to-visit' onmouseover='openMiniMenu(0)'>Places to Visit</a>";
 		
 	}else{
 		console.log("Minimized Header");
@@ -56,10 +56,16 @@ function openMiniMenu(num){
 			minOpen = 1;
 			break;
 		case 2:
-			headerMiniMenu.innerHTML = "<a style='color:orange'>Articles and Information</a> <a>Corporate Events and Meetings</a> <a>Conventions and Events</a> <a>Oras Nou Theater and Performances</a>";
+			headerMiniMenu.innerHTML = "<a style='color:orange' href='"+linkHead+"articles/travel-guides'>Articles and Information</a> <a>Corporate Events</a> <a>Become a Resident</a>";
 			headerMiniMenu.style.display = "block";
 			closerMe.style.display = "block";
 			minOpen = 2;
+			break;
+		case 3:
+			headerMiniMenu.innerHTML = "<a style='color:orange'>Explore Oras Nou</a> <a>Theater & Performances</a> <a>Conventions and Events</a> <a>Restaurants and Dining</a> <a>Unique Attractions</a>";
+			headerMiniMenu.style.display = "block";
+			closerMe.style.display = "block";
+			minOpen = 3;
 			break;
 	}// end of switch
 }// end of openMiniMenu(num)
