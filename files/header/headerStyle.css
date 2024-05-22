@@ -80,6 +80,7 @@
 		text-align:left; border-right:2px solid white;
 		overflow-y:auto;
 		display:none; animation:fadeIn 0.5s;
+		z-index:998;
 	}
 		#miniHeaderMenu div{
 			margin-left:20px; display:none;
