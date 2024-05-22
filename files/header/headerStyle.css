@@ -59,16 +59,27 @@
 		animation:fadeIn 0.8s;
 		display:none;
 	}
-	#headerMiniMenu a{
+	#headerMiniMenu a, #miniHeaderMenu a{
 		display:block;
 		width:100%; padding:10px; padding-right:20px;
 		font-size:20px; margin:0; 
 		text-decoration:none; transition:0.4s;
 		background:none; cursor:pointer;
 	}
-	#headerMiniMenu a:hover{
+	#headerMiniMenu a:hover, #miniHeaderMenu a:hover{
 		background:white; color:#2F4F4F;
 		scale:1.04;
+	}
+
+/* For small screen width */
+	#miniHeaderMenu{ 
+		position:fixed; top:80px; left:0; bottom:0;
+		width:90%; max-width:500px;
+		padding:20px;
+		background:#2F4F4F; color:white;
+		text-align:left; border-right:2px solid white;
+		overflow-y:auto;
+		display:none; animation:fadeIn 0.5s;
 	}
 
 /* FOOTER ELEMENTS */
