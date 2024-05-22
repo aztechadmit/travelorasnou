@@ -19,7 +19,7 @@ function createHeader(){
 
 	const headerBar = document.getElementById("headerBar");
 
-	if(screen.width > 900){
+	if(screen.width > 1000){
 
 		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'></div><div id='headerMiniMenu'></div>";
 
@@ -29,7 +29,16 @@ function createHeader(){
 		
 	}else{
 		console.log("Minimized Header");
-		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'> <a onclick='openHeaderMenu()'>MENU</a></div><div id='closeMiniMenu' style='display:none' onclick='openMiniMenu(0)'></div> ";
+		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'> <a onclick='openHeaderMenu(1)'>MENU</a></div><div id='miniHeaderMenu'></div>";
+		const miniHeaderMenu = document.getElementById("miniHeaderMenu");
+		
+		/* SETUP MINI MENU */
+		miniHeaderMenu.innerHTML = "<a href='https://aztechadmit.github.io/travelorasnou/places-to-visit'>Places to Visit</a> \
+						<a onclick='openHeaderMenu(3)'>Things to Do</a> \
+						<div id='thing-to-do-menu'></div> \
+						<a onclick='openHeaderMenu(4)'>Vacation Planning</a> \
+						<div id='vacation-planning-menu'></div> \
+						<a>More</a>";
 	}
 	createFooter();
 }
@@ -42,7 +51,9 @@ function openMiniMenu(num){
 	const closerMe = document.getElementById("closeMiniMenu");
 	switch(num){
 		case 0:
-			if(minOpen != 0){
+			if(screen.width <= 1000){
+				openHeaderMenu(0);
+			}else if(minOpen != 0){
 				headerMiniMenu.style.display = "none";
 				closerMe.style.display = "none";
 				minOpen = 0;
@@ -72,6 +83,14 @@ function openMiniMenu(num){
 			break;
 	}// end of switch
 }// end of openMiniMenu(num)
+function openHeaderMenu(num){
+	const miniHeaderMenu = document.getElementById("miniHeaderMenu");
+	if(num == 0){
+		miniHeaderMenu.style.display = "none";
+	}else{
+		miniHeaderMenu.style.display = "block";
+	}
+}
 
 // Create the Footer and Populate it
 function createFooter(){
