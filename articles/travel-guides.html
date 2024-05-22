@@ -24,18 +24,21 @@
 	</div>
 
 	<div class='titleBar'>
-		<h1> Travel Guides and Tourism Updates </h1>
+		<h1> Travel Guides and Visitor Information </h1>
 	</div>
 
 	<!-- BODY CONTENT --------------------------------------------------------------------------------------------------------------------------->	
 
 	<div class='subtitleBar'>
 		<h3>Search By Topic</h3>
-		<p><button>View All</button> <button>Entertainment</button> <button>Restaurants</button> <button>Concerts and Events</button> <button>Visitor Guides</button></p>
+		<p id='filterButtonHolder'></p>
 	</div>
 
 	<div class='container'>
-		
+		<h4 id='resultCounter'>No Results</h4>
+		<div class='attractionContainer' id='articleHolder'>
+			No Content to Show.
+		</div>
 	</div>
 
 <!-- Footer Elements --><div id='footer'></div>
@@ -47,4 +50,64 @@
 
 	<!-- JAVASCRIPT ----------------------------------------------------------------------------------------------------------------------------->
 
-	
+	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/articleItems.js'></script>
+	<script>
+		function populateButtons(){
+			const btnHolder = document.getElementById("filterButtonHolder");
+			const articleHolder = document.getElementById("artileHolder");
+			
+			i = 0;
+			btnHolder.innerHTML = "";
+			
+			while(i < articleCategory.length){
+				btnHolder.innerHTML += " <button id='filterBtn"+i+"' onclick='applyFilter("+i+"'>"+articleCategory[i]+"</button> ";
+			}// end of while loop
+			
+		}// end of populateButtons
+
+		function sortItems(){
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+
+			if(urlParams.has("category")){
+				var temp = urlParams.get("category"); // Will return an integer number with the category index
+				searchCategory = articleCategory[temp];
+				console.log("Search Category: " + searchCategory);
+			}else{console.log("no search term"); searchCategory = "none";}
+			
+			// Now load in all articles
+			i = 0;
+			articleHolder.innerHTML = "";
+			var resCount = 0;
+
+			while(i < articleItems.length){
+
+				var temp = articleItems[i].split(" | ");
+
+				if(searchCategory=="none"){
+					// articleItems[NUM] = "1article_title | 2short_description | 3author | 4article_category | 5image_link | 6article_link";
+					articleHolder.innerHTML += "<div class='attractionTile'> <img src='"+temp[5]"'> <div class='txtContent'> <h3>"+temp[1]+"</h3><em>"+temp[4]+"</em>"+temp[2]+"<div>"+temp[3]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
+					resCount += 1;
+				}else if(searchCategory == temp[4]){
+					articleHolder.innerHTML += "<div class='attractionTile'> <img src='"+temp[5]"'> <div class='txtContent'> <h3>"+temp[1]+"</h3><em>"+temp[4]+"</em>"+temp[2]+"<div>"+temp[3]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
+					resCount += 1;
+				}else{
+					console.log("skipped " + temp[1]);
+				}
+
+				i += 1;
+				
+			}// end of while loop
+
+			document.getElementById("resultCounter").innerHTML = "Showing "+resCount+" results";
+		}
+
+		function applyFilter(num){
+			let linkGo = "https://aztechadmit.github.io/travelorasnou/articles/travel-guides?category="+num;
+			window.open(linkGo,"_self");
+		}
+
+		/* 	document.getElementById("MyElement").classList.add('MyClass');
+			document.getElementById("MyElement").classList.remove('MyClass');
+		*/
+	</script>
