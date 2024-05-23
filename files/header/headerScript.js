@@ -19,7 +19,7 @@ function createHeader(){
 
 	const headerBar = document.getElementById("headerBar");
 
-	if(screen.width > 1000){
+	if(window.innerWidth > 1000){
 
 		headerBar.innerHTML = "<div id='headerContents'><img onclick='"+'window.open("https://aztechadmit.github.io/travelorasnou", "_self")'+"' src='https://gcparksandresorts.github.io/travelorasnou/files/images/logos/travelONlogo.png' id='headerLogo'></div><div id='headerMiniMenu'></div>";
 
@@ -52,7 +52,7 @@ function openMiniMenu(num){
 	const closerMe = document.getElementById("closeMiniMenu");
 	switch(num){
 		case 0:
-			if(screen.width <= 1000){
+			if(window.innerWidth <= 1000){
 				closerMe.style.display = "none";
 				openHeaderMenu(0);				
 			}else if(minOpen != 0){
