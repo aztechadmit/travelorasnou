@@ -44,7 +44,7 @@ function createHeader(){
 }
 
 var minOpen = 0;
-window.onresize = createHeader;
+window.onresize = function(){createHeader();};
 
 // If small screen width, this menu will create the normal header elements inside the expandable menu
 function openMiniMenu(num){
