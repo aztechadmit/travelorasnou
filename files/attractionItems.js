@@ -8,7 +8,7 @@ attractionCost = [];
 
 	attractionTags = ["Romantic", "Family Oriented", "Adventure", "Historic", "Local Hotspot", "Prestigious", "Scenic", "Educational", "Thrilling", "Cultural", "Entertainment", 
 			  "Relaxing", "Interactive", "Iconic", "Unique", "Foodie", "Active", "Wildlife", "Artistic", "Instagrammable", "Transit Accessible", "MDA Accessible", "Quiet", "Movies", 
-			  "Music", "Outdoor","LGBTQ", "Broadway"];
+			  "Music", "Outdoor","LGBTQ", "Broadway", "Technology", "Corporate"];
 
 	attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innovation", "Education & Learning", "Entertainment", "Food & Drink", "Nightlife", 
 			      "Shopping", "Sports & Recreation", "Wellness & Relaxation"];
@@ -57,3 +57,4 @@ attractionCost = [];
 	attractionItems[29] = "Themepark Cafe | A themed restaurant featuring unique dining areas | Unique,Local-Hotspot,Themed,Instagrammable | Food & Drink | Northwood | $$ | attraction_link | https://www.davidthemingworks.com/EN/images/THE-CAVE-THEME-PARK-RESTAURANT--8-_3wa5c5ed.jpg";
 	attractionItems[30] = "University of Minecraftia Oras Nou | A prestigious university campus and medical center | Educational,Prestigious,Transit Accessible | Education & Learning | Downtown | Free | attraction_link | https://i.imgur.com/84Iq0cb.jpg";
 	attractionItems[31] = "Capitol Park | Center of the Oras Nou province capitol and headquarters of our ministries and government organizations | Iconic,Quiet,Historic,Educational | Education & Learning | Downtown | Free | click_link | https://www.nps.gov/common/uploads/places/images/nri/20131126/siteadmin/D2F5EA00-C5B7-F538-0D33DD9DB13B2BBF/D2F5EA00-C5B7-F538-0D33DD9DB13B2BBF.jpg";
+	attractionItems[32] = "Mystic Visual | Headquarters of Minecraftia's pioneering animation and computer generated visuals contractor. Also visit the small museum dedicated to the history of animation | Technology,Corporate,Movies | Business & Innovation | Highland | Free | click_link | https://i0.wp.com/handluggageonly.co.uk/wp-content/uploads/2015/09/vodafone-headquarters-3.jpg?resize=1000%2C666&ssl=1";
