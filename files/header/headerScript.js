@@ -25,7 +25,7 @@ function createHeader(){
 
 		const headerContents = document.getElementById("headerContents");
 
-		headerContents.innerHTML += "<a onmouseover='openMiniMenu(2)'>&#11206;</a> <a onmouseover='openMiniMenu(1)' style='cursor:default'>Vacation Planning</a> <a style='cursor:default' onmouseover='openMiniMenu(3)'>Things to Do</a> <a href='"+linkHead+"places-to-visit' onmouseover='openMiniMenu(0)'>Places to Visit</a>";
+		headerContents.innerHTML += "<a onmouseover='openMiniMenu(2)' style='cursor:default'>&#11206;</a> <a onmouseover='openMiniMenu(1)' style='cursor:default'>Vacation Planning</a> <a style='cursor:default' onmouseover='openMiniMenu(3)'>Things to Do</a> <a href='"+linkHead+"places-to-visit' onmouseover='openMiniMenu(0)'>Places to Visit</a>";
 		
 	}else{
 		console.log("Minimized Header");
@@ -35,7 +35,7 @@ function createHeader(){
 		/* SETUP MINI MENU */
 		miniHeaderMenu.innerHTML = "<a href='https://aztechadmit.github.io/travelorasnou/places-to-visit'>Places to Visit</a> \
 						<a onclick='openHeaderMenu(3)'>Things to Do</a> \
-						<div id='thing-to-do-menu'><a style='color:orange' href='"+linkHead+"things-to-do'>Explore Oras Nou</a> <a>Theaters & Performances</a> <a>Conventions & Events</a> <a>Restaurants & Dining</a></div> \
+						<div id='thing-to-do-menu'><a style='color:orange' href='"+linkHead+"things-to-do'>Explore Oras Nou</a> <a>Theaters & Performances</a> <a>Conventions & Events</a> <a>Restaurants & Dining</a> <a href='"+linkHead+"things-to-do/attractions'>View All</a></div> \
 						<a onclick='openHeaderMenu(4)'>Vacation Planning</a> \
 						<div id='vacation-planning-menu'><a style='color:orange' href='"+linkHead+"vacation-planner'>Vacation Planner</a> <a href='"+linkHead+"articles/travel-guides'>Travel Guides & Information</a> <a href='"+linkHead+"places-to-stay'>Places to Stay</a> <a>Visitor Visas</a></div> \
 						<a>More</a>";
@@ -78,7 +78,7 @@ function openMiniMenu(num){
 			break;
 		case 3:
 			headerMiniMenu.style.textAlign = "left";
-			headerMiniMenu.innerHTML = "<a style='color:orange' href='"+linkHead+"things-to-do'>Explore Oras Nou</a> <a>Theater & Performances</a> <a>Conventions and Events</a> <a>Restaurants and Dining</a> <a href='"+linkHead+"things-to-do/attractions?category=2'>Unique Attractions</a>";
+			headerMiniMenu.innerHTML = "<a style='color:orange' href='"+linkHead+"things-to-do'>Explore Oras Nou</a> <a>Theater & Performances</a> <a>Conventions and Events</a> <a>Restaurants and Dining</a> <a href='"+linkHead+"things-to-do/attractions?category=2'>Unique Attractions</a> <a href='"+linkHead+"things-to-do/attractions'>View All</a>";
 			headerMiniMenu.style.display = "block";
 			closerMe.style.display = "block";
 			minOpen = 3;
