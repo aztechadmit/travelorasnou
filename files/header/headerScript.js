@@ -25,7 +25,7 @@ function createHeader(){
 
 		const headerContents = document.getElementById("headerContents");
 
-		headerContents.innerHTML += "<a onmouseover='openMiniMenu(2)'>&#11206;</a> <a onmouseover='openMiniMenu(1)'>Vacation Planning</a> <a href='"+linkHead+"things-to-do' onmouseover='openMiniMenu(3)'>Things to Do</a> <a href='"+linkHead+"places-to-visit' onmouseover='openMiniMenu(0)'>Places to Visit</a>";
+		headerContents.innerHTML += "<a onmouseover='openMiniMenu(2)'>&#11206;</a> <a onmouseover='openMiniMenu(1)' style='cursor:default'>Vacation Planning</a> <a style='cursor:default' onmouseover='openMiniMenu(3)'>Things to Do</a> <a href='"+linkHead+"places-to-visit' onmouseover='openMiniMenu(0)'>Places to Visit</a>";
 		
 	}else{
 		console.log("Minimized Header");
