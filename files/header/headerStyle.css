@@ -71,7 +71,7 @@
 		scale:1.04;
 	}
 
-	@media screen and (max-width:1410px){
+	@media screen and (min-width:1410px){
 		#headerMiniMenu{border-right:5px solid white;
 				right:calc(50% - 700px);
 				right:-webkit-calc(50% - 700px);
