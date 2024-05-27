@@ -23,19 +23,18 @@ body {
 
 	.fullContainer{width:100%; background:cyan; margin:0; padding-top:15px; padding-bottom:15px;}
 
-	.columnContainer{
+	.columnContainer{ /* MUST BE PLACED INSIDE CONTAINER ELEMENT */
 		display:flex; flex-flow:row;
 		width:100%; max-width:1400px;
-		margin:auto; margin-top:20px; margin-bottom:20px;
-		padding:0;
+		margin:0; padding:0;
 	}
 		.columnContainer img {width:40%; margin:15px; border-radius:15px; align-self:stretch; object-fit:cover;}
 		.columnContainer div {width:60%; margin:15px; align-self:stretch;}
 
 		@media screen and (max-width:800px){
 			.columnContainer {flex-flow:column; flex-wrap:wrap;}
-			.columnContainer img {width:100%;}
-			.columnContainer div {width:100%;}
+			.columnContainer img {width:95%; margin:auto;}
+			.columnContainer div {width:95%; margin:auto; margin-top:15px; margin-bottom:15px;}
 		}
 
 	.tileContainer{
