@@ -31,6 +31,11 @@
 				text-align:center; padding:20px; color:white; background:rgba(0,0,0,0.2);
 			}
 			#indexBanner div a{display:inline-block; margin:auto;}
+
+			.portholeContainer{margin:0; padding:0; display:flex; flex-flow:row; flex-wrap:wrap;}
+			.portholeContainer div{display:inline-block; width:20%; margin:0; padding:15px; align-self:stretch; font-size:13px; min-width:250px;}
+			.portholeContainer div img{width: 100%; height:200px; border-radius:15px; margin-bottom:10px;}
+			.portholeContainer div h3{margin:5px; font-size:initial;}
 		</style>
 		<div id='indexBanner'>
 			<div>
@@ -42,26 +47,60 @@
 			</div>-->
 		</div>
 	
-		<div class='container'>
-			
+		<div class='subtitleBar' style='background:linear-gradient(90deg,lightseagreen,teal); color:white; padding-top:20px; padding-bottom:20px;'>
+			<p>Discover a vibrant East-Coast city where there is no limit on fun. Explore a world of thriving culture, art, and business. Dig your toes into warm white sand along miles of gorgeous coastline, or stroll down tree lined boulevards surrounded by art, entertainment, and dining.</p>
 		</div>
 
-		<div class='fullContainer' style='background:white;'>
-			<div class='container'>
-				Discover a vibrant East-Coast city where there is no limit on fun. Explore a world of thriving culture, art, and business. Dig your toes into warm white sand along miles of gorgeous coastline, or stroll down tree lined boulevards surrounded by art, entertainment, and dining.
+		<div class='container' style='display:flex; flex-flow:row; flex-wrap:nowrap; justify-content:center;'>
+			<button style='width:33%;' onclick='window.open("things-to-do","_self")'>Explore Things to Do</button> <button style='width:33%;' onclick='window.open("things-to-do/attractions","_self")'>View Attractions</button> <button style='width:33%;' class='full' onclick='window.open("plan-your-visit","_self")'>Plan Your Visit</button>
+		</div>
+
+		<div class='spacer'></div>
+
+		<div class='container'>
+			<h2>Explore Oras Nou Adventures</h2>
+			<div class='portholeContainer'>
+				<div><img src=''><h3>Walkable Cities</h3>Travel on-foot, by bike, or via accessible transit</div>
+				<div><img src=''><h3>Rich Art & Culture</h3>Explore a multitude of diverese cultures and ethnic experiences</div>
+				<div><img src=''><h3>Sandy Beaches</h3>Bask in the sun along miles of public beaches</div>
+				<div><img src=''><h3>Urban Excitement</h3>Dive into bustling commercial districts and restaurant-lined boulevards</div>
+				<div><img src=''><h3>Entertainment Hub</h3>Jump into the movies and see where the magic is made</div>
+				<div><img src=''><h3>Mother Nature</h3>Take in the awe of jaw-dropping nature and landscapes</div>
+				<div><img src=''><h3>Sunrise to Sunset</h3>Watch as the sun rides over the coast and then explore vibrant nightlife as it sets</div>
+				<div><img src=''><h3>Concerts and Festivals</h3>Dance and rave in a city full of live music</div>
+				<div><img src=''><h3>Romantic Getaways</h3>Open your heart to a world of romance in a city of love</div>
+				<div><img src=''><h3>Business and Commerce</h3>Wow your clients with a buisness trip to Minecraftia's corporate central</div>
+				<!-- <div><img src=''><h3>title_text</h3></div> -->
 			</div>
+			<p><a href='https://aztechadmit.github.io/travelorasnou/articles/travel-guides?category=5'>Get Some Vacation Inspiration</a></p>
+		</div>
 
+		<div class='spacer'></div>
+	
+		<div class='container'>
+			<div class='columnContainer'>
+				<img src='https://www.kayak.com/news/wp-content/uploads/sites/19/2023/07/dest-germany_frankfurt_airport_gettyimages-157399542_universal_within-usage-period_82427.jpg'>
+				<div>
+					<h3>Airports, Seaports, Landports, oh my!</h3>
+					There's many ways to get to Oras Nou, bested only by teleportation. Whether you're coming from the air, the sea, or the land, learn about the best ways to get to your next vacation destination.
+					<p><a href='https://aztechadmit.github.io/travelorasnou/articles/travel-guides?category=1'>View Travel Guide</a></p>
+				</div>
+			</div>
+			
 			<div class='spacer'></div>
+			
+			<div class='columnContainer'>
+				<div>
+					<h3>How to Get a Roof Over Your Head</h3>
+					Vacations require accomodations! Learn about a diverse and infinetly flexible array of hotels and lodging.
+					<p><a href='https://aztechadmit.github.io/travelorasnou/articles/travel-guides?category=1'>View Travel Guide</a></p>
+				</div>
+				<img src='https://www.9minecraft.net/wp-content/uploads/2019/12/Island-Resort-Map-Screenshots-13.jpg'>
+			</div>
+		</div>
+		
 
-			<style>
-				.colImgSize{max-height:none;}
-				@media screen and (max-width:800px){
-					.colImgSize{max-height:200px; object-position:50% 50%;}
-					.colContIn{width: calc(100% - 30px);}
-				}
-					
-			</style>
-
+	<!--
 			<div class='columnContainer colContIn'>
 				<img src='https://oceanbeachsandiego.com/sites/default/files/d7/photos/ocean-beach-fishing-pier-29.jpg' class='colImgSize'>
 				<div>
@@ -86,10 +125,9 @@
 		</div>
 
 		<br>
+	-->
 
-		<div class='container'>
-			<button onclick='window.open("things-to-do","_self")'>Explore Things to Do</button> <button onclick='window.open("things-to-do/attractions","_self")'>View Attractions</button> <button class='full' onclick='window.open("plan-your-visit","_self")'>Plan Your Visit</button>
-		</div>
+		
 
 		<br>
 
