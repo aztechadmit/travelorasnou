@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8"> 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="https://aztechadmit.github.io/travelorasnou/files/images/webfavicon.ico">
+	<link rel="stylesheet" href="https://aztechadmit.github.io/travelorasnou/files/styleSheet.css">
+ 	<link rel="stylesheet" href="https://aztechadmit.github.io/travelorasnou/files/header/headerStyle.css">
+
+	<!-- Placeholder Image: https://aztechadmit.github.io/travelorasnou/files/images/placeholder.jpg -->
+
+	<!-- TAB TITLE OF PAGE ---------------------------------------------------------------------------------------------------------------------->
+	<title><span id='tabTitleElement'>Attraction_Name</span> | Travel Oras Nou</title>
+
+	<style></style>
+</head>
+
+<body onload='endPageLoad()'>
+<!-- Header Elements --><div id='loader'></div><div id='header'></div>
+	
+	<!-- BANNER AND TITLE ----------------------------------------------------------------------------------------------------------------------->
+
+	<div class='banner'>
+		<img id='bannerImage'>
+	</div>
+
+	<div class='titleBar' id='pageTitle'>
+		<h1> PAGE_TITLE </h1>
+	</div>
+
+	<!-- BODY CONTENT --------------------------------------------------------------------------------------------------------------------------->	
+
+	
+
+<!-- Footer Elements --><div id='footer'></div>
+</body>
+
+	<!-- CREATE THE HEADER AND FOOTER -->
+	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/header/headerScript.js'></script>
+	<script>createHeader();</script>
+
+	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/pages/attractionPage.js'></script>
+	<script>
+		function searchParameter(){
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			//const theBox = document.getElementById("categorySelect");
+			
+			if(urlParams.has("index")){
+				var aIndex = urlParams.get("index"); // Will return an integer number with the category index
+
+				if(aIndex > attractionPageTitle.length-1){
+					console.log("Attraction Index is higher than total values of attraction list");
+					window.load("404.html","_self");
+				}else{
+					aName = attractionPageTitle[aIndex];
+					aDescription = attractionPageDescription[aIndex];
+					aMore = attractionPageMore[aIndex];
+					aTags = attractionPageTags[aIndex];
+
+					aGoLink = attractionPageLink[aIndex];
+					aOtherLink = attractionSeeAlso[aIndex];
+					aCategories = attractionPageSimilar[aIndex];
+					
+					aBanner = attractionPageBanner[aIndex];
+					aImages = attractionPageImages[aIndex];
+
+					generateAttractionPage();
+				}
+				
+			}else{
+				console.log("No Attraction Index");
+				window.load("404.html","_self");
+			}
+		}// end of search parameter
+
+		function generateAttractionPage(){
+
+			const tabTitleBox = document.getElementById("tabTitleElement");
+			const pageTitleBox = document.getElementById("pageTitle");
+
+			tabTitleBox.innerHTML = aName;
+			pageTitleBox.innerHTML = "<h1>" + aName + "</h1>";
+			
+
+			var temp = aCategories.split(" | ");
+				aCategory = temp[0]; aLocation = temp[1];
+
+			aOtherLink = aOtherLink.split(" || "); // aOtherLink is now an array with each element: "Display Text | Link";
+			aImages = aImages.split(" | "); // aImages is now an array with each element being the link to an image
+
+			
+				
+			
+		}// end of function generateAttractionPage
+	</script>
+
+	<!-- JAVASCRIPT ----------------------------------------------------------------------------------------------------------------------------->
+
+	
