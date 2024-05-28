@@ -9,7 +9,7 @@
 	<!-- Placeholder Image: https://aztechadmit.github.io/travelorasnou/files/images/placeholder.jpg -->
 
 	<!-- TAB TITLE OF PAGE ---------------------------------------------------------------------------------------------------------------------->
-	<title><span id='tabTitleElement'>Attraction_Name</span> | Travel Oras Nou</title>
+	<title id='tabTitleElement'>Travel Oras Nou</title>
 
 	<style></style>
 </head>
@@ -26,6 +26,7 @@
 	<div class='titleBar' id='pageTitle'>
 		<h1> PAGE_TITLE </h1>
 	</div>
+	<div class='subtitleBar'><p id='pageSummary'></p></div>
 
 	<!-- BODY CONTENT --------------------------------------------------------------------------------------------------------------------------->	
 
@@ -48,7 +49,7 @@
 			if(urlParams.has("index")){
 				var aIndex = urlParams.get("index"); // Will return an integer number with the category index
 
-				if(aIndex > attractionPageTitle.length-1){
+				if(aIndex > attractionPageTitle.length-1 || aIndex < 0){
 					console.log("Attraction Index is higher than total values of attraction list");
 					window.load("404.html","_self");
 				}else{
@@ -78,8 +79,12 @@
 			const tabTitleBox = document.getElementById("tabTitleElement");
 			const pageTitleBox = document.getElementById("pageTitle");
 
-			tabTitleBox.innerHTML = aName;
+			tabTitleBox.innerHTML = aName + " | Attractions | Travel Oras Nou";
 			pageTitleBox.innerHTML = "<h1>" + aName + "</h1>";
+
+			document.getElementById("bannerImage").src = aBanner;
+			document.getElementById("pageSummary").innerHTML = aDescription;
+			
 			
 
 			var temp = aCategories.split(" | ");
