@@ -1,5 +1,5 @@
 attractionPageTitle = []; // Title of the page to display
-attractionPageDescription = []l // Summary of the Attraction / What it is
+attractionPageDescription = []; // Summary of the Attraction / What it is
 attractionPageMore = []; // More general information - not necessary (if blank section will be ommited)
 attractionPageTags = []; // Tags pertaining to this attraction
 
