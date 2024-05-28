@@ -26,8 +26,6 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
 
    	/* ----------------------------------------------------------------------------------------------------------------------------------- */
 
-*/
-
 	attractionPageTitle[0] = "Globe-City's Adventure Park";
 	attractionPageDescription[0] = "A fully immersive theme park centered around Adventure and fun for everyone! Part of the famous <a href='https://gcparksandresorts.github.io/gcresorthighland'>Globe-City Resort Highland</a>, a vacation destination featuring a theme park, two hotels, and an electric shopping & dining experience.";
 	attractionPageMore[0] = "Opened on May 26, 2016, Globe-City's Adventure Park has entertained millions of guests looking for fun new adventures. Adventure Park is Globe-City Entertainment's flagship theme park and features a multitude of immersive dark rides, thrilling rollercoasters, and dazzling entertainment.";
