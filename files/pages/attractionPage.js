@@ -18,7 +18,7 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
 	attractionPageTags[NUM] = "attraction_tags";
 
  	attractionPageLink[NUM] = "attraction_site_link";
-  	attractionPageSimilar[NUM] = "attractio_search_category";
+  	attractionPageSimilar[NUM] = "attractio_search_category | attraction_location";
    	attractionSeeAlso[NUM] = "first_name | first_link || second_name | second_link";
  
  	attractionPageBanner[NUM] = "link_to_banner_image";
@@ -34,7 +34,7 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
 	attractionPageTags[0] = "Family Oriented,Outdoors,Adventure";
 
  	attractionPageLink[0] = "https://gcparksandresorts.github.io/gcresorthighland/destinations/adventure-park";
-  	attractionPageSimilar[0] = "Attractions";
+  	attractionPageSimilar[0] = "Attractions | Highland";
 	attractionSeeAlso[0] = "City-Shop at the GC Resort Highland | https://gcparksandresorts.github.io/gcresorthighland/destinations/city-shop || The Aztech Resort | https://gcparksandresorts.github.io/gcresorthighland/destinations/the-aztech-resort || Globe-City's Lakeside Hotel | https://gcparksandresorts.github.io/gcresorthighland/destinations/globe-citys-lakeside-hotel";
  
  	attractionPageBanner[0] = "https://gcparksandresorts.github.io/gcresorthighland/webresources/images/tts-entrance.jpg";
