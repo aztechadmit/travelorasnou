@@ -53,3 +53,17 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
   	attractionPageImages[1] = "https://ourlittlelifestyle.com/storage/2021/09/Georgia-Aquarium-02.jpg | https://res.klook.com/image/upload/c_fill,w_750,h_500/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/zdhxryz7tekjuorya1nd.jpg";
 
    	/* ----------------------------------------------------------------------------------------------------------------------------------- */
+
+	attractionPageTitle[2] = "Coaster Capitol";
+	attractionPageDescription[2] = "Coaster Capitol was Oras Nou's original amusement park. Boasting exhilerating coasters for all ages and an atmosphere full of fun and excitement for everyone!";
+	attractionPageMore[2] = "Welcome to Coaster Capitol, your go-to destination for thrilling rides and non-stop fun! Our amusement park is packed with an array of exciting roller coasters and rides that cater to all ages and adventure levels. Whether you're a thrill-seeker looking for heart-pounding experiences or a family seeking a day of joyful rides, Coaster Capitol has something for everyone. Come and enjoy a day filled with pure excitement and unforgettable moments on our variety of rides. Coaster Capitol – where the adventure never ends!";
+	attractionPageTags[2] = "Outdoors,Thrilling,Adventure,Local Hotspot";
+
+ 	attractionPageLink[2] = "nan";
+  	attractionPageSimilar[2] = "Attractions | Industrial City";
+   	attractionSeeAlso[2] = "Globe-City Adventure Park | https://aztechadmit.github.io/travelorasnou/things-to-do/pages/attraction?index=0 || Mini-Park Oceanside | https://aztechadmit.github.io/travelorasnou/things-to-do/pages/attraction?index=0";
+ 
+ 	attractionPageBanner[2] = "https://costar.brightspotcdn.com/dims4/default/ea42302/2147483647/strip/true/crop/2100x1400+0+0/resize/2100x1400!/quality/100/?url=http%3A%2F%2Fcostar-brightspot.s3.us-east-1.amazonaws.com%2Fe9%2F43%2F8a18790240a4b23be1e39df63724%2Fcarowinds.jpg";
+  	attractionPageImages[2] = "https://npr.brightspotcdn.com/31/56/688fb68b4215ad233a6a57835d5c/rollercoaster-north-carolina-23184750648493.jpg | https://travel.usnews.com/images/rollercoaster-rides-amusement-park-sky.jpg | https://b2290346.smushcdn.com/2290346/wp-content/uploads/2022/04/E10430A3-DBBE-4705-BB8D-4266EBBDE296-scaled.jpeg?lossy=2&strip=1&webp=1";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
