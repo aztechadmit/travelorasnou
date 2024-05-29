@@ -156,7 +156,7 @@
 			var i = 0;
 			document.getElementById("furtherLink").innerHTML = "";
 			
-			for(i < aOtherLink.length){
+			while(i < aOtherLink.length){
 				var temp = aOtherLink[i].split(" | ");
 				document.getElementById("furtherLink").innerHTML += "<a href='"+temp[1]+"'>"+temp[0]+"</a>";
 				
@@ -174,7 +174,7 @@
 
 				var i = 0;
 
-				for(i < aImages.length){
+				while(i < aImages.length){
 					imageDiv.innerHTML += "<img src='"+aImages[i]+"'>";
 					i += 1;
 				}
