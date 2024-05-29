@@ -11,7 +11,16 @@
 	<!-- TAB TITLE OF PAGE ---------------------------------------------------------------------------------------------------------------------->
 	<title id='tabTitleElement'>Travel Oras Nou</title>
 
-	<style></style>
+	<style>
+		@media screen and (min-width:801px){
+			.columnContainer {}
+			.columnContainer img {width:50%;}
+			.columnContainer div {width:50%;}
+		}
+		#furtherLink a{
+			font-size:18px; display:inline-block; padding:10px;
+		}
+	</style>
 </head>
 
 <body onload='endPageLoad()'>
@@ -19,17 +28,35 @@
 	
 	<!-- BANNER AND TITLE ----------------------------------------------------------------------------------------------------------------------->
 
-	<div class='banner'>
-		<img id='bannerImage'>
+	<div class='fullContainer' style='margin-top:0; background:#2F4F4F; color:white; border-bottom:5px solid white;'>
+		<div class='leftContainer'>
+			<div class='columnContainer' id='pageTitles'>
+				<img id='bannerImage'>
+				<div>
+					<h1 id='pageTitle' style='margin-bottom:5px;'>Attraction Title</h1>
+					<p style='margin-top:0; color:lightgray;' id='pageCatnLocation'>Attraction Category</p>
+					<p id='pageSummary'>Attraction Summary</p>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<div class='titleBar' id='pageTitle'>
-		<h1> PAGE_TITLE </h1>
-	</div>
-	<div class='subtitleBar'><p id='pageSummary'></p></div>
 
 	<!-- BODY CONTENT --------------------------------------------------------------------------------------------------------------------------->	
 
+	<br>
+
+	<div class='leftContainer'>
+		<h3>More Information</h3>
+		<div id='pageMoreText'></div>
+	</div>
+
+	<div class='spacer'></div>
+
+	<div class='container' id='furtherLink'>
+		
+	</div>
+
+	<div class='spacer'></div>
 	
 
 <!-- Footer Elements --><div id='footer'></div>
@@ -51,7 +78,7 @@
 
 				if(aIndex > attractionPageTitle.length-1 || aIndex < 0){
 					console.log("Attraction Index is higher than total values of attraction list");
-					window.load("404.html","_self");
+					//window.open("404.html","_self");
 				}else{
 					aName = attractionPageTitle[aIndex];
 					aDescription = attractionPageDescription[aIndex];
@@ -70,7 +97,7 @@
 				
 			}else{
 				console.log("No Attraction Index");
-				window.load("404.html","_self");
+				//window.open("404.html","_self");
 			}
 		}// end of search parameter
 
@@ -80,11 +107,11 @@
 			const pageTitleBox = document.getElementById("pageTitle");
 
 			tabTitleBox.innerHTML = aName + " | Attractions | Travel Oras Nou";
-			pageTitleBox.innerHTML = "<h1>" + aName + "</h1>";
+			pageTitleBox.innerHTML = aName;
 
 			document.getElementById("bannerImage").src = aBanner;
 			document.getElementById("pageSummary").innerHTML = aDescription;
-			
+			document.getElementById("pageMoreText").innerHTML = aMore;
 			
 
 			var temp = aCategories.split(" | ");
@@ -92,6 +119,9 @@
 
 			aOtherLink = aOtherLink.split(" || "); // aOtherLink is now an array with each element: "Display Text | Link";
 			aImages = aImages.split(" | "); // aImages is now an array with each element being the link to an image
+
+			document.getElementById("pageCatnLocation").innerHTML = "<em>" + aCategory + "</em> | Located in " + aLocation;
+
 
 			
 				
