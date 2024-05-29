@@ -24,6 +24,8 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
  	attractionPageBanner[NUM] = "link_to_banner_image";
   	attractionPageImages[NUM] = "image_link_one | image_link_two";
 
+   	IF NO VALUE FOR ELEMENT, USE "nan"
+
    	/* ----------------------------------------------------------------------------------------------------------------------------------- */
 
 	attractionPageTitle[0] = "Globe-City's Adventure Park";
