@@ -10,6 +10,8 @@ attractionPageLink = []; // Link to the official website of this attraction
 attractionPageSimilar = []; // Input the category of this attraction to search for similar ones
 attractionSeeAlso = []; // Links other related attractions - will show as hyperlinks (or buttons idk yet)
 
+// Example Link: https://aztechadmit.github.io/travelorasnou/things-to-do/pages/attraction?index=1
+
 /* NEW ELEMENT:
 
 	attractionPageTitle[NUM] = "page_title";
@@ -67,3 +69,46 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
   	attractionPageImages[2] = "https://npr.brightspotcdn.com/31/56/688fb68b4215ad233a6a57835d5c/rollercoaster-north-carolina-23184750648493.jpg | https://travel.usnews.com/images/rollercoaster-rides-amusement-park-sky.jpg | https://b2290346.smushcdn.com/2290346/wp-content/uploads/2022/04/E10430A3-DBBE-4705-BB8D-4266EBBDE296-scaled.jpeg?lossy=2&strip=1&webp=1";
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
+	attractionPageTitle[3] = "The Rose Petal";
+	attractionPageDescription[3] = "A lively indie concert venue in Downtown's Rose District, The Rose Petal also boasts a bar with tasty snacks and drinks to enjoy during the show.";
+	attractionPageMore[3] = "The Rose Petal is an iconic concert venue located in the heart of Oras Nou's vibrant Rose District. Renowned as the birthplace of many famous Minecraftian musicians, comedians, drag queens, and more, it’s a spiritual haven where anything can happen. Over its 9+ year lifespan, The Rose Petal has hosted thousands of unforgettable performances, establishing itself as a cornerstone of the arts community. Despite numerous refurbishments and improvements, the venue's unique character and charm remain intact, continuing to inspire both artists and audiences alike.";
+	attractionPageTags[3] = "Music,LGBTQ,Local Hotspot,Entertainment,Iconic";
+
+ 	attractionPageLink[3] = "nan";
+  	attractionPageSimilar[3] = "Entertainment | Downtown";
+   	attractionSeeAlso[3] = "Oras Nou STAGE | https://aztechadmit.github.io/travelorasnou/things-to-do/pages/attraction?index=4 || Quartz Plaza | second_link";
+ 
+ 	attractionPageBanner[3] = "https://d3i6fh83elv35t.cloudfront.net/static/2023/07/Hot-Chip-at-The-Atlantis-3-Photo-by-Troy-Gerhardt-1024x683.jpg";
+  	attractionPageImages[3] = "https://www.billboard.com/wp-content/uploads/2022/08/Dave-Grohl-of-Foo-Fighters-2022-billboard-1548.jpg?w=942&h=623&crop=1 | https://i.redd.it/atlantis-post-show-update-amazing-all-around-the-sound-was-v0-y4wlynxf5q2b1.jpg?width=4032&format=pjpg&auto=webp&s=fe905fa896753de60abbb1de55c5946f27b83e59 | https://seattlemusicinsider.com/wp-content/uploads/2023/10/nggallery_import/Nightly-@-Neumos-10-18-23-6.jpg";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
+	attractionPageTitle[4] = "Oras Nou STAGE";
+	attractionPageDescription[4] = "short_description";
+	attractionPageMore[4] = "longer_description";
+	attractionPageTags[4] = "attraction_tags";
+
+ 	attractionPageLink[4] = "attraction_site_link";
+  	attractionPageSimilar[4] = "attractio_search_category | attraction_location";
+   	attractionSeeAlso[4] = "first_name | first_link || second_name | second_link";
+ 
+ 	attractionPageBanner[4] = "link_to_banner_image";
+  	attractionPageImages[4] = "image_link_one | image_link_two";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
+	attractionPageTitle[5] = "page_title";
+	attractionPageDescription[5] = "short_description";
+	attractionPageMore[5] = "longer_description";
+	attractionPageTags[5] = "attraction_tags";
+
+ 	attractionPageLink[5] = "attraction_site_link";
+  	attractionPageSimilar[5] = "attractio_search_category | attraction_location";
+   	attractionSeeAlso[5] = "first_name | first_link || second_name | second_link";
+ 
+ 	attractionPageBanner[5] = "link_to_banner_image";
+  	attractionPageImages[5] = "image_link_one | image_link_two";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
