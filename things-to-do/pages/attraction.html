@@ -20,12 +20,11 @@
 		#furtherLink a{
 			font-size:18px; display:inline-block; padding:10px;
 		}
-		a.btn {
-			display:inline-block; padding:5px; border:2px solid teal; border-radius:10px; color:teal; text-decoration:none; margin:5px;
-		}
 
 		.imageDiv{display:flex; flex-flow:row; flex-wrap:wrap; justify-content:center;}
 		.imageDiv img{width:32%; min-width:200px; border-radius:10px; align-self:stretch; margin:0.5%; object-fit:cover;}
+
+		#pageTags a {display:inline-block; text-decoration:none; padding:8px; border-radius:10px; background:lightgray; color:#2F4F4F; margin-right:10px;}
 	</style>
 </head>
 
@@ -42,6 +41,7 @@
 					<h1 id='pageTitle' style='margin-bottom:5px;'>Attraction Title</h1>
 					<p style='margin-top:0; color:lightgray;' id='pageCatnLocation'>Attraction Category</p>
 					<p id='pageSummary'>Attraction Summary</p>
+					
 				</div>
 			</div>
 		</div>
@@ -54,7 +54,8 @@
 	<div class='leftContainer'>
 		<h3>More Information</h3>
 		<div id='pageMoreText'></div>
-		
+		<h3>Attraction Tags</h3>
+		<div id='pageTags'></div>
 	</div>
 
 	<div class='spacer'></div>
@@ -67,7 +68,7 @@
 
 	<div class='spacer'></div>
 
-	<div class='leftContainer'>
+	<div class='container'>
 		<h3>Explore Similar Attractions</h3>
 		<div id='furtherLink'></div>
 	</div>
@@ -109,7 +110,7 @@
 					aName = attractionPageTitle[aIndex];
 					aDescription = attractionPageDescription[aIndex];
 					aMore = attractionPageMore[aIndex];
-					aTags = attractionPageTags[aIndex];
+					aTags = attractionPageTags[aIndex]
 
 					aGoLink = attractionPageLink[aIndex];
 					aOtherLink = attractionSeeAlso[aIndex];
@@ -140,7 +141,7 @@
 			
 			document.getElementById("pageMoreText").innerHTML = aMore;
 			if(aGoLink != 'nan'){
-				document.getElementById("pageMoreText").innerHTML += "<p><button style='min-width:300px;' onclick='window.open(" + '"' + ',"_self")' + "'>Visit Website</button></p>";
+				document.getElementById("pageMoreText").innerHTML += "<p><button style='min-width:300px;margin-left:0;' onclick='window.open(" + '"' + aGoLink + '","_self")' + "'>Visit Website</button></p>";
 			}
 			
 
@@ -148,36 +149,51 @@
 				aCategory = temp[0]; aLocation = temp[1];
 
 			aOtherLink = aOtherLink.split(" || "); // aOtherLink is now an array with each element: "Display Text | Link";
-			aImages = aImages.split(" | "); // aImages is now an array with each element being the link to an image
-
 			document.getElementById("pageCatnLocation").innerHTML = "<em>" + aCategory + "</em> | Located in " + aLocation;
-
-			// Generate links to similar attractions
-			var i = 0;
-			document.getElementById("furtherLink").innerHTML = "";
 			
-			while(i < aOtherLink.length){
-				var temp = aOtherLink[i].split(" | ");
-				document.getElementById("furtherLink").innerHTML += "<a href='"+temp[1]+"'>"+temp[0]+"</a>";
-				
-				i += 1;
-			}
+						// Generate links to similar attractions
+						var i = 0;
+						document.getElementById("furtherLink").innerHTML = "";
+						
+						while(i < aOtherLink.length){
+							var temp = aOtherLink[i].split(" | ");
+							document.getElementById("furtherLink").innerHTML += "<a href='"+temp[1]+"'>"+temp[0]+"</a>";
+							
+							i += 1;
+						}
+			
+			if(aImages != 'nan'){
+				aImages = aImages.split(" | "); // aImages is now an array with each element being the link to an image
+
+				// Populate the extra images section
+				const imageDiv = document.getElementById("imagesHolder");
+
+					var i = 0;
+
+					while(i < aImages.length){
+						imageDiv.innerHTML += "<img src='"+aImages[i]+"'>";
+						i += 1;
+					}
+			} // end of image section
+
+			
 
 			// Generate the search similar attractions links
 			const pageCategoryView = document.getElementById("viewSimilarCategory");
 
-				pageCategoryView.innerHTML = "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?category=2'>Search Other Attractions in the " + aCategory + " Category</a>";
-				pageCategoryView.innerHTML += "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?location=2'>Search Other Attractions located in " + aLocation + " </a>";
+				pageCategoryView.innerHTML = "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?category=2'>Search Other Items in the " + aCategory + " Category</a>";
+				pageCategoryView.innerHTML += "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?location=2'>Search Other Items located in " + aLocation + " </a>";
 			
-			// Populate the extra images section
-			const imageDiv = document.getElementById("imagesHolder");
-
+			if(aTags != 'nan'){
+				const tagContainer = document.getElementById("pageTags");
+				aTags = aTags.split(",");
+				
 				var i = 0;
-
-				while(i < aImages.length){
-					imageDiv.innerHTML += "<img src='"+aImages[i]+"'>";
+				while(i < aTags.length){
+					tagContainer.innerHTML += "<a>" + aTags[i] + "</a>";
 					i += 1;
 				}
+			}
 			
 		}// end of function generateAttractionPage
 	</script>
