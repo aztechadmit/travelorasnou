@@ -36,7 +36,7 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
 	attractionSeeAlso[0] = "City-Shop at the GC Resort Highland | https://gcparksandresorts.github.io/gcresorthighland/destinations/city-shop || The Aztech Resort | https://gcparksandresorts.github.io/gcresorthighland/destinations/the-aztech-resort || Globe-City's Lakeside Hotel | https://gcparksandresorts.github.io/gcresorthighland/destinations/globe-citys-lakeside-hotel";
  
  	attractionPageBanner[0] = "https://gcparksandresorts.github.io/gcresorthighland/webresources/images/tts-entrance.jpg";
-  	attractionPageImages[0] = "https://blooloop.com/wp-content/uploads/2016/11/Ghostbusters-triotech.jpg | https://gcparksandresorts.github.io/gcresorthighland/webresources/images/fotd1.jpg";
+  	attractionPageImages[0] = "https://gcparksandresorts.github.io/gcresorthighland/webresources/images/tts3.jpg | https://blooloop.com/wp-content/uploads/2016/11/Ghostbusters-triotech.jpg | https://gcparksandresorts.github.io/gcresorthighland/webresources/images/fotd1.jpg";
 
 	/* ----------------------------------------------------------------------------------------------------------------------------------- */
 
