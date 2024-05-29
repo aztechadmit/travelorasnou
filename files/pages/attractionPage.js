@@ -63,7 +63,7 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
 
  	attractionPageLink[2] = "nan";
   	attractionPageSimilar[2] = "Attractions | Industrial City";
-   	attractionSeeAlso[2] = "Globe-City Adventure Park | https://aztechadmit.github.io/travelorasnou/things-to-do/pages/attraction?index=0 || Mini-Park Oceanside | https://aztechadmit.github.io/travelorasnou/things-to-do/pages/attraction?index=0";
+   	attractionSeeAlso[2] = "Globe-City Adventure Park | attraction?index=0 || Mini-Park Oceanside | https://aztechadmit.github.io/travelorasnou/things-to-do/pages/attraction?index=0";
  
  	attractionPageBanner[2] = "https://costar.brightspotcdn.com/dims4/default/ea42302/2147483647/strip/true/crop/2100x1400+0+0/resize/2100x1400!/quality/100/?url=http%3A%2F%2Fcostar-brightspot.s3.us-east-1.amazonaws.com%2Fe9%2F43%2F8a18790240a4b23be1e39df63724%2Fcarowinds.jpg";
   	attractionPageImages[2] = "https://npr.brightspotcdn.com/31/56/688fb68b4215ad233a6a57835d5c/rollercoaster-north-carolina-23184750648493.jpg | https://travel.usnews.com/images/rollercoaster-rides-amusement-park-sky.jpg | https://b2290346.smushcdn.com/2290346/wp-content/uploads/2022/04/E10430A3-DBBE-4705-BB8D-4266EBBDE296-scaled.jpeg?lossy=2&strip=1&webp=1";
@@ -77,7 +77,7 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
 
  	attractionPageLink[3] = "nan";
   	attractionPageSimilar[3] = "Entertainment | Downtown";
-   	attractionSeeAlso[3] = "Oras Nou STAGE | https://aztechadmit.github.io/travelorasnou/things-to-do/pages/attraction?index=4 || Quartz Plaza | second_link";
+   	attractionSeeAlso[3] = "Oras Nou STAGE | attraction?index=4 || Quartz Plaza | attraction?index=5";
  
  	attractionPageBanner[3] = "https://d3i6fh83elv35t.cloudfront.net/static/2023/07/Hot-Chip-at-The-Atlantis-3-Photo-by-Troy-Gerhardt-1024x683.jpg";
   	attractionPageImages[3] = "https://www.billboard.com/wp-content/uploads/2022/08/Dave-Grohl-of-Foo-Fighters-2022-billboard-1548.jpg?w=942&h=623&crop=1 | https://i.redd.it/atlantis-post-show-update-amazing-all-around-the-sound-was-v0-y4wlynxf5q2b1.jpg?width=4032&format=pjpg&auto=webp&s=fe905fa896753de60abbb1de55c5946f27b83e59 | https://seattlemusicinsider.com/wp-content/uploads/2023/10/nggallery_import/Nightly-@-Neumos-10-18-23-6.jpg";
@@ -85,30 +85,30 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
 	attractionPageTitle[4] = "Oras Nou STAGE";
-	attractionPageDescription[4] = "short_description";
-	attractionPageMore[4] = "longer_description";
-	attractionPageTags[4] = "attraction_tags";
+	attractionPageDescription[4] = "The Oras Nou STAGE is an iconic outdoor concert venue nestled in the breathtaking Highland area of Oras Nou. Similar in grandeur and atmosphere to the renowned Hollywood Bowl, this massive venue offers a unique concert-going experience with its dramatic cliffside setting and picturesque river valley backdrop.";
+	attractionPageMore[4] = "From cultural festivals to special events, the STAGE is the perfect venue for a wide range of large-scale gatherings. With its state-of-the-art sound and lighting systems, the Oras Nou STAGE ensures that every event is a sensory delight. Whether you’re attending a concert, a movie premiere, or a grand festival, the STAGE provides an unparalleled setting that combines natural beauty with world-class entertainment.";
+	attractionPageTags[4] = "Transit Accessible,Entertainment,Concerts,Iconic,Outdoor";
 
- 	attractionPageLink[4] = "attraction_site_link";
-  	attractionPageSimilar[4] = "attractio_search_category | attraction_location";
-   	attractionSeeAlso[4] = "first_name | first_link || second_name | second_link";
+ 	attractionPageLink[4] = "nan";
+  	attractionPageSimilar[4] = "Entertainment | Highland";
+   	attractionSeeAlso[4] = "The Rose Petal | attraction?index=3 || Quartz Plaza | attraction?index=5";
  
- 	attractionPageBanner[4] = "link_to_banner_image";
-  	attractionPageImages[4] = "image_link_one | image_link_two";
+ 	attractionPageBanner[4] = "https://ucarecdn.com/8ae9952d-6848-4d2a-9b5b-69c5578c2e9d/";
+  	attractionPageImages[4] = "https://ucarecdn.com/fc320d82-8ef1-4378-b8e5-49275c9ea599/webfireworks_1_RGB.jpg | https://ca-times.brightspotcdn.com/dims4/default/d230055/2147483647/strip/true/crop/800x420+0+44/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F50%2Fff%2F40081cbf4c2498e7212c9788b84c%2F1953.jpg | https://ca-times.brightspotcdn.com/dims4/default/61f2de0/2147483647/strip/true/crop/3566x2377+217+0/resize/2000x1333!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fe1%2Fb9%2Fcfb815c84217ba235b0e481f633d%2Fla-photos-1staff-769563-la-et-hollywood-bowl-reopening-48-als.jpg";
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
-	attractionPageTitle[5] = "page_title";
-	attractionPageDescription[5] = "short_description";
-	attractionPageMore[5] = "longer_description";
-	attractionPageTags[5] = "attraction_tags";
+	attractionPageTitle[5] = "Quartz Plaza";
+	attractionPageDescription[5] = "Quartz Plaza is a versatile outdoor festival and concert venue situated in the iconic Capitol Park area of Downtown Oras Nou. This dynamic space is home to a variety of events, including concerts, movie festivals, charity gatherings, and night markets.";
+	attractionPageMore[5] = "There's alot going on at Quartz Plaza! Home to the nationwide charity concert: <em>Nou Live</em>, a televised concert featuring top musicians from the year. In addition, Enjoy live music from local and international artists in a vibrant outdoor setting and watch films under the stars during our themed movie nights and festivals.<p>Every weekend, the plaza also features a <b>night market</b> where you can explore eclectic stalls and savor delicious street food with performances from local culture artists.</p>";
+	attractionPageTags[5] = "Transit Accessible,Entertainment,Concerts,Iconic,Outdoor,Music,Movies";
 
- 	attractionPageLink[5] = "attraction_site_link";
-  	attractionPageSimilar[5] = "attractio_search_category | attraction_location";
-   	attractionSeeAlso[5] = "first_name | first_link || second_name | second_link";
+ 	attractionPageLink[5] = "nan";
+  	attractionPageSimilar[5] = "Entertainment | Downtown";
+   	attractionSeeAlso[5] = "The Rose Petal | attraction?index=3 || Oras Nou STAGE | attraction?index=4";
  
- 	attractionPageBanner[5] = "link_to_banner_image";
-  	attractionPageImages[5] = "image_link_one | image_link_two";
+ 	attractionPageBanner[5] = "https://www.laparent.com/wp-content/uploads/2021/08/4-credit_-Jenna-Selby-_-San-Diego-Symphony.jpg";
+  	attractionPageImages[5] = "https://www.halfmooninn.com/blog/wp-content/uploads/2021/07/6HMIByTheBay.jpg | https://www.sfcv.org/sites/default/files/styles/full_width_content_870x/public/media/images/2021-08/rady_shell_projections_0.jpeg?itok=9Ewczy4_";
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
