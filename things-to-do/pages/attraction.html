@@ -20,6 +20,12 @@
 		#furtherLink a{
 			font-size:18px; display:inline-block; padding:10px;
 		}
+		a.btn {
+			display:inline-block; padding:5px; border:2px solid teal; border-radius:10px; color:teal; text-decoration:none; margin:5px;
+		}
+
+		.imageDiv{display:flex; flex-flow:row; flex-wrap:wrap; justify-content:center;}
+		.imageDiv img{width:32%; min-width:200px; border-radius:10px; align-self:stretch; margin:0.5%; object-fit:cover;}
 	</style>
 </head>
 
@@ -48,15 +54,35 @@
 	<div class='leftContainer'>
 		<h3>More Information</h3>
 		<div id='pageMoreText'></div>
-	</div>
-
-	<div class='spacer'></div>
-
-	<div class='container' id='furtherLink'>
 		
 	</div>
 
 	<div class='spacer'></div>
+
+		<div class='container'>
+			<div class='imageDiv' id='imagesHolder'>
+				
+			</div>
+		</div>
+
+	<div class='spacer'></div>
+
+	<div class='leftContainer'>
+		<h3>Explore Similar Attractions</h3>
+		<div id='furtherLink'></div>
+	</div>
+
+	<div class='spacer'></div>
+
+	<div class='container' id='viewSimilarCategory'>
+		<a class='btn'>Search for similar attractions</a>
+	</div>
+
+	<div class='spacer'></div>
+
+	<div class='container'>
+		<button onclick='history.back()'>Back to Previous</button>
+	</div>
 	
 
 <!-- Footer Elements --><div id='footer'></div>
@@ -111,7 +137,11 @@
 
 			document.getElementById("bannerImage").src = aBanner;
 			document.getElementById("pageSummary").innerHTML = aDescription;
+			
 			document.getElementById("pageMoreText").innerHTML = aMore;
+			if(aGoLink != 'nan'){
+				document.getElementById("pageMoreText").innerHTML += "<p><button style='min-width:300px;' onclick='window.open(" + '"' + ',"_self")' + "'>Visit Website</button></p>";
+			}
 			
 
 			var temp = aCategories.split(" | ");
@@ -122,9 +152,32 @@
 
 			document.getElementById("pageCatnLocation").innerHTML = "<em>" + aCategory + "</em> | Located in " + aLocation;
 
-
+			// Generate links to similar attractions
+			var i = 0;
+			document.getElementById("furtherLink").innerHTML = "";
 			
+			for(i < aOtherLink.length){
+				var temp = aOtherLink[i].split(" | ");
+				document.getElementById("furtherLink").innerHTML += "<a href='"+temp[1]+"'>"+temp[0]+"</a>";
 				
+				i += 1;
+			}
+
+			// Generate the search similar attractions links
+			const pageCategoryView = document.getElementById("pageCatnLocation");
+
+				pageCategoryView.innerHTML = "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?category=2'>Search Other Attractions in the " + aCategory + " Category</a>";
+				pageCategoryView.innerHTML += "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?location=2'>Search Other Attractions located in " + aLocation + " </a>";
+			
+			// Populate the extra images section
+			const imageDiv = document.getElementById("imagesHolder");
+
+				var i = 0;
+
+				for(i < aImages.length){
+					imageDiv.innerHTML += "<img src='"+aImages[i]+"'>";
+					i += 1;
+				}
 			
 		}// end of function generateAttractionPage
 	</script>
