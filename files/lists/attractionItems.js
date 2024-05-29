@@ -17,7 +17,7 @@ attractionCost = [];
 
 	attractionCost = ["none","Free", "$", "$$", "$$$", "$$$$"];
 
-	const quickLink = ""+quickLink+"";
+	const quickLink = "https://aztechadmit.github.io/travelorasnou/things-to-do/pages/attraction";
 	
 // ------------ ATTRACTION ITEMS ----------------------------------------------------------------------------------------------------------------------------------------------------------------- //
 
