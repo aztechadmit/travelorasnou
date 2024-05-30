@@ -112,3 +112,45 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
+	attractionPageTitle[6] = "The Aztech Theater";
+	attractionPageDescription[6] = "A prestegious and well-televised performance stage and cinema home to the renowned Academy Awards for motion picture. This theater has also been home to many large scale broadway productions and movie premiers.";
+	attractionPageMore[6] = "Renowned as the home of the Academy Awards®, the Aztech Theater® is a 180,000-square-foot, 3,400-seat cinema and performance stage, celebrating our commitment to science and innovation. Guests at this special events venue are able to experience films with the ultravivid color of Aztech PureView® technology and the immersive sound of Aztech Audio®. PureView® looks more like real life, with darker darks, lighter lights, and a remarkable color range. Aztech Audio creates a multidimensional soundscape with sounds that can be placed anywhere in the cinema including overhead. In fact, the Dolby Theatre has 215 individually powered speakers enabled with Aztech Audio, making it one of the most sophisticated sound systems in the world. We've been working with talented filmmakers to create unforgettable movie experiences for more than 10 years. From the cinema to the living room, Aztech Technologies continues to transform the entertainment experience, and the Aztech Theatre reflects our ongoing commitment to help moviemakers realize their visions.";
+	attractionPageTags[6] = "Cultural,Entertainment,Instagrammable,Prestigious,Iconic,Broadway";
+
+ 	attractionPageLink[6] = "nan";
+  	attractionPageSimilar[6] = "Art & Culture | Highland";
+   	attractionSeeAlso[6] = "Lea Kra Sasson Concert Hall | attraction?index=8 || Sussman Performing Arts Center | attraction?index=7";
+ 
+ 	attractionPageBanner[6] = "https://www.historictheatrephotos.com/Resources/Theatre-Photos/Dolby-Los-Angeles/Photos/Auditorium/First_Mezzanine_Center.jpg";
+  	attractionPageImages[6] = "https://www.dolbytheatre.com/assets/ShowPro/gallery/photo/_resampled/ScaleWidthWyI1MDAiXQ/gallery-1-large2.jpg | https://ca-times.brightspotcdn.com/dims4/default/cfc3aa1/2147483647/strip/true/crop/5036x3357+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fa2%2F70%2Fa880531f43f8b7bbe4c1925ec72f%2Fla-photos-1staff-488196-et-oscars-show-rcg-0839-739657-739900.JPG | https://media.architecturaldigest.com/photos/623c9610156fa77bad1dd50b/16:9/w_1280,c_limit/Oscars%20rendering%202022%20by%20David%20Korins%20.jpg";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
+	attractionPageTitle[7] = "Sussman Performing Arts Center";
+	attractionPageDescription[7] = "short_description";
+	attractionPageMore[7] = "longer_description";
+	attractionPageTags[7] = "attraction_tags";
+
+ 	attractionPageLink[7] = "nan";
+  	attractionPageSimilar[7] = "Art & Culture | Newtown";
+   	attractionSeeAlso[7] = "first_name | first_link || second_name | second_link";
+ 
+ 	attractionPageBanner[7] = "https://theatreprojects.com/wp-content/uploads/2022/04/ahmanson-theatre-01.jpg";
+  	attractionPageImages[7] = "image_link_one | image_link_two";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
+	attractionPageTitle[8] = "Lea Kra Sasson Concert Hall";
+	attractionPageDescription[8] = "short_description";
+	attractionPageMore[8] = "longer_description";
+	attractionPageTags[8] = "attraction_tags";
+
+ 	attractionPageLink[8] = "nan";
+  	attractionPageSimilar[8] = "attractio_search_category | attraction_location";
+   	attractionSeeAlso[8] = "first_name | first_link || second_name | second_link";
+ 
+ 	attractionPageBanner[8] = "https://media.timeout.com/images/101758989/750/422/image.jpg";
+  	attractionPageImages[8] = "image_link_one | image_link_two";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+	
