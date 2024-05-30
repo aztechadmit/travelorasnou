@@ -72,6 +72,12 @@
 						<option value="5">$$$$</option>
 					</select>
 				</div>
+				<div>
+					<label for='monthSelect'>Month: </label>
+					<select name='monthSelect' id='monthSelect' onchange='document.getElementById("updateFiltBtn").style.display="block";'>
+						<option value="0">View All</option>
+					</select>
+				</div>
 			</div>
 			<p><span style='display:none' class='fadeDiv' id='updateFiltBtn'><a onclick='categoryChanged()'>Update Filters</a></p>
 		</div>
