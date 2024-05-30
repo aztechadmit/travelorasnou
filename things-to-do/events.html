@@ -140,10 +140,17 @@
 			}else{
 				searchLocation = 'none';
 			}
+			if(urlParams.has("month")){
+				var temp = urlParams.get("month");
+				searchMonth = eventMonths[temp];
+			}else{
+				searchMonth = 'none';
+			}
 
 			console.log("searchCategory = " + searchCategory);
 			console.log("searchLocation = " + searchLocation);
 			console.log("searchPrice = " + searchPrice);
+			console.log("searchMonth = " + searchMonth);
 
 
 			filterElements();
@@ -171,22 +178,33 @@
 							if(temp[4].includes(",")){ // if multiple months
 								var tempMonth = temp[4].split(",");
 
-								if(tempMonth.includes(eventMonths[thisMonth])){
-									monthContainer.innerHTML += "<div class='attractionTile'> <img src='"+temp[9]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[3]+"</em>"+temp[7]+"<div><b>"+temp[6]+"</b> - "+temp[8]+"</div></div><a class='hiddenLink' href='"+temp[10]+"'></a></div>";
+								if(searchMonth == 'none' || tempMonth.includes(searchMonth)){
+									if(tempMonth.includes(eventMonths[thisMonth])){
+										monthContainer.innerHTML += "<div class='attractionTile'> <img src='"+temp[9]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[3]+"</em>"+temp[7]+"<div><b>"+temp[6]+"</b> - "+temp[8]+"</div></div><a class='hiddenLink' href='"+temp[10]+"'></a></div>";
+										showingCount += 1;
+									}else{
+										mainContainer.innerHTML += "<div class='attractionTile'> <img src='"+temp[9]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[3]+" | "+temp[4]+"</em>"+temp[7]+"<div><b>"+temp[6]+"</b> - "+temp[8]+"</div></div><a class='hiddenLink' href='"+temp[10]+"'></a></div>";
+										showingCount += 1;
+									}
 								}else{
-									mainContainer.innerHTML += "<div class='attractionTile'> <img src='"+temp[9]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[3]+" | "+temp[4]+"</em>"+temp[7]+"<div><b>"+temp[6]+"</b> - "+temp[8]+"</div></div><a class='hiddenLink' href='"+temp[10]+"'></a></div>";
+									console.log("Skipped " + temp[0]);
 								}
-							}else{ // Only one month
+
+								
+							}else if(searchMonth == 'none' || temp[4] == searchMonth){ // Only one month
 
 								if(temp[4] == eventMonths[thisMonth]){ // If the event takes place in this month
 									monthContainer.innerHTML += "<div class='attractionTile'> <img src='"+temp[9]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[3]+"</em>"+temp[7]+"<div><b>"+temp[6]+"</b> - "+temp[8]+"</div></div><a class='hiddenLink' href='"+temp[10]+"'></a></div>";
+									showingCount += 1;
 								}else{
 									mainContainer.innerHTML += "<div class='attractionTile'> <img src='"+temp[9]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[3]+" | "+temp[4]+"</em>"+temp[7]+"<div><b>"+temp[6]+"</b> - "+temp[8]+"</div></div><a class='hiddenLink' href='"+temp[10]+"'></a></div>";
+									showingCount += 1;
 								}
 								
+							}else{
+								console.log("Skipped " + temp[0]);
 							}
 
-							showingCount += 1;
 
 						}else{
 							console.log("Skipped " + temp[0]);
