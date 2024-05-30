@@ -97,4 +97,98 @@
 
 	<!-- JAVASCRIPT ----------------------------------------------------------------------------------------------------------------------------->
 
-	
+	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/lists/eventItems.js'></script>
+	<script>
+		const mainContainer = document.getElementById("resultsViewer");
+		const monthContainer = document.getElementById("thisMonthViewer");
+
+		// <div class='attractionTile'> <img src='ATTRACTION_IMAGE_LINK'> <div class='txtContent'> <h3>ATTRACTION_NAME</h3><em>ATTRACTION_LOCATION</em>ATTRACTION_DESCRIPTION<div>TAGS</div></div><a class='hiddenLink' href='LINK_TO_ATTRACTION'></a></div>
+
+		const tdate = new Date();
+		const thisMonth = tdate.getMonth() + 1; // Jan - 1, Feb - 2, Mar - 3, ...
+
+		// Search URL parameters for search terms
+		function searchParameter(){
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			
+			if(urlParams.has("category")){
+				var temp = urlParams.get("category");
+				searchCategory = eventCategory[temp];
+			}else{
+				searchCategory = 'none';
+			}
+			if(urlParams.has("price")){
+				var temp = urlParams.get("price");
+				searchPrice = eventCost[temp];
+			}else{
+				searchLocation = 'none';
+			}
+			if(urlParams.has("location")){
+				var temp = urlParams.get("location");
+				searchLocation = eventLocation[temp];
+			}else{
+				searchLocation = 'none';
+			}
+
+			filterElements();
+		} // end of searchParameter
+
+
+		// Generate the event displays
+		function filterElements(){
+
+			var i = 0;
+
+			while(i < eventItems.length){
+
+				var temp = eventItems[i].split(" | ");
+
+				if(searchCategory == 'none' || temp[1] == searchCategory){
+
+					if(searchLocation == 'none' || temp[3] == searchLocation){
+
+						if(searchPrice == 'none' || temp[6] == searchPrice){
+
+							// First check if the event is in our current month
+							if(temp[4].includes(",")){ // if multiple months
+								var tempMonth = temp[4].split(",");
+
+								if(tempMonth.includes(eventMonths[thisMonth])){
+									monthContainer.innerHTML += "<div class='attractionTile'> <img src='"+temp[9]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[3]+"</em>"+temp[7]+"<div><b>"+temp[6]+"</b> - "+temp[8]+"</div></div><a class='hiddenLink' href='"+temp[10]+"'></a></div>";
+								}else{
+									mainContainer.innerHTML += "<div class='attractionTile'> <img src='"+temp[9]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[3]+" | "+temp[4]+"</em>"+temp[7]+"<div><b>"+temp[6]+"</b> - "+temp[8]+"</div></div><a class='hiddenLink' href='"+temp[10]+"'></a></div>";
+								}
+							}else{ // Only one month
+
+								if(temp[4] == eventMonths[thisMonth]){ // If the event takes place in this month
+									monthContainer.innerHTML += "<div class='attractionTile'> <img src='"+temp[9]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[3]+"</em>"+temp[7]+"<div><b>"+temp[6]+"</b> - "+temp[8]+"</div></div><a class='hiddenLink' href='"+temp[10]+"'></a></div>";
+								}else{
+									mainContainer.innerHTML += "<div class='attractionTile'> <img src='"+temp[9]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[3]+" | "+temp[4]+"</em>"+temp[7]+"<div><b>"+temp[6]+"</b> - "+temp[8]+"</div></div><a class='hiddenLink' href='"+temp[10]+"'></a></div>";
+								}
+								
+							}
+
+						}else{
+							console.log("Skipped " + temp[0]);
+						}
+						
+					}else{
+						console.log("Skipped " + temp[0]);
+					}
+					
+				}else{
+					console.log("Skipped " + temp[0]);
+				}	
+
+				i += 1;
+				
+			}// end of while loop
+			
+		}
+
+		
+
+		searchParameter();
+		
+	</script>
