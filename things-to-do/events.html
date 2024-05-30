@@ -101,6 +101,10 @@
 	<script>
 		const mainContainer = document.getElementById("resultsViewer");
 		const monthContainer = document.getElementById("thisMonthViewer");
+		const counterDisp = document.getElementById("resultCountDisplay");
+
+		mainContainer.innerHTML = '';
+		monthContainer.innerHTML = '';
 
 		// <div class='attractionTile'> <img src='ATTRACTION_IMAGE_LINK'> <div class='txtContent'> <h3>ATTRACTION_NAME</h3><em>ATTRACTION_LOCATION</em>ATTRACTION_DESCRIPTION<div>TAGS</div></div><a class='hiddenLink' href='LINK_TO_ATTRACTION'></a></div>
 
@@ -122,7 +126,7 @@
 				var temp = urlParams.get("price");
 				searchPrice = eventCost[temp];
 			}else{
-				searchLocation = 'none';
+				searchPrice = 'none';
 			}
 			if(urlParams.has("location")){
 				var temp = urlParams.get("location");
@@ -144,6 +148,8 @@
 		function filterElements(){
 
 			var i = 0;
+
+			var showingCount = 0;
 
 			while(i < eventItems.length){
 
@@ -174,6 +180,8 @@
 								
 							}
 
+							showingCount += 1;
+
 						}else{
 							console.log("Skipped " + temp[0]);
 						}
@@ -189,6 +197,12 @@
 				i += 1;
 				
 			}// end of while loop
+
+			if(showingCount == 0){
+				counterDisp.innerHTML = "No results matching search terms. Try broadening your search!";
+			}else{
+				counterDisp.innerHTML = "Showing " + showingCount + " results";
+			}
 			
 		}
 
