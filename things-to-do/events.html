@@ -227,10 +227,39 @@
 			}else{
 				counterDisp.innerHTML = "Showing " + showingCount + " results";
 			}
-			
-		}
 
-		
+			populateSearchBar();
+			
+		} // end of function filter elements
+
+		function populateSearchBar(){
+
+			const categorySelect = document.getElementById("categorySelect");
+			const locationSelect = document.getElementById("locationSelect");
+			const priceSelect = document.getElementById("priceSelect");
+			const monthSelect = document.getElementById("monthSelect");
+
+			// Populate categories
+			var i = 1;
+			while(i < eventCategory.length){
+				categorySelect.innerHTML += "<option value='"+i+"'>"+eventCategory[i]+"</option>";
+				i += 1;
+			}// end of populate categories
+			if(searchCategory != 'none'){categorySelect.value = eventCategory.indexOf(searchCategory);}
+
+			//populate search month
+			i = 1;
+			while(i < eventMonths.length){
+				monthSelect.innerHTML += "<option value='"+i+"'>"+eventMonths[i]+"</option>";
+				i += 1;
+			}
+			if(searchMonth != 'none'){monthSelect.value = eventMonths.indexOf(searchMonth);}
+
+			// Price and Location
+			if(searchPrice != 'none'){priceSelect.value = eventCost.indexOf(searchPrice);}
+			if(searchLocation != 'none'){locationSelect.value = eventLocation.indexOf(searchLocation);}
+			
+		} // end of function populateSearchBar
 
 		searchParameter();
 		
