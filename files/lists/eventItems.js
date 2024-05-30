@@ -14,6 +14,7 @@
 	eventVenue = ["none", "Quarts Plaza", "Oras Nou STAGE", "The Rose Petal", "Club Nou", "The Aztech Theater", "Lea Kra Sasson Concert Hall", "Sussman Performing Arts Center", "Industries Stadium", "SkyNet Theater", 
 		      "Diamond Center Stadium", "City-Shop", "", ""];
 
+	eventItems = [];
 // ---------------------------------------------------------------------------------------- EVENT ITEMS -- -----------------------------------------------------	
 
 //							Months is comma separated list of INTEGER numbers - days correspond with each month -> may,june | 1,2 = May 1st and June 2nd -> 'nan' for days means no specific dates!
