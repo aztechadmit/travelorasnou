@@ -85,13 +85,13 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
 	attractionPageTitle[4] = "Oras Nou STAGE";
-	attractionPageDescription[4] = "The Oras Nou STAGE is an iconic outdoor concert venue nestled in the breathtaking Highland area of Oras Nou. Similar in grandeur and atmosphere to the renowned Hollywood Bowl, this massive venue offers a unique concert-going experience with its dramatic cliffside setting and picturesque river valley backdrop.";
+	attractionPageDescription[4] = "The Oras Nou STAGE is an iconic outdoor concert venue nestled in the breathtaking Highland area of Oras Nou. It is part of the famous Highland Stadium Complex which also includes Industries Stadium. Similar in grandeur and atmosphere to the renowned Hollywood Bowl, this massive venue offers a unique concert-going experience with its dramatic cliffside setting and picturesque river valley backdrop.";
 	attractionPageMore[4] = "From cultural festivals to special events, the STAGE is the perfect venue for a wide range of large-scale gatherings. With its state-of-the-art sound and lighting systems, the Oras Nou STAGE ensures that every event is a sensory delight. Whether you’re attending a concert, a movie premiere, or a grand festival, the STAGE provides an unparalleled setting that combines natural beauty with world-class entertainment.";
 	attractionPageTags[4] = "Transit Accessible,Entertainment,Concerts,Iconic,Outdoor";
 
  	attractionPageLink[4] = "nan";
   	attractionPageSimilar[4] = "Entertainment | Highland";
-   	attractionSeeAlso[4] = "The Rose Petal | attraction?index=3 || Quartz Plaza | attraction?index=5";
+   	attractionSeeAlso[4] = "The Rose Petal | attraction?index=3 || Quartz Plaza | attraction?index=5 || Industries Stadium | attraction?index=9";
  
  	attractionPageBanner[4] = "https://ucarecdn.com/8ae9952d-6848-4d2a-9b5b-69c5578c2e9d/";
   	attractionPageImages[4] = "https://ucarecdn.com/fc320d82-8ef1-4378-b8e5-49275c9ea599/webfireworks_1_RGB.jpg | https://ca-times.brightspotcdn.com/dims4/default/d230055/2147483647/strip/true/crop/800x420+0+44/resize/1200x630!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F50%2Fff%2F40081cbf4c2498e7212c9788b84c%2F1953.jpg | https://ca-times.brightspotcdn.com/dims4/default/61f2de0/2147483647/strip/true/crop/3566x2377+217+0/resize/2000x1333!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fe1%2Fb9%2Fcfb815c84217ba235b0e481f633d%2Fla-photos-1staff-769563-la-et-hollywood-bowl-reopening-48-als.jpg";
@@ -127,16 +127,16 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
 	attractionPageTitle[7] = "Sussman Performing Arts Center";
-	attractionPageDescription[7] = "short_description";
-	attractionPageMore[7] = "longer_description";
+	attractionPageDescription[7] = "A technologically advanced and high-end performing arts theater featuring many local productions, musicals, and small-scale broadway productions. Part of the Oras Nou College of Art & Literature campus.";
+	attractionPageMore[7] = "The SPAC was part of a large donation to the Oras Nou College of Art & Literature by the Kra Sasson Gallery. Since its opening, the high-tech and classy theater has welcomed numerous local productions from artists at the university as well as small theater groups across Minecraftia. Now, the venue is also home to traveling broadway productions, popular musicals, and many displays of the wonderful art & culture of theater!";
 	attractionPageTags[7] = "attraction_tags";
 
  	attractionPageLink[7] = "nan";
   	attractionPageSimilar[7] = "Art & Culture | Newtown";
-   	attractionSeeAlso[7] = "first_name | first_link || second_name | second_link";
+   	attractionSeeAlso[7] = "The Aztech Theater | attraction?index=6 || Lea Kra Sasson Concert Hall | attraction?index=8 || Oras Nou STAGE | attraction?index=4";
  
  	attractionPageBanner[7] = "https://theatreprojects.com/wp-content/uploads/2022/04/ahmanson-theatre-01.jpg";
-  	attractionPageImages[7] = "image_link_one | image_link_two";
+  	attractionPageImages[7] = "https://images.squarespace-cdn.com/content/v1/52ee7adbe4b00067fb62832a/1527386565971-6NBYGAIYR3EM62ZU9TAT/ahmanson_stage.jpg | https://southpasadenan.com/wp-content/uploads/south-pasadena-news-12-11-2023-a-christmas-story-the-ahmanson-04.jpg | https://res.cloudinary.com/dv3qcy9ay/image/upload/c_fill,f_auto,g_auto,h_630,q_90,w_1200/v1/2023-2024/Prod_ACS/Slideshow/CSM300.jpg";
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
@@ -153,4 +153,17 @@ attractionSeeAlso = []; // Links other related attractions - will show as hyperl
   	attractionPageImages[8] = "image_link_one | image_link_two";
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
-	
+
+	attractionPageTitle[9] = "Industries Stadium";
+	attractionPageDescription[9] = "The 2nd largest stadium in Minecraftia, part of the world famous <em>Stadium Center Complex</em> featuring the stadium, Oras Nou STAGE, team offices, and more.";
+	attractionPageMore[9] = "Industries Stadium is one of the most advanced and eye-catching sporting facilities. Currently, the stadium is home to the Eastpoint Panties soccer AND the Footlong Fockers football teams. The stadium also hosts countless large-scale concerts and events.<p>With a max seating capacity of 50000, Industries Stadium is the 2nd largest sporting facility in the entire country of Minecraftia and a daring leap towards the advancement of sporting and entertainment!</p>";
+	attractionPageTags[9] = "Sports,Iconic,Transit Accessible,Entertainment";
+
+ 	attractionPageLink[9] = "nan";
+  	attractionPageSimilar[9] = "Sports & Recreation | Highland";
+   	attractionSeeAlso[9] = "Diamond Center Stadium | attraction?index=10 || Oras Nou STAGE | attraction?index=4";
+ 
+ 	attractionPageBanner[9] = "https://i.redd.it/i-built-this-football-stadium-for-my-minecraft-city-what-do-v0-xbgibw3xc32a1.png?width=1280&format=png&auto=webp&s=565de0e8ac3d98776fc4ba1b0e70636db820b0b5";
+  	attractionPageImages[9] = "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fi-built-this-football-stadium-for-my-minecraft-city-what-do-v0-r1orno0xc32a1.png%3Fwidth%3D1280%26format%3Dpng%26auto%3Dwebp%26s%3Dc001360bfe9a50eea4673b1362526db3721d1938 | https://preview.redd.it/i-built-this-football-stadium-for-my-minecraft-city-what-do-v0-1bumgtwwc32a1.png?width=1080&crop=smart&auto=webp&s=49b1a73767366c6ec7f9befe1d4c794f70be8025";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
