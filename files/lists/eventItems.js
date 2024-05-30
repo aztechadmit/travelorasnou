@@ -7,7 +7,7 @@
 	eventTags = ["Local Favorite", "Popular", "Outdoors", "Music", "Live Entertainment", "Televised", "Adult Oriented", "Family Oriented", "Limited Entry", "Fireworks","LGBTQ"];
 
 
-	eventCost = ["Free Entry","$","$$","$$$","$$$$"];
+	eventCost = ["none","Free Entry","$","$$","$$$","$$$$"];
 
 	eventLocation = ["none", "Airport City", "Downtown", "Highland", "Industrial City", "Newtown", "Northwood", "Oceanside", "Oldtown"];
 
