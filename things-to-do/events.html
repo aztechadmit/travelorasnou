@@ -261,6 +261,24 @@
 			
 		} // end of function populateSearchBar
 
+		function categoryChanged(){
+
+			const categorySelect = document.getElementById("categorySelect");
+			const locationSelect = document.getElementById("locationSelect");
+			const priceSelect = document.getElementById("priceSelect");
+			const monthSelect = document.getElementById("monthSelect");
+
+			var goLink = "https://aztechadmit.github.io/travelorasnou/things-to-do/events?";
+
+			goLink += "category="+categorySelect.value;
+			goLink += "&location="+locationSelect.value;
+			goLink += "&price="+priceSelect.value;
+			goLink += "&month="+monthSelect.value;
+
+			window.open(goLink,"_self");
+
+		}// end of function categoryChanged
+
 		searchParameter();
 		
 	</script>
