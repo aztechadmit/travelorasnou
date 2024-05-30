@@ -228,6 +228,10 @@
 				counterDisp.innerHTML = "Showing " + showingCount + " results";
 			}
 
+			if(monthContainer.innerHTML == ""){
+				monthContainer.innerHTML = "No events this month match current search terms";
+			}
+
 			populateSearchBar();
 			
 		} // end of function filter elements
