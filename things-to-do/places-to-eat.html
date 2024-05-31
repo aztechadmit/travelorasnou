@@ -87,7 +87,7 @@
 
 		var searchCategory;
 
-		// <div class='restaurantTile'> <img src='restaurant_IMAGE_LINK'> <div class='txtContent'> <h3>restaurant_NAME</h3><em>restaurant_LOCATION</em>restaurant_DESCRIPTION<div>TAGS</div></div><a class='hiddenLink' href='LINK_TO_restaurant'></a></div>
+		// <div class='attractionTile'> <img src='restaurant_IMAGE_LINK'> <div class='txtContent'> <h3>restaurant_NAME</h3><em>restaurant_LOCATION</em>restaurant_DESCRIPTION<div>TAGS</div></div><a class='hiddenLink' href='LINK_TO_restaurant'></a></div>
 
 		function searchParameter(){
 			const queryString = window.location.search;
@@ -137,10 +137,10 @@
 				var temp = restaurantItems[i].split(" | ");
 
 				if(searchCategory == "none"){ // No category specified
-					viewer.innerHTML += "<div class='restaurantTile fadeDiv' id='tileDiv"+i+"'> <img src='"+temp[7]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[4]+"</em>"+temp[1]+"<div>"+temp[2]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
+					viewer.innerHTML += "<div class='attractionTile fadeDiv' id='tileDiv"+i+"'> <img src='"+temp[7]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[4]+"</em>"+temp[1]+"<div>"+temp[2]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
 					countRes += 1;
 				}else if(temp[3] == searchCategory){
-					viewer.innerHTML += "<div class='restaurantTile fadeDiv' id='tileDiv"+i+"'> <img src='"+temp[7]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[4]+"</em>"+temp[1]+"<div>"+temp[2]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
+					viewer.innerHTML += "<div class='attractionTile fadeDiv' id='tileDiv"+i+"'> <img src='"+temp[7]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[4]+"</em>"+temp[1]+"<div>"+temp[2]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
 					countRes += 1;
 				}else{
 					console.log("Skipped " + temp[0]);
