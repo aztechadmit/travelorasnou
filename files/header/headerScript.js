@@ -35,7 +35,7 @@ function createHeader(){
 		/* SETUP MINI MENU */
 		miniHeaderMenu.innerHTML = "<a href='https://aztechadmit.github.io/travelorasnou/places-to-visit'>Places to Visit</a> \
 						<a onclick='openHeaderMenu(3)'>Things to Do</a> \
-						<div id='thing-to-do-menu'><a style='color:orange' href='"+linkHead+"things-to-do'>Explore Oras Nou</a> <a>Theaters & Performances</a> <a>Conventions & Events</a> <a>Restaurants & Dining</a> <a href='"+linkHead+"things-to-do/attractions'>View All</a></div> \
+						<div id='thing-to-do-menu'><a style='color:orange' href='"+linkHead+"things-to-do'>Explore Oras Nou</a> <a  href='"+linkHead+"things-to-do/events'>Concerts & Events</a> <a href='"+linkHead+"things-to-do/places-to-eat'>Restaurants & Dining</a> <a href='"+linkHead+"things-to-do/attractions'>Attractions</a></div> \
 						<a onclick='openHeaderMenu(4)'>Vacation Planning</a> \
 						<div id='vacation-planning-menu'><a style='color:orange' href='"+linkHead+"vacation-planner'>Vacation Planner</a> <a href='"+linkHead+"articles/travel-guides'>Travel Guides & Information</a> <a href='"+linkHead+"places-to-stay'>Places to Stay</a> <a>Visitor Visas</a></div> \
 						<a>More</a>";
@@ -78,7 +78,7 @@ function openMiniMenu(num){
 			break;
 		case 3:
 			headerMiniMenu.style.textAlign = "left";
-			headerMiniMenu.innerHTML = "<a style='color:orange' href='"+linkHead+"things-to-do'>Explore Oras Nou</a> <a href='"+linkHead+"things-to-do/events'>Events and Festivals</a> <a href='"+linkHead+"things-to-do/attractions?category=6'>Restaurants and Dining</a> <a href='"+linkHead+"things-to-do/attractions'>Attractions</a>";
+			headerMiniMenu.innerHTML = "<a style='color:orange' href='"+linkHead+"things-to-do'>Explore Oras Nou</a> <a href='"+linkHead+"things-to-do/events'>Events and Festivals</a> <a href='"+linkHead+"things-to-do/places-to-eat'>Restaurants and Dining</a> <a href='"+linkHead+"things-to-do/attractions'>Attractions</a>";
 			headerMiniMenu.style.display = "block";
 			closerMe.style.display = "block";
 			minOpen = 3;
