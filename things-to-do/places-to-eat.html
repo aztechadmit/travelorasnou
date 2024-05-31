@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8"> 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="https://aztechadmit.github.io/travelorasnou/files/images/webfavicon.ico">
+	<link rel="stylesheet" href="https://aztechadmit.github.io/travelorasnou/files/styleSheet.css">
+ 	<link rel="stylesheet" href="https://aztechadmit.github.io/travelorasnou/files/header/headerStyle.css">
+
+	<!-- Placeholder Image: https://aztechadmit.github.io/travelorasnou/files/images/placeholder.jpg -->
+
+	<!-- TAB TITLE OF PAGE ---------------------------------------------------------------------------------------------------------------------->
+	<title>Places to Eat | Things to Do | Travel Oras Nou</title>
+
+	<style>
+		#filterHolder div{display:inline-block;}
+		select{margin:10px; padding:8px; font-size:inherit;}
+	</style>
+</head>
+
+<body onload='endPageLoad()'>
+<!-- Header Elements --><div id='loader'></div><div id='header'></div>
+	
+	<!-- BANNER AND TITLE ----------------------------------------------------------------------------------------------------------------------->
+	
+	<div class='titleBar'>
+		<h1> Restaurants and Dining </h1>
+	</div>
+
+	<!-- BODY CONTENT --------------------------------------------------------------------------------------------------------------------------->	
+
+	<div class='container'>
+		<div style='width:100%; margin:auto; border:1px solid black; background:white; border-radius:15px;'>
+			<div class='fadeDiv' id='filterHolder' style='padding:20px;'>
+				<div>
+					<label for='categorySelect'>Category: </label>
+					<select name="categorySelect" id="categorySelect" onchange='document.getElementById("updateFiltBtn").style.display="block";'>
+					  	<option value="0">View All</option>
+					</select>
+				</div>
+				<div>
+					<label for='locationSelect'>Location: </label>
+					<select name='locationSelect' id='locationSelect' onchange='document.getElementById("updateFiltBtn").style.display="block";'>
+						<option value="0">View All</option>
+						<option value="1">Airport City</option>
+						<option value="2">Downtown</option>
+						<option value="3">Highland</option>
+						<option value="4">Industrial City</option>
+						<option value="5">Newtown</option>
+						<option value="6">Northwood</option>
+						<option value="7">Oceanside</option>
+						<option value="8">Oldtown</option>
+					</select>
+				</div>
+				<div>
+					<label for='priceSelect'>Price: </label>
+					<select name='priceSelect' id='priceSelect' onchange='document.getElementById("updateFiltBtn").style.display="block";'>
+						<option value="0">View All</option>
+						<option value="1">Free</option>
+						<option value="2">$</option>
+						<option value="3">$$</option>
+						<option value="4">$$$</option>
+						<option value="5">$$$$</option>
+					</select>
+				</div>
+			</div>
+			<p><span style='display:none' class='fadeDiv' id='updateFiltBtn'><a onclick='categoryChanged()'>Update Filters</a></p>
+		</div>
+	</div>
+
+	<div class='container'>
+		<h4 id='resultCounter'>No Results</h4>
+		<div class='restaurantContainer' id='viewerBox'>
+			No Content to Show.
+		</div>
+	</div>
+
+<!-- Footer Elements --><div id='footer'></div>
+</body>
+
+	<!-- JAVASCRIPT ----------------------------------------------------------------------------------------------------------------------------->
+
+	<script type='text/javascript' src='https://aztechadmit.github.io/travelorasnou/files/lists/restaurantItems.js'></script>
+
+	<script>
+		const viewer = document.getElementById("viewerBox");
+		
+
+		var searchCategory;
+
+		// <div class='restaurantTile'> <img src='restaurant_IMAGE_LINK'> <div class='txtContent'> <h3>restaurant_NAME</h3><em>restaurant_LOCATION</em>restaurant_DESCRIPTION<div>TAGS</div></div><a class='hiddenLink' href='LINK_TO_restaurant'></a></div>
+
+		function searchParameter(){
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			//const theBox = document.getElementById("categorySelect");
+			
+			if(urlParams.has("category")){
+				var temp = urlParams.get("category"); // Will return an integer number with the category index
+				//theBox.value = "'"+temp+"'";
+				searchCategory = restaurantCategory[temp];
+				console.log("Search Category: " + searchCategory);
+			}else{
+				searchCategory = 'none';
+			}
+			if(urlParams.has("location")){
+				var temp = urlParams.get("location"); // Will return an integer number with the location index
+				//theBox.value = "'"+temp+"'";
+				searchLocation = restaurantLocation[temp];
+				console.log("Search Location: " + searchLocation);
+			}else{
+				searchLocation = 'none';
+			}
+			if(urlParams.has("price")){
+				var temp = urlParams.get("price"); // Will return an integer number with the price index
+				//theBox.value = "'"+temp+"'";
+				searchPrice = restaurantCost[temp];
+				console.log("Search Price: " + searchPrice);
+			}else{
+				searchPrice = 'none';
+			}
+
+			filterElements();
+		} // end of searchParameter
+
+		
+
+		function filterElements(){
+			var i = 0;
+			var countRes = 0;
+			viewer.innerHTML = "";
+	
+			//restaurantItems[NUM] = restaurantItems[NUM] = "0name | 1description | 2tags | 3category | 4location | 5price | 6click_link | 7image_link";
+			
+			// SEARCH BY CATEGORY FIRST
+			while (i < restaurantItems.length) {
+
+				var temp = restaurantItems[i].split(" | ");
+
+				if(searchCategory == "none"){ // No category specified
+					viewer.innerHTML += "<div class='restaurantTile fadeDiv' id='tileDiv"+i+"'> <img src='"+temp[7]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[4]+"</em>"+temp[1]+"<div>"+temp[2]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
+					countRes += 1;
+				}else if(temp[3] == searchCategory){
+					viewer.innerHTML += "<div class='restaurantTile fadeDiv' id='tileDiv"+i+"'> <img src='"+temp[7]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[4]+"</em>"+temp[1]+"<div>"+temp[2]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
+					countRes += 1;
+				}else{
+					console.log("Skipped " + temp[0]);
+				}
+				
+				i += 1;
+			} // end of sort by category
+
+			i = 0;
+			
+			// NOW SORT BY LOCATION
+			if(searchLocation != "none"){
+				while (i < restaurantItems.length) {
+					var tempDiv = document.getElementById("tileDiv"+i);
+
+					if(tempDiv != null){ // The div exists on the page
+						var temp = restaurantItems[i].split(" | ");
+						if(searchLocation != temp[4]){
+							if(tempDiv.style.display != "none"){
+								tempDiv.style.display = "none";
+								countRes -= 1;
+							}
+						}
+					}
+					
+					i += 1;
+				} // end of sort by location
+			}else{console.log("Not sorting by location");}
+
+			i = 0;
+
+			// NOW SORT BY PRICE
+			if(searchPrice != "none"){
+				while (i < restaurantItems.length) {
+					var tempDiv = document.getElementById("tileDiv"+i);
+
+					if(tempDiv != null){ // The div exists on the page
+						var temp = restaurantItems[i].split(" | ");
+						if(searchPrice != temp[5]){
+							if(tempDiv.style.display != "none"){
+								tempDiv.style.display = "none";
+								countRes -= 1;
+							}	
+						}
+					}
+					
+					i += 1;
+				} // end of sort by price
+			}else{console.log("Not sorting by price");}
+
+			if(countRes > 0){
+				document.getElementById("resultCounter").innerHTML = "Showing " + countRes + " results";
+			}else{
+				document.getElementById("resultCounter").innerHTML = "No results match selected filters. Try broadening your search!";
+			}
+
+			setupFilterBox();
+			
+
+		}// end of filterElements
+
+		function setupFilterBox(){
+
+			const theBoxA = document.getElementById("categorySelect");
+			const theBoxB = document.getElementById("locationSelect");
+			const theBoxC = document.getElementById("priceSelect");
+
+			theBoxA.innerHTML = "<option value='0'>View All</option>";
+
+			var i = 1;
+			
+			while (i < restaurantCategory.length) {
+
+				var temp = restaurantCategory[i];
+				
+				theBoxA.innerHTML += "<option value='"+ i +"'>" + temp + "</option>";
+
+				i += 1;
+			}
+
+			theBoxA.value = restaurantCategory.indexOf(searchCategory);
+			theBoxB.value = restaurantLocation.indexOf(searchLocation);
+			theBoxC.value = restaurantCost.indexOf(searchPrice);
+			
+		} // end of setupFilterBox
+
+		searchParameter();
+		
+	</script>
+
+	<script>
+		function categoryChanged(){
+			const theBoxA = document.getElementById("categorySelect");
+			const theBoxB = document.getElementById("locationSelect");
+			const theBoxC = document.getElementById("priceSelect");
+			let linkGo = "https://aztechadmit.github.io/travelorasnou/things-to-do/places-to-eat?category="+theBoxA.value+"&location="+theBoxB.value+"&price="+theBoxC.value;
+
+			window.open(linkGo,"_self");
+			
+		}// end of function categoryChanged
+	</script>
+
+	<!-- EADER AND FPPT ------------------------------------------------------------------------------------------------------------------------->
+
+	<!-- CREATE THE HEADER AND FOOTER -->
+	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/header/headerScript.js'></script>
+	<script>createHeader();</script>
+
+	
+
+	
