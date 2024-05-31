@@ -10,6 +10,9 @@ attractionPageLink = []; // Link to the official website of this attraction
 attractionPageSimilar = []; // Input the category of this attraction to search for similar ones
 attractionSeeAlso = []; // Links other related attractions - will show as hyperlinks (or buttons idk yet)
 
+attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innovation", "Education & Learning", "Entertainment", "Food & Drink", "Nightlife", 
+			      "Shopping", "Sports & Recreation", "Wellness & Relaxation"];
+
 // Example Link: https://aztechadmit.github.io/travelorasnou/things-to-do/pages/attraction?index=1
 
 /* NEW ELEMENT:
