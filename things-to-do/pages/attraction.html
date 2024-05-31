@@ -181,7 +181,10 @@
 			// Generate the search similar attractions links
 			const pageCategoryView = document.getElementById("viewSimilarCategory");
 
-				pageCategoryView.innerHTML = "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?category=2'>Search Other Items in the " + aCategory + " Category</a>";
+				var indx = attractionCategory.indexOf(aCategory);
+				pageCategoryView.innerHTML = "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?category="+indx+"'>Search Other Items in the " + aCategory + " Category</a>";
+
+				indx = attractionLocation.indexOf(aLocation);
 				pageCategoryView.innerHTML += "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?location=2'>Search Other Items located in " + aLocation + " </a>";
 			
 			if(aTags != 'nan'){
