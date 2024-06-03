@@ -129,13 +129,17 @@
 			var i = 0;
 			var countRes = 0;
 			viewer.innerHTML = "";
+
+			var totalArrayLength = 0;
 	
 			//attractionItems[NUM] = attractionItems[NUM] = "0name | 1description | 2tags | 3category | 4location | 5price | 6click_link | 7image_link";
 			
 			// SEARCH BY CATEGORY FIRST
 			while (i < attractionItems.length) {
 
-				var temp = attractionItems[i].split(" | ");
+				var temp = attractionItems[i]; totalArrayLength += temp.length;
+				
+				temp = temp.split(" | ");
 
 				if(searchCategory == "none"){ // No category specified
 					viewer.innerHTML += "<div class='attractionTile fadeDiv' id='tileDiv"+i+"'> <img src='"+temp[7]+"'> <div class='txtContent'> <h3>"+temp[0]+"</h3><em>"+temp[4]+"</em>"+temp[1]+"<div>"+temp[2]+"</div></div><a class='hiddenLink' href='"+temp[6]+"'></a></div>";
@@ -198,6 +202,8 @@
 				document.getElementById("resultCounter").innerHTML = "No results match selected filters. Try broadening your search!";
 			}
 
+			
+			console.log("Total Length of Attraction Array: " + totalArrayLength + " characters.");
 			setupFilterBox();
 			
 
