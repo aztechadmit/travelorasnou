@@ -198,3 +198,18 @@ attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innova
   	attractionPageImages[11] = "image_link_one | image_link_two";
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
+	attractionPageTitle[12] = "The Industrial Complex";
+	attractionPageDescription[12] = "A popular nightclub and bar located in an abandonded factory in Industrial City. The club boasts private rooms, hot tubs, bars, dance floors, a tall terrace, and an electric atmosphere. The club is open Monday, Wednesday, and Friday and each night features a new theme.";
+	attractionPageMore[12] = "TIC is located inside what used to be a natural-gas powered cold-storage facility opened in 1983. In 2003, the facility went bankrupt and shuttered its doors permanenetly after more modern and clean-air cold-storage facilities opened in the nearby industrial area. In 2015, The Industrial City counsel reclaimed the facility, backed by the recently established <em>Oras Nou Realestate Abandonment Clause*</em>, and sold off it's interior. In 2018 the building was sold to a wealthy developer who re-imagined it into The Industrial Complex club, finally opened in 2019. Today, the club sees nearly 1000 guests during its nightly operation and hosts some of the hottest DJs in Minecraftia. <p style='color:gray; font-size:12px;'>* This clause was introduced in 2010 and states that land-owners have 5.5 years to repurpose or sell abandonded and unused buildings before the responsible district counsel has legal right to repurpose the land. This was a meeasure aimed to make better use of abandoned and unused land in an ever-expanding city.</p>";
+	attractionPageTags[12] = "Unique,Local Hotspot,Iconic,Prestegious,Instagrammable,Entertainment,Music,Adult Oriented,21+";
+
+ 	attractionPageLink[12] = "nan";
+  	attractionPageSimilar[12] = "Nightlife | Industrial City";
+   	attractionSeeAlso[12] = "Club Nou | first_link || Jacob's On Rose | second_link";
+ 
+ 	attractionPageBanner[12] = "https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2017/05/24/010b21a8-c883-4f51-9d6c-519fb132f65e/printworks";
+  	attractionPageImages[12] = "https://cloudinary-assets.dostuffmedia.com/res/dostuff-media/image/upload/venue-298916/1405106700.jpg | https://img.redbull.com/images/q_auto,f_auto/redbullcom/2017/05/24/fc6bcf12-07ec-4cf5-82d4-a5416110e84b/printworks | https://vintageindustrialstyle.com/wp-content/uploads/2014/12/Examples-of-Modern-Light-Fixtures-for-NightClubs-3.jpg";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
