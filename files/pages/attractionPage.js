@@ -132,7 +132,7 @@ attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innova
 	attractionPageTitle[7] = "Sussman Performing Arts Center";
 	attractionPageDescription[7] = "A technologically advanced and high-end performing arts theater featuring many local productions, musicals, and small-scale broadway productions. Part of the Oras Nou College of Art & Literature campus.";
 	attractionPageMore[7] = "The SPAC was part of a large donation to the Oras Nou College of Art & Literature by the Kra Sasson Gallery. Since its opening, the high-tech and classy theater has welcomed numerous local productions from artists at the university as well as small theater groups across Minecraftia. Now, the venue is also home to traveling broadway productions, popular musicals, and many displays of the wonderful art & culture of theater!";
-	attractionPageTags[7] = "attraction_tags";
+	attractionPageTags[7] = "Cultural,Entertainment,Instagrammable,Prestigious,Iconic,Broadway";
 
  	attractionPageLink[7] = "nan";
   	attractionPageSimilar[7] = "Art & Culture | Newtown";
@@ -144,16 +144,16 @@ attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innova
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
 	attractionPageTitle[8] = "Lea Kra Sasson Concert Hall";
-	attractionPageDescription[8] = "short_description";
-	attractionPageMore[8] = "longer_description";
-	attractionPageTags[8] = "attraction_tags";
+	attractionPageDescription[8] = "A gorgeous and prestegious concert hall. Home to the Oras Nou Harmonic Orchestra and the site of many awe-inspiring musical performances, operas, and delightful displays of art. The LKS Concert Hall is located in the famous <em>Exposition Park</em> in Downtown, a campus full of art, history, and innovation.";
+	attractionPageMore[8] = "The LKS Concert Hall is a historic testement to the prestegious Art & Culture scene in Oras Nou. It is an integral part of <b>Exposition Park</b> in Downtown, a large campus home to many museums, art galleries, expo halls, and learning centers. This massive concert hall was designed by famed architect Jaxton Waxkie and is the perfect compliment to impactful and heart-pounding musical performances.";
+	attractionPageTags[8] = "Cultural,Entertainment,Instagrammable,Prestigious,Iconic,Learning,Music";
 
  	attractionPageLink[8] = "nan";
-  	attractionPageSimilar[8] = "attractio_search_category | attraction_location";
-   	attractionSeeAlso[8] = "first_name | first_link || second_name | second_link";
+  	attractionPageSimilar[8] = "Art & Culture | Downtown";
+   	attractionSeeAlso[8] = "The Mystique | attraction?index=10 || Sussman Performing Arts Center | attraction?index=7 || The Aztech Theater | attraction?index=6";
  
  	attractionPageBanner[8] = "https://media.timeout.com/images/101758989/750/422/image.jpg";
-  	attractionPageImages[8] = "image_link_one | image_link_two";
+  	attractionPageImages[8] = "https://metropolismag.com/wp-content/uploads/2021/08/Shanghai_CourtesyChenHao.jpg | https://static01.nyt.com/images/2021/10/13/arts/12concerthall-1/12concerthall-1-videoSixteenByNineJumbo1600.jpg | https://ucarecdn.com/9aa5c3fb-1595-4dd5-a8b4-eb5d5e86416b/";
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
@@ -164,9 +164,37 @@ attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innova
 
  	attractionPageLink[9] = "nan";
   	attractionPageSimilar[9] = "Sports & Recreation | Highland";
-   	attractionSeeAlso[9] = "Diamond Center Stadium | attraction?index=10 || Oras Nou STAGE | attraction?index=4";
+   	attractionSeeAlso[9] = "Diamond Center Stadium | attraction?index=11 || Oras Nou STAGE | attraction?index=4";
  
  	attractionPageBanner[9] = "https://i.redd.it/i-built-this-football-stadium-for-my-minecraft-city-what-do-v0-xbgibw3xc32a1.png?width=1280&format=png&auto=webp&s=565de0e8ac3d98776fc4ba1b0e70636db820b0b5";
   	attractionPageImages[9] = "https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fi-built-this-football-stadium-for-my-minecraft-city-what-do-v0-r1orno0xc32a1.png%3Fwidth%3D1280%26format%3Dpng%26auto%3Dwebp%26s%3Dc001360bfe9a50eea4673b1362526db3721d1938 | https://preview.redd.it/i-built-this-football-stadium-for-my-minecraft-city-what-do-v0-1bumgtwwc32a1.png?width=1080&crop=smart&auto=webp&s=49b1a73767366c6ec7f9befe1d4c794f70be8025";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
+	attractionPageTitle[10] = "The Mystique - Circular Theater";
+	attractionPageDescription[10] = "A unique circular theater where the audience surrounds the stage for an intimate 360 degree viewing experience. Located in Downtown's <em>Exposition Park</em>, an iconic campus featuring theaters, museums, art galleries, and expo halls.";
+	attractionPageMore[10] = "The Mystique has a history rooted in Oras Nou's arts scene. The theater was originally constructed in 2001 to host <em>Mystique de Los Jentes del Sol</em>, an awe-inspiring musical and visual performance by the Circus Minecraftian company. The show ran for 5 years before deciding to travel the world. Now, the theater is home to dozens of performances, concerts, and speakers which take full advantage of its unique design.";
+	attractionPageTags[10] = "Entertainment,Unique,Iconic,Cultural,Music,Concerts";
+
+ 	attractionPageLink[10] = "nan";
+  	attractionPageSimilar[10] = "Entertainment | Downtown";
+   	attractionSeeAlso[10] = "Lea Kra Sasson Concert Hall | attraction?index=8 || Sussman Performing Arts Center | attraction?index=7 || The Aztech Theater | attraction?index=6";
+ 
+ 	attractionPageBanner[10] = "https://d26oc3sg82pgk3.cloudfront.net/files/media/edit/image/50609/article_aligned%402x.jpg";
+  	attractionPageImages[10] = "https://www.newcitystage.com/wp-content/uploads/2023/06/Buddy-1.jpg | https://www.newcitystage.com/wp-content/uploads/2019/09/6CTRTUHFPZFQHF44N2OX37UOEA.jpg | https://i.pinimg.com/originals/f8/a1/8f/f8a18fbdcdac24c8b2855b844db9a6e6.jpg";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
+	attractionPageTitle[11] = "page_title";
+	attractionPageDescription[11] = "short_description";
+	attractionPageMore[11] = "longer_description";
+	attractionPageTags[11] = "attraction_tags";
+
+ 	attractionPageLink[11] = "attraction_site_link";
+  	attractionPageSimilar[11] = "attractio_search_category | attraction_location";
+   	attractionSeeAlso[11] = "first_name | first_link || second_name | second_link";
+ 
+ 	attractionPageBanner[11] = "link_to_banner_image";
+  	attractionPageImages[11] = "image_link_one | image_link_two";
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
