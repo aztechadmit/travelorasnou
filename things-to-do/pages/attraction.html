@@ -105,8 +105,9 @@
 			if(urlParams.has("index")){
 				var aIndex = urlParams.get("index"); // Will return an integer number with the category index
 
-				if(aIndex > attractionPageTitle.length-1 || aIndex < 0){
+				if(aIndex > attractionPageTitle.length-1 || aIndex < 0 || aIndex == 'nan'){
 					console.log("Attraction Index is higher than total values of attraction list");
+					window.open("unknown-page");
 					//window.open("404.html","_self");
 				}else{
 					aName = attractionPageTitle[aIndex];
