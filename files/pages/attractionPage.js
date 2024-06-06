@@ -185,17 +185,17 @@ attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innova
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
-	attractionPageTitle[11] = "page_title";
-	attractionPageDescription[11] = "short_description";
-	attractionPageMore[11] = "longer_description";
-	attractionPageTags[11] = "attraction_tags";
+	attractionPageTitle[11] = "Oras Nou Zoo";
+	attractionPageDescription[11] = "It's more than a zoo, the Oras Nou Zoo is a deep-dive into the astounding natural world. Featuring unique themed rides, exotic and elaborate exhibits, sustainablility teaching, and educational connections, your ultimate natural experience awaits!";
+	attractionPageMore[11] = "The Oras Nou zoo is home to over 300 different species of animals and dozens of unique interactive exhibits. Gaze in awe at the glory of nature in a medium which does little to take away from natural un-touched beauty. The Oras Nou zoo is an important member of the Minecraftian Association for Wildlife and Nature (MAWN) and partners with the prestegious Burke Research Institute to further improve our knowlege of the natural world.";
+	attractionPageTags[11] = "Family Oriented,Adventure,Scenic,Educational,Wildlife,Transit Accessible,MDA Accessible,Outdoor,All-day";
 
- 	attractionPageLink[11] = "attraction_site_link";
-  	attractionPageSimilar[11] = "attractio_search_category | attraction_location";
-   	attractionSeeAlso[11] = "first_name | first_link || second_name | second_link";
+ 	attractionPageLink[11] = "nan";
+  	attractionPageSimilar[11] = "Attractions | Newtown";
+   	attractionSeeAlso[11] = "Globe-City's Adventure Park | attraction?index=0 || The Bautista Aquarium of Oceanside | attraction?index=1";
  
- 	attractionPageBanner[11] = "link_to_banner_image";
-  	attractionPageImages[11] = "image_link_one | image_link_two";
+ 	attractionPageBanner[11] = "https://media.nbcsandiego.com/2019/09/San-Diego-Zoo-entrance-generic-61020.jpg?quality=85&strip=all&resize=1200%2C675";
+  	attractionPageImages[11] = "https://www.usatoday.com/gcdn/media/2019/08/12/USATODAY/usatsports/gettyimages-474690025.jpg?width=1200&disable=upscale&format=pjpg&auto=webp | https://offloadmedia.feverup.com/secretldn.com/wp-content/uploads/2022/08/25135907/g70f4baf2763e53b2299d98f45e53977620e5f29ffd251690be4fe40efc1cc3dc20ca8daab5df6faf1ed5170281566d08ff46a884c7aee9c2884900034f7af11a_1280.jpg | https://www.sandiego.org/-/media/images/sdta-site/things-to-do/attractions/san-diego-attractions/seaworld-sd.jpg?h=500&la=en&w=600";
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
@@ -213,3 +213,32 @@ attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innova
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
+	attractionPageTitle[13] = "Highland Studios";
+	attractionPageDescription[13] = "Minecraftia's largest movie studio. Home to some of the most filmed sets, studios, and lots and the backdrop of many of your favorite movies! Jump right into the movies on the <a>Highland Studios Tour</a> taking you through enormous sound stages, famous TV sets, and a mini-neighborhood built for the camera.";
+	attractionPageMore[13] = "Highland Studios stands as a testement to the history of filmmaking in Oras Nou. It was the first, and now the largest, movie studio in the nation and boasts over 15 soundstages. The studio has been the backdrop of many famous movies and blockbusters as well as music videos and other media. Today over 25 film companies lease out office spaces within the studio and dozens of movies are shot here every month!";
+	attractionPageTags[13] = "Movies,Iconic,Outdoor";
+
+ 	attractionPageLink[13] = "nan";
+  	attractionPageSimilar[13] = "Attractions | Highland";
+   	attractionSeeAlso[13] = "Highland Walk of Stars | attraction?index=14 || The Aztech Theater | attraction?index=6 || Oras Nou STAGE | attraction?index=4";
+ 
+ 	attractionPageBanner[13] = "https://www.visittheusa.com/sites/default/files/styles/hero_l/public/images/hero_media_image/2019-04/1d9024c65063202d43bdfac0e073dab6.jpeg?h=c1692a99&itok=Ts8Ejha7";
+  	attractionPageImages[13] = "https://www.creativetravelguide.com/wp-content/uploads/2016/11/warner-brothers-studio-tour2-728x410.jpg | https://images.ctfassets.net/twizyp0t114t/4eED5AtyJwZBIooVozuYMw/3f2addc8bd4cabbed6e300bf75b70e50/Walks_Harry_Potter_Studio_Tour_WEB_RES_0009_Copyrighted.jpg?fm=webp&w=600&h=400&q=90&fit=pad&f=center&bg=rgb:000000";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
+	attractionPageTitle[14] = "Highland Walk of Stars";
+	attractionPageDescription[14] = "Walk in the footsteps of famous faces from movies, music, and television. This over 1/2 mile stretch of magic features iconic attractions centered around the film and music industry as well as sidewikes adorned with plaques dedicated to some of the most influential names.";
+	attractionPageMore[14] = "The Highland Walk of Stars is named after the iconic stars carved into its sidewalk adorned with the names of influentual people across the world. This bustling stretch of magic features the iconic Aztech Theater, The Highland Hotel, many movie and music attractions, galleries, and more. It's your one-stop-shop to explore all your favorite movies, musicians, celebrites, and magical worlds. <h4>Walking Tours</h4><p>If you like to explore on foot, enjoy walking down large sidewalks on a self-guided tour of the boulevard. Download the <a>GO-O.N.</a> app for an augmented reality tour with enhanced visuals and visual guides to the magic.</p><h4>Driving Tours</h4><p>If you'd like to see the sights from greater heights, book a deck-bus tour through Highland with countless tour companies such as <a>Hollywood in Nou Travel LLC.</a></p>";
+	attractionPageTags[14] = "Movies,Iconic,Outdoor,Unique,Broadway";
+
+ 	attractionPageLink[14] = "nan";
+  	attractionPageSimilar[14] = "Attractions | Highland";
+   	attractionSeeAlso[14] = "Highland Studios | attraction?index=13 || The Aztech Theater | attraction?index=6 || Oras Nou STAGE | attraction?index=4";
+ 
+ 	attractionPageBanner[14] = "https://www.introducinglosangeles.com/f/estados-unidos/los-angeles/guia/hollywood-boulevard-m.jpg";
+  	attractionPageImages[14] = "https://www.explore.com/img/gallery/your-guide-to-the-hollywood-walk-of-fame/intro-1677259806.jpg | https://cdn.prod.website-files.com/660332e04a42ee42011d9a2b/660332e04a42ee42011d9dbc_Blog%20-%20Hollywood%20Sign.jpg | https://traveler.marriott.com/wp-content/uploads/2016/07/ALMY_FTD9AK_HollywoodBlvd.jpg";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
+	
