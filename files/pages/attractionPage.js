@@ -241,4 +241,18 @@ attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innova
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
+	attractionPageTitle[15] = "Jacob's on Rose";
+	attractionPageDescription[15] = "A fun, quirky, and all around great place to be! Jacob's on Rose is a happy little bar and club located on the fabulous Rose Avenue. This club features kareoke, great drinks, awesome vibes, pool, boardgames, and fun people! Whether your LGBTQ+ or an ally, come and enjoy some paradise.";
+	attractionPageMore[15] = "longer_description";
+	attractionPageTags[15] = "LGBTQ,Adult Oriented,Karaoke,Music,Local Hotspot";
+
+ 	attractionPageLink[15] = "nan";
+  	attractionPageSimilar[15] = "Nightlife | Downtown";
+   	attractionSeeAlso[15] = "The Industrial Complex | attraction?index=12 || Club Nou | attraction?index=nan";
+ 
+ 	attractionPageBanner[15] = "link_to_banner_image";
+  	attractionPageImages[15] = "image_link_one | image_link_two";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
 	
