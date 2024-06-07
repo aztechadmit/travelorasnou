@@ -91,6 +91,7 @@
 	<script>createHeader();</script>
 
 	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/pages/placePage.js'></script>
+	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/lists/attractionItems.js'></script>
 	
 	<script>
 		function searchParameter(){
@@ -123,6 +124,7 @@
 				
 			}else{
 				console.log("No Attraction Index");
+				window.open("unknown-page", "_self");
 				//window.open("404.html","_self");
 			}
 		}// end of search parameter
@@ -144,11 +146,10 @@
 			}
 			
 
-			var temp = aCategories.split(" | ");
-				aCategory = temp[0]; aLocation = temp[1];
+			var aLocation = aCategories;
 
 			aOtherLink = aOtherLink.split(" || "); // aOtherLink is now an array with each element: "Display Text | Link";
-			document.getElementById("pageCatnLocation").innerHTML = "<em>" + aCategory + "</em> | Located in " + aLocation;
+			document.getElementById("pageCatnLocation").innerHTML = "Located in " + aLocation;
 			
 						// Generate links to similar attractions
 						var i = 0;
@@ -180,11 +181,10 @@
 			// Generate the search similar attractions links
 			const pageCategoryView = document.getElementById("viewSimilarCategory");
 
-				var indx = attractionCategory.indexOf(aCategory);
 				pageCategoryView.innerHTML = "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do'>View More Neighborhoods & Districts</a>";
 
 				indx = attractionLocation.indexOf(aLocation);
-				pageCategoryView.innerHTML += "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?location=2'>Search Other Items located in " + aLocation + " </a>";
+				pageCategoryView.innerHTML += "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?location=2'>Search Items located in " + aLocation + " </a>";
 			
 			if(aTags != 'nan'){
 				const tagContainer = document.getElementById("pageTags");
