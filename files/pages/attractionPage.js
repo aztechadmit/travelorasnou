@@ -243,15 +243,15 @@ attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innova
 
 	attractionPageTitle[15] = "Jacob's on Rose";
 	attractionPageDescription[15] = "A fun, quirky, and all around great place to be! Jacob's on Rose is a happy little bar and club located on the fabulous Rose Avenue. This club features kareoke, great drinks, awesome vibes, pool, boardgames, and fun people! Whether your LGBTQ+ or an ally, come and enjoy some paradise.";
-	attractionPageMore[15] = "longer_description";
-	attractionPageTags[15] = "LGBTQ,Adult Oriented,Karaoke,Music,Local Hotspot";
+	attractionPageMore[15] = "Bring your friends, or come to make new ones! Jacob's on Rose is a local hotspot featuring banging music, awesome vibes, and an atmosphere full of fun. Open every night (except sunday), this popping club features a bustling dance floor, a quiet loft, and a rooftop terrace overlooking Rose Avenue. Whether you're here to party, make out with strangers, show off your moves, or literally anything else, come and do it at Jacob's!";
+	attractionPageTags[15] = "LGBTQ,Adult Oriented,Karaoke,Music,Local Hotspot,21+";
 
  	attractionPageLink[15] = "nan";
   	attractionPageSimilar[15] = "Nightlife | Downtown";
-   	attractionSeeAlso[15] = "The Industrial Complex | attraction?index=12 || Club Nou | attraction?index=nan";
+   	attractionSeeAlso[15] = "The Industrial Complex | attraction?index=12 || Club Nou | attraction?index=nan || The Rose District | place?index=0";
  
- 	attractionPageBanner[15] = "link_to_banner_image";
-  	attractionPageImages[15] = "image_link_one | image_link_two";
+ 	attractionPageBanner[15] = "https://magprod2-1a27b.kxcdn.com/wp-content/uploads/2022/08/@richssd_Facebook1.jpg";
+  	attractionPageImages[15] = "https://resizer.otstatic.com/v2/photos/wide-huge/4/31137703.jpg | https://vicevibe.com/wp-content/uploads/2019/05/Richs-San-Diego-6.png | https://cdn.vor.us/profile/3481162/og/accc4c4b01ba4958b6cce33a83e3f4c7.image!jpeg.525295.jpg.46213192_2130095793709676_3438686478014611456_n.jpg";
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
