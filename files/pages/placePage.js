@@ -40,7 +40,7 @@ placeCategory = ["none", "Art & Culture", "Places", "Business & Innovation", "Ed
   	placePageSimilar[0] = "Downtown";
    	placeSeeAlso[0] = "Jacob's on Rose | attraction?index=15 || The Rose Petal | attraction?index=3";
  
- 	placePageBanner[0] = "link_to_banner_image";
+ 	placePageBanner[0] = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Rainbow_Crossing_on_Campbell_Street_in_Surry_Hills_%282%29.jpg/1200px-Rainbow_Crossing_on_Campbell_Street_in_Surry_Hills_%282%29.jpg";
   	placePageImages[0] = "image_link_one | image_link_two";
 
    /* ----IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
