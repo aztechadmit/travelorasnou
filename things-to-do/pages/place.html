@@ -1,0 +1,209 @@
+<!-- places to visit -->
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="utf-8"> 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="https://aztechadmit.github.io/travelorasnou/files/images/webfavicon.ico">
+	<link rel="stylesheet" href="https://aztechadmit.github.io/travelorasnou/files/styleSheet.css">
+ 	<link rel="stylesheet" href="https://aztechadmit.github.io/travelorasnou/files/header/headerStyle.css">
+
+	<!-- Placeholder Image: https://aztechadmit.github.io/travelorasnou/files/images/placeholder.jpg -->
+
+	<!-- TAB TITLE OF PAGE ---------------------------------------------------------------------------------------------------------------------->
+	<title id='tabTitleElement'>Travel Oras Nou</title>
+
+	<style>
+		@media screen and (min-width:801px){
+			.columnContainer {}
+			.columnContainer img {width:50%;}
+			.columnContainer div {width:50%;}
+		}
+		#furtherLink a{
+			font-size:18px; display:inline-block; padding:10px;
+		}
+
+		.imageDiv{display:flex; flex-flow:row; flex-wrap:wrap; justify-content:center;}
+		.imageDiv img{width:32%; min-width:200px; border-radius:10px; align-self:stretch; margin:0.5%; object-fit:cover;}
+
+		#pageTags a {display:inline-block; text-decoration:none; padding:8px; border-radius:10px; background:lightgray; color:#2F4F4F; margin-right:10px;}
+	</style>
+</head>
+
+<body onload='endPageLoad()'>
+<!-- Header Elements --><div id='loader'></div><div id='header'></div>
+	
+	<!-- BANNER AND TITLE ----------------------------------------------------------------------------------------------------------------------->
+
+	<div class='fullContainer' style='margin-top:0; background:#2F4F4F; color:white; border-bottom:5px solid white;'>
+		<div class='leftContainer'>
+			<div class='columnContainer' id='pageTitles'>
+				<img id='bannerImage'>
+				<div>
+					<h1 id='pageTitle' style='margin-bottom:5px;'>Place Name</h1>
+					<p style='margin-top:0; color:lightgray;' id='pageCatnLocation'>Place Location</p>
+					<p id='pageSummary'>Place Description</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- BODY CONTENT --------------------------------------------------------------------------------------------------------------------------->	
+
+	<br>
+
+	<div class='leftContainer'>
+		<h3>More Information</h3>
+		<div id='pageMoreText'></div>
+		<h3>Location Tags</h3>
+		<div id='pageTags'></div>
+	</div>
+
+	<div class='spacer'></div>
+
+		<div class='container'>
+			<div class='imageDiv' id='imagesHolder'>
+				
+			</div>
+		</div>
+
+	<div class='spacer'></div>
+
+	<div class='container'>
+		<h3>Explore Attractions & Things to Do</h3>
+		<div id='furtherLink'></div>
+	</div>
+
+	<div class='spacer'></div>
+
+	<div class='spacer'></div>
+
+	<div class='container'>
+		<button onclick='history.back()'>Back to Previous</button>
+	</div>
+	
+
+<!-- Footer Elements --><div id='footer'></div>
+</body>
+
+	<!-- CREATE THE HEADER AND FOOTER -->
+	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/header/headerScript.js'></script>
+	<script>createHeader();</script>
+
+	<script type='text/javascript'src='https://aztechadmit.github.io/travelorasnou/files/pages/placePage.js'></script>
+	
+	<script>
+		function searchParameter(){
+			const queryString = window.location.search;
+			const urlParams = new URLSearchParams(queryString);
+			//const theBox = document.getElementById("categorySelect");
+			
+			if(urlParams.has("index")){
+				var aIndex = urlParams.get("index"); // Will return an integer number with the category index
+
+				if(aIndex > placePageTitle.length-1 || aIndex < 0 || aIndex == 'nan'){
+					console.log("Attraction Index is higher than total values of attraction list");
+					window.open("unknown-page", "_self");
+					//window.open("404.html","_self");
+				}else{
+					aName = placePageTitle[aIndex];
+					aDescription = placePageDescription[aIndex];
+					aMore = placePageMore[aIndex];
+					aTags = placePageTags[aIndex]
+
+					aGoLink = placePageLink[aIndex];
+					aOtherLink = placeSeeAlso[aIndex];
+					aCategories = placePageSimilar[aIndex];
+					
+					aBanner = placePageBanner[aIndex];
+					aImages = placePageImages[aIndex];
+
+					generateplacePage();
+				}
+				
+			}else{
+				console.log("No Attraction Index");
+				//window.open("404.html","_self");
+			}
+		}// end of search parameter
+
+		function generateplacePage(){
+
+			const tabTitleBox = document.getElementById("tabTitleElement");
+			const pageTitleBox = document.getElementById("pageTitle");
+
+			tabTitleBox.innerHTML = aName + " | Attractions | Travel Oras Nou";
+			pageTitleBox.innerHTML = aName;
+
+			document.getElementById("bannerImage").src = aBanner;
+			document.getElementById("pageSummary").innerHTML = aDescription;
+			
+			document.getElementById("pageMoreText").innerHTML = aMore;
+			if(aGoLink != 'nan'){
+				document.getElementById("pageMoreText").innerHTML += "<p><button style='min-width:300px;margin-left:0;' onclick='window.open(" + '"' + aGoLink + '","_self")' + "'>Visit Website</button></p>";
+			}
+			
+
+			var temp = aCategories.split(" | ");
+				aCategory = temp[0]; aLocation = temp[1];
+
+			aOtherLink = aOtherLink.split(" || "); // aOtherLink is now an array with each element: "Display Text | Link";
+			document.getElementById("pageCatnLocation").innerHTML = "<em>" + aCategory + "</em> | Located in " + aLocation;
+			
+						// Generate links to similar attractions
+						var i = 0;
+						document.getElementById("furtherLink").innerHTML = "";
+						
+						while(i < aOtherLink.length){
+							var temp = aOtherLink[i].split(" | ");
+							document.getElementById("furtherLink").innerHTML += "<a href='"+temp[1]+"'>"+temp[0]+"</a>";
+							
+							i += 1;
+						}
+			
+			if(aImages != 'nan'){
+				aImages = aImages.split(" | "); // aImages is now an array with each element being the link to an image
+
+				// Populate the extra images section
+				const imageDiv = document.getElementById("imagesHolder");
+
+					var i = 0;
+
+					while(i < aImages.length){
+						imageDiv.innerHTML += "<img src='"+aImages[i]+"'>";
+						i += 1;
+					}
+			} // end of image section
+
+			
+
+			// Generate the search similar attractions links
+			const pageCategoryView = document.getElementById("viewSimilarCategory");
+
+				var indx = attractionCategory.indexOf(aCategory);
+				pageCategoryView.innerHTML = "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do'>View More Neighborhoods & Districts</a>";
+
+				indx = attractionLocation.indexOf(aLocation);
+				pageCategoryView.innerHTML += "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?location=2'>Search Other Items located in " + aLocation + " </a>";
+			
+			if(aTags != 'nan'){
+				const tagContainer = document.getElementById("pageTags");
+				aTags = aTags.split(",");
+				
+				var i = 0;
+				while(i < aTags.length){
+					tagContainer.innerHTML += "<a>" + aTags[i] + "</a>";
+					i += 1;
+				}
+			}
+			
+		}// end of function generateplacePage
+	</script>
+
+	<script>
+		searchParameter();
+	</script>
+
+	<!-- JAVASCRIPT ----------------------------------------------------------------------------------------------------------------------------->
+
+	
