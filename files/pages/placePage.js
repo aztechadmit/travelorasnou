@@ -36,7 +36,7 @@ placeCategory = ["none", "Art & Culture", "Places", "Business & Innovation", "Ed
 	placePageMore[0] = "longer_description";
 	placePageTags[0] = "LGBTQ,Art & Culture,Nightlife";
 
- 	placePageLink[0] = "place_site_link";
+ 	placePageLink[0] = "nan";
   	placePageSimilar[0] = "Downtown";
    	placeSeeAlso[0] = "Jacob's on Rose | attraction?index=15 || The Rose Petal | attraction?index=3";
  
