@@ -34,7 +34,7 @@
 	
 	<!-- BANNER AND TITLE ----------------------------------------------------------------------------------------------------------------------->
 
-	<div class='fullContainer' style='margin-top:0; background:#2F4F4F; color:white; border-bottom:5px solid white;'>
+	<div class='fullContainer' style='margin-top:0; background:#778899; color:white; border-bottom:5px solid white;'>
 		<div class='leftContainer'>
 			<div class='columnContainer' id='pageTitles'>
 				<img id='bannerImage'>
@@ -75,6 +75,9 @@
 	</div>
 
 	<div class='spacer'></div>
+
+	<div class='container' id='viewSimilarCategory'>
+	</div>
 
 	<div class='spacer'></div>
 
@@ -181,10 +184,10 @@
 			// Generate the search similar attractions links
 			const pageCategoryView = document.getElementById("viewSimilarCategory");
 
-				pageCategoryView.innerHTML = "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do'>View More Neighborhoods & Districts</a>";
+				pageCategoryView.innerHTML = "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/places-to-visit'>View More Neighborhoods & Districts</a>";
 
 				indx = attractionLocation.indexOf(aLocation);
-				pageCategoryView.innerHTML += "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?location=2'>Search Items located in " + aLocation + " </a>";
+				pageCategoryView.innerHTML += "<a class='btn' href='https://aztechadmit.github.io/travelorasnou/things-to-do/attractions?location='"+indx+"'>Search Items located in " + aLocation + " </a>";
 			
 			if(aTags != 'nan'){
 				const tagContainer = document.getElementById("pageTags");
