@@ -44,3 +44,17 @@ placeCategory = ["none", "Art & Culture", "Places", "Business & Innovation", "Ed
   	placePageImages[0] = "image_link_one | image_link_two";
 
    /* ----IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
+	placePageTitle[1] = "Exposition Park";
+	placePageDescription[1] = "short_description";
+	placePageMore[1] = "longer_description";
+	placePageTags[1] = "Art & Culture,Learning,Entertainment";
+
+ 	placePageLink[1] = "nan";
+  	placePageSimilar[1] = "Downtown";
+   	placeSeeAlso[1] = "Oras Nou AeroTower | attraction?index=nan || Lea Kra Sasson Concert Hall | attraction?index=8 || The Mystique - Circular Theater | attraction?index=10 || Museum of Oras Nou | attraction?index=nan";
+ 
+ 	placePageBanner[1] = "link_to_banner_image";
+  	placePageImages[1] = "image_link_one | image_link_two";
+
+   /* ----IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
