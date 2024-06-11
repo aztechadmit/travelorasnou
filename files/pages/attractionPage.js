@@ -255,4 +255,18 @@ attractionCategory = ["none", "Art & Culture", "Attractions", "Business & Innova
 
    	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
+	attractionPageTitle[16] = "Oras Nou AeroTower";
+	attractionPageDescription[16] = "Standing at nearly 200 meters (650 ft) tall, the Oras Nou AeroTower is a jaw-dropping landmark and testiment to Oras Nou's forward-thinking and futuristic design. The tower was constructed in 1985 as part of a donation from the Minecraftian Association for Better Cities and was dsesigned to be a symbol of Oras Nou's people-centric and futuristic design.";
+	attractionPageMore[16] = "Capture the city of the future from above as you soar to 200 meters. The AeroTower features multiple outdoor and indoor observation decks, a magical rotating bar at 120 meters, an interactive museum, and more! If the elevator sounds boring, try climbing over 50 flights of stairs on your way to the top, entirely on the exterior of the main elevator shaft. <h4>A Journey Upwards</h4>In the elevator up to the observation platform, learn about the history of the tower and watch it be constructed around you in a unique 360 degree visual experience, designed by Painter Creative and Mystique Visuals.<h4>The Science of Height</h4>At 200 meters tall, the AeroTower is packed full of innovative technology which keeps this skinny tower upright against strong winds, earthquakes, and gravity. At the towers base, explore an interactive exhibit which teaches about this technology and the construction of this marvelous monument.";
+	attractionPageTags[16] = "Unique,Instagrammable,Scenic,Iconic,Learning";
+
+ 	attractionPageLink[16] = "nan";
+  	attractionPageSimilar[16] = "Attractions | Downtown";
+   	attractionSeeAlso[16] = "Exposition Park, Downtown | place?index=1 || The Mystique - Circular Theater | attraction?index=10";
+ 
+ 	attractionPageBanner[16] = "https://www.burientoyota.com/blogs/2317/wp-content/uploads/2019/03/space-needle.jpg";
+  	attractionPageImages[16] = "https://i.pinimg.com/736x/c6/9e/e9/c69ee9a881617c4d23729a1800e5464a.jpg | https://www.edgewaterhotel.com///wp-content/uploads/2020/01/Space-Needle-at-Night-hero.jpg | https://media.architecturaldigest.com/photos/5afc411fda68792ef45e524b/16:9/w_2560%2Cc_limit/GettyImages-133955724.jpg";
+
+   	/* ----	IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
 	
