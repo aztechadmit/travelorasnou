@@ -52,7 +52,7 @@ placeCategory = ["none", "Art & Culture", "Places", "Business & Innovation", "Ed
 
  	placePageLink[1] = "nan";
   	placePageSimilar[1] = "Downtown";
-   	placeSeeAlso[1] = "Oras Nou AeroTower | attraction?index=nan || Lea Kra Sasson Concert Hall | attraction?index=8 || The Mystique - Circular Theater | attraction?index=10 || Museum of Oras Nou | attraction?index=nan";
+   	placeSeeAlso[1] = "Oras Nou AeroTower | attraction?index=16 || Lea Kra Sasson Concert Hall | attraction?index=8 || The Mystique - Circular Theater | attraction?index=10 || Museum of Oras Nou | attraction?index=nan";
  
  	placePageBanner[1] = "link_to_banner_image";
   	placePageImages[1] = "image_link_one | image_link_two";
