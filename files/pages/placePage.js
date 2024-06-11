@@ -46,16 +46,16 @@ placeCategory = ["none", "Art & Culture", "Places", "Business & Innovation", "Ed
    /* ----IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
 	placePageTitle[1] = "Exposition Park";
-	placePageDescription[1] = "short_description";
+	placePageDescription[1] = "In the heart of Downtown, Exposition Park is a mini-district dedicated to art, history, innovation, and exhibits with things from across the world. Originally constructed in 2001, Exposition Park was opened to the public with the idea of being a place where people could learn anything and explore the magnicicent cultures, countries, and wonders around us. Today the park is home to many museums, art exhibits, exhibit halls, and attractions.";
 	placePageMore[1] = "longer_description";
 	placePageTags[1] = "Art & Culture,Learning,Entertainment";
 
  	placePageLink[1] = "nan";
   	placePageSimilar[1] = "Downtown";
-   	placeSeeAlso[1] = "Oras Nou AeroTower | attraction?index=16 || Lea Kra Sasson Concert Hall | attraction?index=8 || The Mystique - Circular Theater | attraction?index=10 || Museum of Oras Nou | attraction?index=nan";
+   	placeSeeAlso[1] = "Oras Nou AeroTower | attraction?index=16 || Lea Kra Sasson Concert Hall | attraction?index=8 || The Mystique - Circular Theater | attraction?index=10 || Museum of Oras Nou | attraction?index=nan || Connorslong Museum of Natural History | attraction?index=nan || Mendez Art Pavillion | attraction?index=nan || Avner Sasson Innovation Pavillion | attraction?index=nan || Keppler Aerospace Pavllion | attraction?index=nan";
  
- 	placePageBanner[1] = "link_to_banner_image";
-  	placePageImages[1] = "image_link_one | image_link_two";
+ 	placePageBanner[1] = "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/c0/b6.jpg";
+  	placePageImages[1] = "https://th-thumbnailer.cdn-si-edu.com/f8d7yehJjD46qGh_QNlXrLovqzo=/fit-in/1600x0/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/35/39/35399575-62c7-41cb-bda3-1b0a9f7cca8b/main_borderlesswaorl_takihana_2_3_high.jpg | https://www.washingtonpost.com/resizer/sOZorjVT0LyNdDt82Fsh1lRZE_s=/arc-anglerfish-washpost-prod-washpost/public/TUQSDMUB5BPOIQBUMDSLBA7SVU.JPG | https://a.travel-assets.com/findyours-php/viewfinder/images/res70/480000/480454-Balboa-Park.jpg";
 
    /* ----IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
 
