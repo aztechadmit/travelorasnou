@@ -72,3 +72,17 @@ placeCategory = ["none", "Art & Culture", "Places", "Business & Innovation", "Ed
   	placePageImages[2] = "image_link_one | image_link_two";
 
    /* ----IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
+
+	placePageTitle[3] = "Oceanside Shores";
+	placePageDescription[3] = "Explroe this cute coastal village in the heart of Oceanside. Stroll down tree lined avenues with the cool ocean air blowing past cute store fronts, bustling restaurants, wine bars, art galleries, and more! There's much to explore in this lively town nestled between gorgeous hillsides and the blocklantic ocean.";
+	placePageMore[3] = "longer_description";
+	placePageTags[3] = "Outdoor,Shopping,Foodie,Family Oriented,Romantic,Coastal";
+
+ 	placePageLink[3] = "nan";
+  	placePageSimilar[3] = "Oceanside";
+   	placeSeeAlso[3] = "Oceanside Village | attraction?index=nan || Eastpoint Beach | attraction?index=nan";
+ 
+ 	placePageBanner[3] = "https://www.shutterstock.com/image-photo/playa-del-carmen-26-march-600nw-2289447361.jpg";
+  	placePageImages[3] = "https://media.cntraveler.com/photos/5a8ecbbc8087c02669a7d9e5/16:9/w_2560,c_limit/La-Jolla-Torrey-Pines-State-Park--Courtesy-SanDiego.org.jpg | https://img.govisitsandiego.com/guides/things-to-do/shopping/shopping-in-downtown-la-jolla/lrg-fine-art-gallery-in-the-village-of-la-jolla.webp | https://ca-times.brightspotcdn.com/dims4/default/b2d1416/2147483647/strip/true/crop/2520x1554+0+0/resize/1200x740!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fc5%2Faf%2F658d45044abfa13ef976b2263711%2Fcm-ljl-homes-sold-shoreline-jpg.jpg";
+
+   /* ----IF NO VALUE FOR ELEMENT, USE "nan" ----------------------------------------------------------------------------------------- */
