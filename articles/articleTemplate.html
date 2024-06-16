@@ -12,58 +12,47 @@
 	<title>PAGE_TITLE | Articles & Travel Guides | Travel Oras Nou</title>
 
 	<style>
-		#articleBody{
-			background:aliceblue;
-		}
-		#articleContainer {width:100%; max-width:1000px; background:white; margin:auto; margin-top:20px;}
-		#articleContainer .subtitleBar{background:lightgray; border-bottom:5px solid gray; margin-top:0;}
-		#articleContainer .titleBar h2{font-weight:normal; margin-top:0px;}
-		#articleContainer .titleBar h1{margin-bottom:2px;}
-
-		#articleBannerImg{width:100%; margin:0; height:300px; object-fit:cover;}
-		#articleSubtitle{margin:0;}
 		
-		#subTitleContents {width:100%; padding:0px; display:flex; flex-flow:row; flex-wrap:wrap; margin:0;}
-		#subTitleContents div{min-width:300px; margin:auto;}
-		#subTitleContents #categoryText{text-align:center;}
-		#subTitleContents #postingDate{text-align:right;}
-		#subTitleContents #authorText{text-align:left;}
 	</style>
 </head>
 
 <body onload='endPageLoad()' id='articleBody'>
 <!-- Header Elements --><div id='loader'></div><div id='header'></div>
 
-	<div id='articleContainer'>
+	<div id='articleBody'>
+
+		<!-- ARTICLE BANNER AND TITLE CONTENT -->
+
+		<div id='pageBanner'> <img src='BANNER_SRC_LINK'> </div>
+		<div id='pageTitle'> <h1>page_title</h1> <h2>page_subtitle</h2> </div>
+		<div id='postingInformation'> <div><h4>Article_Author</h4><h4>Article_Category</h4><h4>Article_Date</h4></div> </div>
 		
-		<!-- BANNER AND TITLE ----------------------------------------------------------------------------------------------------------------------->
-	
-		<div class='titleBar' id='articleMainTitle'>
-			<h1> Article_Title </h1>
-			<h2> article_subtext </h2>
-		</div>
-		<img id='articleBannerImg' src='https://aztechadmit.github.io/travelorasnou/files/images/placeholder.jpg'>
-		<div class='subtitleBar' id='articleSubtitle'>
-			<div id='subTitleContents'>
-				<div id='authorText'>Article_Author</div>
-				<div id='categoryText'>Article_Category</div>
-				<div id='postingDate'>Posting_Date</div>
+
+		<!-- ARTICLE CONTENT -->
+		
+		<div id='articleContent'>
+
+			<div class='leftContainer'>
+				This is a placeholder paragraph designed to show how the page will look filled with glorious words. Please ignore everything you are reading in this paragraph as it is absolutely useless and will provide no gain to you or your little life. Anyways, now that that is out of the way let me tell you about this crazy night I had one time in the city of oras nou. So me and my friends were out and about and we decided to hit the Rose District for some clubbing action. Thats when we ran in to non other than my ex-boyfriend who dumped me when he realized he was straight. So then I ...
 			</div>
+
+			<div class='spacer'></div>
+
+			<div class='leftContainer'>
+				This is a placeholder paragraph designed to show how the page will look filled with glorious words. Please ignore everything you are reading in this paragraph as it is absolutely useless and will provide no gain to you or your little life. Anyways, now that that is out of the way let me tell you about this crazy night I had one time in the city of oras nou. So me and my friends were out and about and we decided to hit the Rose District for some clubbing action. Thats when we ran in to non other than my ex-boyfriend who dumped me when he realized he was straight. So then I ...
+			</div>
+
 		</div>
-	
-		<!-- BODY CONTENT --------------------------------------------------------------------------------------------------------------------------->	
-	
-		<div class='leftContainer'>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</div>
+
+		<br><br>
 
 		<div class='spacer'></div>
 
-		<div class='leftContainer'>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<div class='container'>
+			<button onclick='history.back()'>Back to Previous</button> <button onclick='window.open("https://aztechadmit.github.io/travelorasnou/articles/travel-guides","_self")'>More Articles</button>
 		</div>
 		
-	</div> <!-- end of article container -->
+	</div> <!-- end of article body - NO CONTENT BEYOND THIS POINT -->
 
 <!-- Footer Elements --><div id='footer'></div>
 </body>
